@@ -1,11 +1,13 @@
 {
   "pages":[
+        "pages/browse/browse",
     "pages/index/index"
+   
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarBackgroundColor": "#1C1919",
+    "navigationBarTitleText": "TatU",
+    "navigationBarTextStyle":"white"
   }
 }
