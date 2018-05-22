@@ -15,6 +15,32 @@ Page({
   
   },
 
+  // START TABBAR
+
+  goBrowse: function (e) {
+    wx.reLaunch({
+      url: '/pages/browse/browse',
+    })
+  },
+
+  goFavourite: function (e) {
+    wx.reLaunch({
+      url: '/pages/favourite/favourite',
+    })
+  },
+  goInbox: function (e) {
+    wx.reLaunch({
+      url: '/pages/inbox/inbox',
+    })
+  },
+  goInfo: function (e) {
+    wx.reLaunch({
+      url: '/pages/info/info',
+    })
+  },
+
+  // END TABBAR
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

@@ -24,17 +24,17 @@ Page({
     this.setData({ shops: mock.shops })
   },
 
-  showUser: function (e) {
+  showStyle: function (e) {
     const data = e.currentTarget.dataset
-    const user = data.user
-    console.log(user)
+    const shop = data.name
+    console.log(2323, shop)
     // wx.navigateTo({
     //   url: `/pages/show/show?=${user.id}`,
     // })
     wx.switchTab({
       url: `/pages/show/show?=${user.id}`,
     })
-    console.log(user.id)
+    console.log(5555, shop.id)
   },
 
   showInput: function () {

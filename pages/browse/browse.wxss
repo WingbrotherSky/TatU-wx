@@ -75,18 +75,29 @@ padding: 0px;
   background-position: center;
   color: white;
   position: relative;
-  margin: 6px;
+  margin: 8px;
+  margin-bottom: 5px;
   border-radius: 3px;
 }
 
+.small-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .small-card {
-  height: 150px;
-  width: 142px;
+  height: 136px;
+  width: 136px;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   background-position: center;
   color: white;
-  margin: 6px;
+  margin: 9px;
   border-radius: 3px;
+}
+
+.blank-item {
+  height: 10px;
+  background-color: black;
 }
 
 
