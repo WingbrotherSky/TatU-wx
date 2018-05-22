@@ -4,17 +4,25 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
+  
+
   //事件处理函数
-  bindViewTap: function() {
+  goToBrowsePage: function() {
     wx.navigateTo({
-      url: '../logs/logs'
+      url: 'pages/browse/browse'
     })
   },
+
+  goToShowShopPage: function () {
+    wx.navigateTo({
+      url: 'pages/showshop/showshop'
+    })
+  },
+
   onLoad: function () {
    app.login()
   },
@@ -24,7 +32,8 @@ Page({
     this.setData({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
-      
     })
+
+    this.goToBrowsePage()
   }
 })
