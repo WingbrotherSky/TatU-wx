@@ -1,0 +1,125 @@
+<view class='whole-page'>
+<!-- START SEARCH BAR  -->
+
+<view class="navbar">
+  <view class="page">
+    <view class="page__bd">
+        <view class="weui-search-bar">
+            <view class="weui-search-bar__form">
+                <view class="weui-search-bar__box">
+                    <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                      <input type="text" class="weui-search-bar__input" placeholder="Search the style" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+                      <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+                        <icon type="clear" size="14"></icon>
+                      </view>
+                </view>
+            </view>
+            <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+        </view>
+        <view class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}">
+            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">
+                    <view>Service 1</view>
+                </view>
+            </navigator>
+            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">
+                    <view>Service 2</view>
+                </view>
+            </navigator>
+            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">
+                    <view>Service 3</view>
+                </view>
+            </navigator>
+            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">
+                    <view>Service 4</view>
+                </view>
+            </navigator>
+        </view>
+    </view>
+  </view>
+</view>
+
+<!-- END SEARCH BAR  -->
+
+<!-- START CONTAINER CARD  -->
+<view class='shop-container'>
+<view class='shop-info'>
+<view class='shop-name'> Temple Tattoo</view>
+<image class='shop-logo' src='../../image/templetattoo.jpg'> </image>
+</view>
+
+<view class='featured-container'>
+ 
+    <view bindtap='showStyle' data-style="{{item.style}}" class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://wx1.sinaimg.cn/mw690/95af932egy1fp11zn5j9tj20hs0hsmzh.jpg');">   
+    
+    <view class="card-description">
+      <text>{{item.shop}}</text>
+    </view>
+  </view>
+</view>
+
+
+<!-- sssss -->
+
+      <!-- <block wx:for="{{services}}">
+        <view bindtap='showUser' data-user="{{item.user}}" class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://picsum.photos/200/300');">
+          <view class="card-category">{{item.name}}</view>
+          <view class="userProfile-name">{{item.user.username}}
+            <image class="avatar" src="https://picsum.photos/200/300"></image>
+          </view>
+          <view class="card-description">
+            <text>{{item.description}}</text>
+          </view>
+        </view>
+      </block> -->
+ 
+
+    <!-- sxxxx -->
+
+ 
+<view class='cards-container'>
+  <block wx:for="{{shops}}">
+  <view bindtap='showShop' data-user="{{item.user}}" class='card' style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://picsum.photos/200/300');"></view>
+  <image src="{{item.banner_url}}" class="small-card"></image>
+   </block>
+
+
+
+<!-- <view class='secondary-cards'>
+      <view bindtap='showStyle' data-style="{{item.style}}" class="card2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://wx1.sinaimg.cn/mw690/95af932egy1fp11zn5j9tj20hs0hsmzh.jpg');">  
+      
+      <view class="card-description">
+        <text>{{item.shop}}</text>
+      </view>
+    </view>
+</view> -->
+</view>
+
+<!-- END CARD LOOP -->
+</view> 
+</view>
+
+<!-- START TAB BAR -->
+
+<view class='nav'>
+  <view class='markey-container'>
+      <view class='extend-padding' bindtap='goBrowse'>
+      <image class='avatar-tab' src="../../image/search.png"></image>
+      </view>
+      <view class='extend-padding' bindtap='goFavourite'>
+      <image class='avatar-tab' src="../../image/star.png"></image>
+      </view>
+      <view class='extend-padding' bindtap='goInbox'>
+      <image class='avatar-tab' src="../../image/chat.png"></image>
+      </view>
+      <view class='extend-padding' bindtap='goInfo'>
+      <image class='avatar-tab' src="../../image/information.png"></image>
+      </view>
+  </view>
+</view>
+
+
+<!-- END TAB BAR -->
