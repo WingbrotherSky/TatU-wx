@@ -1,6 +1,7 @@
 //index.js
 //获取应用实例
 const app = getApp()
+console.log(111111, app)
 
 Page({
   data: {
@@ -29,7 +30,7 @@ Page({
          },
          success: res => {
            console.log(res)
-           this.globalData.userId=res.data.userId
+           app.globalData.userId=res.data.userId
          }
        })
      }
