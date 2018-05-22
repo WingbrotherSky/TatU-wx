@@ -1,7 +1,11 @@
 {
   "pages":[
         "pages/browse/browse",
-    "pages/index/index"
+    "pages/index/index",
+    "pages/favourite/favourite",
+    "pages/inbox/inbox",
+    "pages/info/info",
+    "pages/show/show"
    
   ],
   "window":{
