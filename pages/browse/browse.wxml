@@ -46,62 +46,31 @@
 
 <!-- START CONTAINER CARD  -->
 <view class='shop-container'>
-<view class='shop-info'>
-<view class='shop-name'> Temple Tattoo</view>
-<image class='shop-logo' src='../../image/templetattoo.jpg'> </image>
-</view>
 
-<view class='featured-container'>
- 
-    <view bindtap='showStyle' data-style="{{item.style}}" class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://wx1.sinaimg.cn/mw690/95af932egy1fp11zn5j9tj20hs0hsmzh.jpg');">   
-    
-    <view class="card-description">
-      <text>{{item.shop}}</text>
-    </view>
+  <view wx:for="{{shops}}">
+
+  <view class='shop-info'>
+    <view class='shop-name'> Temple Tattoo</view>
+      <image class='shop-logo' src='../../image/templetattoo.jpg'> </image>
   </view>
-</view>
 
-
-<!-- sssss -->
-
-      <!-- <block wx:for="{{services}}">
-        <view bindtap='showUser' data-user="{{item.user}}" class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://picsum.photos/200/300');">
-          <view class="card-category">{{item.name}}</view>
-          <view class="userProfile-name">{{item.user.username}}
-            <image class="avatar" src="https://picsum.photos/200/300"></image>
-          </view>
-          <view class="card-description">
-            <text>{{item.description}}</text>
-          </view>
-        </view>
-      </block> -->
- 
-
-    <!-- sxxxx -->
-
- 
-<view class='cards-container'>
-  <block wx:for="{{shops}}">
-  <view bindtap='showShop' data-user="{{item.user}}" class='card' style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://picsum.photos/200/300');"></view>
-  <image src="{{item.banner_url}}" class="small-card"></image>
-   </block>
-
-
-
-<!-- <view class='secondary-cards'>
-      <view bindtap='showStyle' data-style="{{item.style}}" class="card2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://wx1.sinaimg.cn/mw690/95af932egy1fp11zn5j9tj20hs0hsmzh.jpg');">  
-      
-      <view class="card-description">
-        <text>{{item.shop}}</text>
+    <view class='featured-container'>
+      <view bindtap='showStyle' data-style="{{item.style}}" class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://wx1.sinaimg.cn/mw690/95af932egy1fp11zn5j9tj20hs0hsmzh.jpg');">    
       </view>
     </view>
-</view> -->
-</view>
 
+    <view class="small-cards">
+      <view wx:for="{{item.artists}}" wx:for-item="smallItem" bindtap='showStyle' class='small-card' style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{smallItem.art[0].url}}');"></view>
+    </view>
+
+  <view class='blank-item'> </view>
+  </view>
+
+
+</view>
+ 
 <!-- END CARD LOOP -->
-</view> 
 </view>
-
 <!-- START TAB BAR -->
 
 <view class='nav'>
