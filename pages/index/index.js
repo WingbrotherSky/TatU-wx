@@ -1,7 +1,6 @@
 //index.js
 //获取应用实例
 const app = getApp()
-console.log(111111, app)
 
 Page({
   data: {
@@ -17,24 +16,7 @@ Page({
     })
   },
   onLoad: function () {
-   const host = "http://localhost:3000/"
-   console.log("Logging in")
-   wx.login({
-     success: res => {
-       console.log(res)
-       wx.request({
-         url: host + 'login',
-         method: 'POST',
-         data: {
-           code: res.code
-         },
-         success: res => {
-           console.log(res)
-           app.globalData.userId=res.data.userId
-         }
-       })
-     }
-   })
+   app.login()
   },
   getUserInfo: function(e) {
     console.log(e)
