@@ -1,10 +1,30 @@
-<!--pages/showimage/showimage.wxml-->
+<!--pages/show-image/show-image.wxml-->
+<!-- <text>pages/show-image/show-image.wxml</text>  -->
+<page>
+<view class='shop-container'>
 
+  <view class='shop-info'>
+    <view class='shop-name'> {{art.artist.shop.name}}</view>
+    <image class='shop-logo' catchtap='goToShowShopPage' src='{{art.artist.shop.logo_url}}'></image>
+  </view>
 
+  <view class='featured-container'>
+    <view bindtap='previewImages' data-style="{{item.style}}" class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{art.url}}');"> {{art.artist.name}}
+    <image class='avatar' catchtap='goToShowArtistPage' src='{{art.artist.shop.logo_url}}'></image>  
+    </view>
 
+    <view class='button-container'>
+      <image class="button" src="../../image/share-2.png" bindtap=''></image>
+      <image class="button" src="../../image/heart.png" bindtap=''></image>
+       <image class="button" src="../../image/chat的副本.png" bindtap=''></image>
+      <image class="button" src="../../image/download-2.png" bindtap=''></image>
+    </view>
+  </view>
+  
+</view>
 
-<!-- START TAB BAR -->
-<view class='blank-item'> </view>
+<!-- <tabbar-start> -->
+
 <view class='nav'>
   <view class='markey-container'>
       <view class='extend-padding' bindtap='goBrowse'>
@@ -22,5 +42,5 @@
   </view>
 </view>
 
-
-<!-- END TAB BAR -->
+<!-- <tabbar-end> -->
+</page>
