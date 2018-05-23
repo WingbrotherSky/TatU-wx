@@ -10,6 +10,11 @@
         </view>
       </block>
     </view>
+    <button bindtap="goToBrowsePage"> test browse page </button>
+    <button bindtap="goToFavouritePage"> test favourite page </button>
+    <button bindtap="goToInboxPage"> test inbox page </button>
+    <button bindtap="goToInfoPage"> test info page </button>
+    <button bindtap="goToShowPage"> test show? page </button>
   </view>
   <!-- <view wx:if="{{user already has shop}}" bindtap="goToShopShow">
   <block wx:else>
