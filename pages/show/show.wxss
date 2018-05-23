@@ -1,0 +1,32 @@
+/* pages/show/show.wxss */
+
+ /* START TAB BAR  */
+
+.avatar-tab {
+  width: 22px;
+  height: 22px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden;
+  height: 45px;
+  border-top: 0.5px solid #dddddd;
+}
+
+.markey-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.extend-padding {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+ /* END TAB BAR  */

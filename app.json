@@ -1,11 +1,17 @@
 {
   "pages":[
-    "pages/index/index"
+        "pages/browse/browse",
+    "pages/index/index",
+    "pages/favourite/favourite",
+    "pages/inbox/inbox",
+    "pages/info/info",
+    "pages/show/show"
+   
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarBackgroundColor": "#1C1919",
+    "navigationBarTitleText": "TatU",
+    "navigationBarTextStyle":"white"
   }
 }
