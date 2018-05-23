@@ -10,10 +10,10 @@ Page({
   
   },
 
-  previewImages() {
+  previewImages(e) {
     console.log('ready to preview');
     wx.previewImage({
-      urls: ['https://wx1.sinaimg.cn/mw690/95af932egy1fp11zn5j9tj20hs0hsmzh.jpg']
+      urls: [e.currentTarget.dataset.url]
     })
   },
 
