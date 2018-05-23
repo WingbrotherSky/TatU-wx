@@ -27,17 +27,14 @@ Page({
     })
   },
 
-
   showArtist: function (e) {
     const data = e.currentTarget.dataset
     console.log(435, data)
     const artistId = data.artistid
     console.log(3333, artistId)
-    // wx.navigateTo({
-    //   url: `/pages/show/show?=${user.id}`,
-    // })
+
     wx.navigateTo({
-      url: `/pages/show/show?id=${artistId}`,
+      url: `/pages/showartist/showartist?id=${artistId}`,
     })
   },
 
