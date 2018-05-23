@@ -1,0 +1,46 @@
+<!--pages/show-image/show-image.wxml-->
+<!-- <text>pages/show-image/show-image.wxml</text>  -->
+<page>
+<view class='shop-container'>
+
+  <view class='shop-info'>
+    <view class='shop-name'> Temple Tattoo</view>
+    <image class='shop-logo' catchtap='goToShowShopPage' src='../../image/templetattoo.jpg'></image>
+  </view>
+
+  <view class='featured-container'>
+    <view bindtap='previewImages' data-style="{{item.style}}" class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://wx1.sinaimg.cn/mw690/95af932egy1fp11zn5j9tj20hs0hsmzh.jpg');"> Tianyi
+    <image class='avatar' catchtap='goToShowArtistPage' src='../../image/templetattoo.jpg'></image>  
+    </view>
+
+    <view class='button-container'>
+      <image class="button" src="../../image/share-2.png" bindtap=''></image>
+      <image class="button" src="../../image/heart.png" bindtap=''></image>
+       <image class="button" src="../../image/chat的副本.png" bindtap=''></image>
+      <image class="button" src="../../image/download-2.png" bindtap=''></image>
+    </view>
+  </view>
+  
+</view>
+
+<!-- <tabbar-start> -->
+
+<view class='nav'>
+  <view class='markey-container'>
+      <view class='extend-padding' bindtap='goBrowse'>
+      <image class='avatar-tab' src="../../image/search.png"></image>
+      </view>
+      <view class='extend-padding' bindtap='goFavourite'>
+      <image class='avatar-tab' src="../../image/star.png"></image>
+      </view>
+      <view class='extend-padding' bindtap='goInbox'>
+      <image class='avatar-tab' src="../../image/chat.png"></image>
+      </view>
+      <view class='extend-padding' bindtap='goInfo'>
+      <image class='avatar-tab' src="../../image/information.png"></image>
+      </view>
+  </view>
+</view>
+
+<!-- <tabbar-end> -->
+</page>
