@@ -29,12 +29,20 @@ Page({
 
   showArtist: function (e) {
     const data = e.currentTarget.dataset
-    console.log(435, data)
     const artistId = data.artistid
-    console.log(3333, artistId)
 
     wx.navigateTo({
       url: `/pages/showartist/showartist?id=${artistId}`,
+    })
+  },
+
+  showArt: function(e) {
+    const data = e.currentTarget.dataset
+    const artId = data.artid
+
+
+    wx.navigateTo({
+      url: `/pages/showimage/showimage?id=${artId}`,
     })
   },
 
