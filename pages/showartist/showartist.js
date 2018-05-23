@@ -14,6 +14,12 @@ Page({
     inputVal: "",
     shops: []
   },
+  previewImages() {
+    console.log('ready to preview');
+    wx.previewImage({
+      urls: ['https://wx1.sinaimg.cn/mw690/95af932egy1fp11zn5j9tj20hs0hsmzh.jpg']
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载
