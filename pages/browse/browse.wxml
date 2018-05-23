@@ -1,0 +1,94 @@
+<view class='whole-page'>
+<!-- START SEARCH BAR  -->
+
+<view class="navbar">
+  <view class="page">
+    <view class="page__bd">
+        <view class="weui-search-bar">
+            <view class="weui-search-bar__form">
+                <view class="weui-search-bar__box">
+                    <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                      <input type="text" class="weui-search-bar__input" placeholder="Search the style" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+                      <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+                        <icon type="clear" size="14"></icon>
+                      </view>
+                </view>
+            </view>
+            <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+        </view>
+        <view class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}">
+            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">
+                    <view>Service 1</view>
+                </view>
+            </navigator>
+            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">
+                    <view>Service 2</view>
+                </view>
+            </navigator>
+            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">
+                    <view>Service 3</view>
+                </view>
+            </navigator>
+            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">
+                    <view>Service 4</view>
+                </view>
+            </navigator>
+        </view>
+    </view>
+  </view>
+</view>
+
+<!-- END SEARCH BAR  -->
+
+<!-- START CONTAINER CARD  -->
+<view class='shop-container'>
+
+  <view wx:for="{{shops}}">
+
+  <view class='shop-info'>
+    <view class='shop-name'> Temple Tattoo</view>
+      <image class='shop-logo' src='../../image/templetattoo.jpg'> </image>
+  </view>
+
+    <view class='featured-container'>
+      <view bindtap='showStyle' data-style="{{item.style}}" class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://wx1.sinaimg.cn/mw690/95af932egy1fp11zn5j9tj20hs0hsmzh.jpg');">    
+      </view>
+    </view>
+
+    <view class="small-cards">
+      <view wx:for="{{item.artists}}" wx:for-item="smallItem" bindtap='showStyle' class='small-card' style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{smallItem.art[0].url}}');"></view>
+    </view>
+
+  <view class='blank-item'> </view>
+  </view>
+
+
+</view>
+ 
+<!-- END CARD LOOP -->
+</view>
+<!-- START TAB BAR -->
+
+<view class='nav'>
+  <view class='markey-container'>
+      <view class='extend-padding' bindtap='goBrowse'>
+      <image class='avatar-tab' src="../../image/search.png"></image>
+      </view>
+      <view class='extend-padding' bindtap='goFavourite'>
+      <image class='avatar-tab' src="../../image/star.png"></image>
+      </view>
+      <view class='extend-padding' bindtap='goInbox'>
+      <image class='avatar-tab' src="../../image/chat.png"></image>
+      </view>
+      <view class='extend-padding' bindtap='goInfo'>
+      <image class='avatar-tab' src="../../image/information.png"></image>
+      </view>
+  </view>
+</view>
+
+
+<!-- END TAB BAR -->
