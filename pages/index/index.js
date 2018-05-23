@@ -13,15 +13,39 @@ Page({
   //事件处理函数
   goToBrowsePage: function() {
     wx.navigateTo({
-      url: 'pages/browse/browse'
+      url: '/pages/browse/browse'
     })
   },
 
   goToShowShopPage: function () {
     wx.navigateTo({
-      url: 'pages/showshop/showshop'
+      url: '/pages/showshop/showshop'
     })
   },
+
+  goToFavouritePage: function () {
+    wx.navigateTo({
+      url: '/pages/favourite/favourite'
+    })
+  },
+  goToInboxPage: function () {
+    wx.navigateTo({
+      url: '/pages/inbox/inbox'
+    })
+  },
+
+  goToInfoPage: function () {
+    wx.navigateTo({
+      url: '/pages/info/info'
+    })
+  },
+
+  goToShowPage: function () {
+    wx.navigateTo({
+      url: '/pages/show/show'
+    })
+  },
+
 
   onLoad: function () {
    app.login()
