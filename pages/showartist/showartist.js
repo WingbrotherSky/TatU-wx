@@ -1,8 +1,7 @@
 // pages/browse/browse.js
 
 const app = getApp()
-const mock = require('./mock')
-const path = require('./mock')
+const paths = require('../../common/apiPaths')
 
 Page({
 
@@ -12,22 +11,25 @@ Page({
   data: {
     inputShowed: false,
     inputVal: "",
-    shops: []
   },
-  previewImages() {
+  previewImages(e) {
     console.log('ready to preview');
     wx.previewImage({
-      urls: ['https://wx1.sinaimg.cn/mw690/95af932egy1fp11zn5j9tj20hs0hsmzh.jpg']
+      urls: [e.currentTarget.dataset.url]
     })
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function () {
-
-
-    this.setData({ shops: mock.shops })
+  onLoad: function (options) {
+    const that = this
+    wx.request({
+      url: paths.getArtist + options.id,
+      success: res => {
+        that.setData({ artist: res.data })
+      }
+    })
   },
 
   showShop: function (e) {
