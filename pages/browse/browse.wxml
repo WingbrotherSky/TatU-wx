@@ -64,6 +64,7 @@
         <view class="small-cards">
       <view wx:for="{{item.art}}"  bindtap='showArt' data-artId="{{item.id}}"class='small-card' style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{item.url}}');"></view>
     </view>
+
     <view class="location" bindtap='showShop'>
       Location: {{item.location}}
       Contact: {{item.phone_number}}
