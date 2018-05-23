@@ -2,7 +2,7 @@
 
 const app = getApp()
 const mock = require('./mock')
-const path = require('./mock')
+const paths = require('../../common/apiPaths')
 
 Page({
 
@@ -19,22 +19,26 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function () {
-
-
-    this.setData({ shops: mock.shops })
+    const that = this
+    wx.request({
+      url: paths.getAllShops,
+      success:(res) => {
+          that.setData({shops: res.data.shops})
+      }
+    })
   },
 
-  showStyle: function (e) {
+  showArtist: function (e) {
     const data = e.currentTarget.dataset
-    const shop = data.name
-    console.log(2323, shop)
+    console.log(435, data)
+    const artistId = data.artistid
+    console.log(3333, artistId)
     // wx.navigateTo({
     //   url: `/pages/show/show?=${user.id}`,
     // })
-    wx.switchTab({
-      url: `/pages/show/show?=${user.id}`,
+    wx.navigateTo({
+      url: `/pages/show/show?id=${artistId}`,
     })
-    console.log(5555, shop.id)
   },
 
   showInput: function () {
