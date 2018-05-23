@@ -9,8 +9,8 @@
   </view>
 
   <view class='featured-container'>
-    <view bindtap='previewImages' data-style="{{item.style}}" class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{art.url}}');"> {{art.artist.name}}
-    <image class='avatar' catchtap='goToShowArtistPage' src='{{art.artist.shop.logo_url}}'></image>  
+    <view bindtap='previewImages' data-url="{{art.url}}" class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{art.url}}');"> {{art.artist.name}}
+    <image class='avatar' catchtap='goToShowArtistPage' src='{{art.artist.avatar_url}}'></image>  
     </view>
 
     <view class='button-container'>
