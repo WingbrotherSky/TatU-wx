@@ -1,4 +1,6 @@
-// pages/showimage/showimage.js
+// pages/show-image/show-image.js
+const paths = require('../../common/apiPaths')
+
 Page({
 
   /**
@@ -8,11 +10,45 @@ Page({
   
   },
 
+  previewImages() {
+    console.log('ready to preview');
+    wx.previewImage({
+      urls: ['https://wx1.sinaimg.cn/mw690/95af932egy1fp11zn5j9tj20hs0hsmzh.jpg']
+    })
+  },
+
+  
+navigateBack() {
+  wx.navigateBack({
+    delta: 1,
+  })
+},
+
+goToShowArtistPage: function (e) {
+  wx.navigateTo({
+    url: '/pages/showartist/showartist',
+  })
+},
+
+goToShowShopPage: function (e) {
+  wx.navigateTo({
+    url: '/pages/showshop/showshop',
+  })
+},
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    const that = this
+    wx.request({
+      url: paths.getArt + options.id,
+      success: res => {
+        this.setData({
+          art: res.data
+        })
+      }
+    })
   },
 
   /**
