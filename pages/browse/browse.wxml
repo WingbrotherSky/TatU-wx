@@ -53,7 +53,7 @@
   <view wx:for="{{shops}}">
   
   <view class='shop-info'>
-    <view class='shop-name'> {{item.name}}</view>
+    <view class='shop-name'>{{item.name}}</view>
       <image class='shop-logo' src="{{item.logo_url}}"> </image>
   </view>
 
