@@ -2,14 +2,15 @@
 
 .artist-container {
   margin: 6px;
-  background-color: white;
   border-radius: 3px;
+  background: linear-gradient(white, black);
 }
 
 .artist-info {
   display: flex;
   justify-content: space-between;
   border-radius: 3px;
+  margin-bottom: 5px;
   
 }
 
@@ -58,6 +59,7 @@
     position: relative;
     padding-left: 9rpx;
     padding-right: 9rpx;
+    padding-bottom: 5rpx;
 }
 
 /* For Gallery  */
@@ -110,6 +112,7 @@
     border-radius: 2%;
     color: white;
     padding: 10px;
+    background-size: cover;
 }
   
 
@@ -143,6 +146,10 @@
   font-size: 15px;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+.featured-container {
+
 }
 
 .card-description {
