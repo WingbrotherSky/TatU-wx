@@ -3,30 +3,32 @@
 
 
 <!-- START CONTAINER CARD  -->
-<view class='artist-container' bindtap='showShop'>
-
-  <view wx:for="{{shops}}">
-
-  <view class='artist-info'>
-    <view class='artist-name' bindtap='showShop'> {{item.name}}</view>
+<view class='artist-container'>
+<view class='artist-info'>
+    <view class='artist-name'> Tianyi </view>
       <image class='artist-logo' src='../../image/templetattoo.jpg' bindtap='showShop'></image>
     </view>
-
     <view class='featured-container'>
-      <view bindtap='showStyle' data-style="{{item.style}}" class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://wx1.sinaimg.cn/mw690/95af932egy1fp11zn5j9tj20hs0hsmzh.jpg');"> {{item.artists[0].name}}
+      <view bindtap='previewImages' class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://wx1.sinaimg.cn/mw690/95af932egy1fp11zn5j9tj20hs0hsmzh.jpg');"> 
       </view>
     </view>
+              <view wx:for="{{shops}}">
+              <view class="small-cards">
+                <view wx:for="{{item.artists}}" wx:for-item="smallItem" bindtap='previewImages' class='small-card' style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{smallItem.art[0].url}}');"> </view> 
+              </view>
+            </view>  
 
-    <view class="small-cards">
-      <view wx:for="{{item.artists}}" wx:for-item="smallItem"bindtap='showStyle' class='small-card' style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{smallItem.art[0].url}}');"> {{item.artists[1].name}}</view>
-    <view class="location" bindtap='showShop'>
-      Location: {{item.location}}
-      Contact: {{item.phone_number}}
-    </view>
+<!-- 
+           <view wx:if="{{items.length > 0}}" class="gallery">
+          <view class="gallery-item">
+        <block wx:for="{{items}}" wx:for-item="item" wx:for-index="itemsIndex" class='small-card' wx:key="items" bindtap='showStyle'>
+        
+                <image class="gallery-item-cover" src="{{item.image_url}}" mode="aspectFill" data-index="{{itemsIndex}}" bindtap="showStyle"></image>          
+        </block>
+        </view>
+    </view>  -->
 
-    </view>
-    <view class='blank-item'> </view>
-  </view>
+
 </view>
 
 <!-- END CARD LOOP -->
@@ -52,3 +54,4 @@
 
 
 <!-- END TAB BAR -->
+
