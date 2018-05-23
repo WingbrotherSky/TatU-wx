@@ -51,26 +51,29 @@
 <view class='shop-container' bindtap='showShop'>
 
   <view wx:for="{{shops}}">
-
+  
   <view class='shop-info'>
-    <view class='shop-name' bindtap='showShop'> {{item.name}}</view>
-      <image class='shop-logo' src='../../image/templetattoo.jpg' bindtap='showShop'></image>
-    </view>
+    <view class='shop-name'> {{item.name}}</view>
+      <image class='shop-logo' src="{{item.logo_url}}"> </image>
+  </view>
 
     <view class='featured-container'>
-      <view bindtap='showStyle' data-style="{{item.style}}" class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://wx1.sinaimg.cn/mw690/95af932egy1fp11zn5j9tj20hs0hsmzh.jpg');"> {{item.artists[0].name}}
+    <block wx:for="{{item.artists}}">
+      <view bindtap='showArtist' data-artistId="{{item.id}}" class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{item.avatar_url}}');"> 
       </view>
+        <view class="small-cards">
+      <view wx:for="{{item.art}}"  bindtap='showArt' data-artId="{{item.id}}"class='small-card' style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{item.url}}');"></view>
     </view>
-
-    <view class="small-cards">
-      <view wx:for="{{item.artists}}" wx:for-item="smallItem"bindtap='showStyle' class='small-card' style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{smallItem.art[0].url}}');"> {{item.artists[1].name}}</view>
     <view class="location" bindtap='showShop'>
       Location: {{item.location}}
       Contact: {{item.phone_number}}
     </view>
-
+      </block>   
     </view>
-    <view class='blank-item'> </view>
+
+    
+
+  <view class='blank-item'> </view>
   </view>
 </view>
 
