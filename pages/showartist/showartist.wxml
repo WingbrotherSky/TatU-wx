@@ -5,16 +5,17 @@
 <!-- START CONTAINER CARD  -->
 <view class='artist-container'>
 <view class='artist-info'>
-    <view class='artist-name'> Tianyi </view>
-      <image class='artist-logo' src='../../image/templetattoo.jpg' bindtap='showShop'></image>
+    <view class='artist-name'> {{artist.name}} </view>
+      <image class='artist-logo' src='{{artist.shop_logo_url}}' bindtap='showShop'></image>
     </view>
     <view class='featured-container'>
-      <view bindtap='previewImages' class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://wx1.sinaimg.cn/mw690/95af932egy1fp11zn5j9tj20hs0hsmzh.jpg');"> 
+      <view bindtap='previewImages' data-url="{{artist.avatar_url}}"class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{artist.avatar_url}}')"> 
       </view>
     </view>
-              <view wx:for="{{shops}}">
+             
               <view class="small-cards">
-                <view wx:for="{{item.artists}}" wx:for-item="smallItem" bindtap='previewImages' class='small-card' style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{smallItem.art[0].url}}');"> </view> 
+               <view wx:for="{{artist.art}}">
+                <view bindtap='previewImages' data-url="{{item.url}}"class='small-card' style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{item.url}}');"> </view> 
               </view>
             </view>  
 
