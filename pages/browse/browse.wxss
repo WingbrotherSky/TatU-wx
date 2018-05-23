@@ -83,6 +83,7 @@ padding: 0px;
 .small-cards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .small-card {
