@@ -1,4 +1,7 @@
+
 <view class='whole-page'>
+
+
 <!-- START SEARCH BAR  -->
 
 <view class="navbar">
@@ -14,27 +17,27 @@
                       </view>
                 </view>
             </view>
-            <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+            <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消            </view>
         </view>
         <view class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}">
             <navigator url="" class="weui-cell" hover-class="weui-cell_active">
                 <view class="weui-cell__bd">
-                    <view>Service 1</view>
+                    <view>Cat</view>
                 </view>
             </navigator>
             <navigator url="" class="weui-cell" hover-class="weui-cell_active">
                 <view class="weui-cell__bd">
-                    <view>Service 2</view>
+                    <view>Fish</view>
                 </view>
             </navigator>
             <navigator url="" class="weui-cell" hover-class="weui-cell_active">
                 <view class="weui-cell__bd">
-                    <view>Service 3</view>
+                    <view>Dog</view>
                 </view>
             </navigator>
             <navigator url="" class="weui-cell" hover-class="weui-cell_active">
                 <view class="weui-cell__bd">
-                    <view>Service 4</view>
+                    <view>Forrest style</view>
                 </view>
             </navigator>
         </view>
@@ -45,34 +48,36 @@
 <!-- END SEARCH BAR  -->
 
 <!-- START CONTAINER CARD  -->
-<view class='shop-container'>
+<view class='shop-container' bindtap='showShop'>
 
   <view wx:for="{{shops}}">
 
   <view class='shop-info'>
-    <view class='shop-name'> Temple Tattoo</view>
-      <image class='shop-logo' src='../../image/templetattoo.jpg'> </image>
-  </view>
+    <view class='shop-name' bindtap='showShop'> {{item.name}}</view>
+      <image class='shop-logo' src='../../image/templetattoo.jpg' bindtap='showShop'></image>
+    </view>
 
     <view class='featured-container'>
-      <view bindtap='showStyle' data-style="{{item.style}}" class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://wx1.sinaimg.cn/mw690/95af932egy1fp11zn5j9tj20hs0hsmzh.jpg');">    
+      <view bindtap='showStyle' data-style="{{item.style}}" class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://wx1.sinaimg.cn/mw690/95af932egy1fp11zn5j9tj20hs0hsmzh.jpg');"> {{item.artists[0].name}}
       </view>
     </view>
 
     <view class="small-cards">
-      <view wx:for="{{item.artists}}" wx:for-item="smallItem" bindtap='showStyle' class='small-card' style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{smallItem.art[0].url}}');"></view>
+      <view wx:for="{{item.artists}}" wx:for-item="smallItem"bindtap='showStyle' class='small-card' style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{smallItem.art[0].url}}');"> {{item.artists[1].name}}</view>
+    <view class="location" bindtap='showShop'>
+      Location: {{item.location}}
+      Contact: {{item.phone_number}}
     </view>
 
-  <view class='blank-item'> </view>
+    </view>
+    <view class='blank-item'> </view>
   </view>
-
-
 </view>
- 
+
 <!-- END CARD LOOP -->
 </view>
 <!-- START TAB BAR -->
-
+<view class='blank-item'> </view>
 <view class='nav'>
   <view class='markey-container'>
       <view class='extend-padding' bindtap='goBrowse'>

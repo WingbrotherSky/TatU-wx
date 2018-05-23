@@ -24,13 +24,23 @@ Page({
     this.setData({ shops: mock.shops })
   },
 
+  showShop: function (e) {
+    const data = e.currentTarget.dataset
+    const shop = data.name
+    console.log(2321, shop)
+    wx.navigateTo({
+      url: `/pages/showshop/showshop`,
+    })
+  },
   showStyle: function (e) {
     const data = e.currentTarget.dataset
     const shop = data.name
     console.log(2323, shop)
-    // wx.navigateTo({
-    //   url: `/pages/show/show?=${user.id}`,
-    // })
+    wx.navigateTo({
+      url: `/pages/showimage/showimage`, 
+    })
+
+      // ?=${user.id }
     wx.switchTab({
       url: `/pages/show/show?=${user.id}`,
     })
@@ -61,6 +71,12 @@ Page({
 
 
   // START TABBAR
+  goBack: function (e) {
+    console.log(333, "back")
+    wx.reLaunch({
+      url: '/pages/index/index',    //// change to one page before
+    })
+  },
 
   goBrowse: function (e) {
     wx.reLaunch({
@@ -80,13 +96,13 @@ Page({
   },
   goInfo: function (e) {
     wx.reLaunch({
-      url: '/pages/info/info',
+      url: '/pages/showartist/showartist',
     })
   },
 
   // END TABBAR
 
-  
+
 
   /**
    * 生命周期函数--监听页面初次渲染完成

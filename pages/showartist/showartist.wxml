@@ -1,2 +1,54 @@
-<!--pages/showartist/showartist.wxml-->
-<text>pages/showartist/showartist.wxml</text>
+
+<view class='whole-page'>
+
+
+<!-- START CONTAINER CARD  -->
+<view class='artist-container' bindtap='showShop'>
+
+  <view wx:for="{{shops}}">
+
+  <view class='artist-info'>
+    <view class='artist-name' bindtap='showShop'> {{item.name}}</view>
+      <image class='artist-logo' src='../../image/templetattoo.jpg' bindtap='showShop'></image>
+    </view>
+
+    <view class='featured-container'>
+      <view bindtap='showStyle' data-style="{{item.style}}" class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://wx1.sinaimg.cn/mw690/95af932egy1fp11zn5j9tj20hs0hsmzh.jpg');"> {{item.artists[0].name}}
+      </view>
+    </view>
+
+    <view class="small-cards">
+      <view wx:for="{{item.artists}}" wx:for-item="smallItem"bindtap='showStyle' class='small-card' style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{smallItem.art[0].url}}');"> {{item.artists[1].name}}</view>
+    <view class="location" bindtap='showShop'>
+      Location: {{item.location}}
+      Contact: {{item.phone_number}}
+    </view>
+
+    </view>
+    <view class='blank-item'> </view>
+  </view>
+</view>
+
+<!-- END CARD LOOP -->
+</view>
+<!-- START TAB BAR -->
+<view class='blank-item'> </view>
+<view class='nav'>
+  <view class='markey-container'>
+      <view class='extend-padding' bindtap='goBrowse'>
+      <image class='avatar-tab' src="../../image/search.png"></image>
+      </view>
+      <view class='extend-padding' bindtap='goFavourite'>
+      <image class='avatar-tab' src="../../image/star.png"></image>
+      </view>
+      <view class='extend-padding' bindtap='goInbox'>
+      <image class='avatar-tab' src="../../image/chat.png"></image>
+      </view>
+      <view class='extend-padding' bindtap='goInfo'>
+      <image class='avatar-tab' src="../../image/information.png"></image>
+      </view>
+  </view>
+</view>
+
+
+<!-- END TAB BAR -->

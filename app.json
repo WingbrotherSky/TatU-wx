@@ -1,5 +1,6 @@
 {
   "pages": [
+      "pages/showartist/showartist",
     "pages/index/index",
     "pages/browse/browse",
     "pages/favourite/favourite",
@@ -7,13 +8,13 @@
     "pages/info/info",
     "pages/show/show",
     "pages/showimage/showimage",
-    "pages/showartist/showartist",
+ 
     "pages/showshop/showshop"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarBackgroundColor": "#1C1919",
+    "navigationBarTitleText": "TatU",
+    "navigationBarTextStyle": "white"
   }
 }
