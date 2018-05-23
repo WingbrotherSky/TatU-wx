@@ -18,6 +18,13 @@ App({
             success: function (res) {
               console.log(22323232323232323, res)
               that.globalData.userInfo = res.data.userInfo
+              if (res.data.errors) {
+                wx.setStorage({
+                  key: 'auth_key',
+                  data: undefined,
+                })
+                that.login()
+              }
             }
           })
         } else {
