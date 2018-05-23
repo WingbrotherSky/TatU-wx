@@ -5,6 +5,10 @@
   align-items: center;
 }
 
+.splash-container {
+  background-color: #aaa;
+}
+
 .userinfo-avatar {
   width: 128rpx;
   height: 128rpx;
@@ -13,9 +17,26 @@
 }
 
 .userinfo-nickname {
-  color: #aaa;
+  color: black;
+  font-weight: bold;
 }
 
 .usermotto {
-  margin-top: 200px;
+  margin-top: 20px;
 }
+
+.splash-button {
+  background-color: black;
+  color: whitesmoke;
+  margin: 10px;
+  }
+
+.splash-button-browse {
+  background-color: black;
+  color: whitesmoke;
+  margin: 10px;
+  }
+
+  .splash-text-shop {
+    font-style: oblique;
+  }

@@ -1,13 +1,24 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<view class="splash-container">
+  <view class="container">
+    <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" class="splash-button" open-type="getUserInfo" bindgetuserinfo="getUserInfo">Sign In</button>
+      <block wx:else>
+        <button class="splash-button-browse" bindtap="goToBrowsePage">Enter</button>
+        <view>
+          <view class="splash-text-shop" bindtap="goToShowShopPage">I am an Artist</view>
+        </view>
+      </block>
+    </view>
+    <button bindtap="goToBrowsePage"> test browse page </button>
+    <button bindtap="goToFavouritePage"> test favourite page </button>
+    <button bindtap="goToInboxPage"> test inbox page </button>
+    <button bindtap="goToInfoPage"> test info page </button>
+    <button bindtap="goToShowPage"> test show? page </button>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+  <!-- <view wx:if="{{user already has shop}}" bindtap="goToShopShow">
+  <block wx:else>
+  <view bindtap="goToCreateShopProfile"> Create a Shop </view>  -->
 </view>
+
+

@@ -1,6 +1,14 @@
 {
-  "pages":[
-    "pages/index/index"
+  "pages": [
+    "pages/index/index",
+    "pages/browse/browse",
+    "pages/favourite/favourite",
+    "pages/inbox/inbox",
+    "pages/info/info",
+    "pages/show/show",
+    "pages/showimage/showimage",
+    "pages/showartist/showartist",
+    "pages/showshop/showshop"
   ],
   "window":{
     "backgroundTextStyle":"light",
