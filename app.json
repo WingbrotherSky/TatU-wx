@@ -1,15 +1,13 @@
 {
   "pages": [
-      "pages/showartist/showartist",
     "pages/index/index",
     "pages/browse/browse",
+    "pages/showartist/showartist",
     "pages/favourite/favourite",
     "pages/inbox/inbox",
     "pages/info/info",
-    "pages/show/show",
-    "pages/showimage/showimage",
- 
-    "pages/showshop/showshop"
+    "pages/showshop/showshop",
+    "pages/showimage/showimage"
   ],
   "window":{
     "backgroundTextStyle":"light",
