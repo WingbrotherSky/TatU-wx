@@ -1,4 +1,9 @@
 /* pages/browse/browse.wxss */
+
+#search-bar {
+  display: flex;
+}
+
 .searchbar-result{
     margin-top: 4;
     font-size: 14px;
@@ -10,7 +15,7 @@
 
 .weui-search-bar_input {
 color: black;
-padding: 0px;
+padding: 5rpx;
 }
 
 .weui-cell{
@@ -182,6 +187,11 @@ padding: 0px;
   border-radius: 0px;
   box-shadow: 0 1px 2px rgba(0,0,0,0.2);
   border: white 1px solid;
+}
+
+.weui-icon-search_in-box {
+  margin: 10rpx;
+  margin-right: 13rpx;
 }
 
  /* START TAB BAR  */

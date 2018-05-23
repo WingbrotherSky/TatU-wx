@@ -19,12 +19,6 @@ Page({
     })
   },
 
-  goToShowShopPage: function () {
-    wx.navigateTo({
-      url: '/pages/showshop/showshop'
-    })
-  },
-
   goToFavouritePage: function () {
     wx.navigateTo({
       url: '/pages/favourite/favourite'
@@ -42,9 +36,21 @@ Page({
     })
   },
 
-  goToShowPage: function () {
+  goToShowImagePage: function () {
     wx.navigateTo({
-      url: '/pages/show/show'
+      url: '/pages/showimage/showimage'
+    })
+  },
+
+  goToShowArtistPage: function () {
+    wx.navigateTo({
+      url: '/pages/showartist/showartist'
+    })
+  },
+  
+  goToShowShopPage: function () {
+    wx.navigateTo({
+      url: '/pages/showshop/showshop'
     })
   },
 
@@ -73,7 +79,6 @@ Page({
       success(res) {
         console.log("last", res)
       }})
-      this.goToBrowsePage()
     }
   })
 

@@ -22,21 +22,38 @@
 }
 
 .usermotto {
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
 .splash-button {
   background-color: black;
   color: whitesmoke;
-  margin: 10px;
+  margin: 10rpx;
+  margin-bottom: 25rpx;
   }
 
 .splash-button-browse {
   background-color: black;
   color: whitesmoke;
-  margin: 10px;
+  margin: 10rpx;
   }
 
   .splash-text-shop {
     font-style: oblique;
+    text-align: center;
+  }
+
+  .artist-button {
+    background-color: #aaa;
+    margin: 10rpx;
+    border-bottom: solid, white;
+  }
+  
+  .enter-buttons-container {
+    display: flex;
+    flex-direction: column;
+    margin: 25rpx;
+    background-color: aliceblue;
+    border-radius: 5%;
+    padding: 20rpx;
   }

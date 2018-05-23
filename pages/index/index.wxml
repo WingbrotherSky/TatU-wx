@@ -4,17 +4,21 @@
     <view class="userinfo">
       <button wx:if="{{!hasUserInfo && canIUse}}" class="splash-button" open-type="getUserInfo" bindgetuserinfo="getUserInfo">Sign In</button>
       <block wx:else>
-        <button class="splash-button-browse" bindtap="goToBrowsePage">Enter</button>
-        <view>
-          <view class="splash-text-shop" bindtap="goToShowShopPage">I am an Artist</view>
+        <view class="enter-buttons-container">
+        <button class="splash-button-browse" bindtap="goToBrowsePage">Enter TatU</button>
+        <view class="splash-text-shop" bindtap="goToShowShopPage">I am an Artist</view>
         </view>
       </block>
     </view>
-    <button bindtap="goToBrowsePage"> test browse page </button>
-    <button bindtap="goToFavouritePage"> test favourite page </button>
-    <button bindtap="goToInboxPage"> test inbox page </button>
-    <button bindtap="goToInfoPage"> test info page </button>
-    <button bindtap="goToShowPage"> test show? page </button>
+    <view class="button-container">
+      <button bindtap="goToBrowsePage"> test browse page </button>
+      <button bindtap="goToFavouritePage"> test favourite page </button>
+      <button bindtap="goToInboxPage"> test inbox page </button>
+      <button bindtap="goToInfoPage"> test info page </button>
+      <button bindtap="goToShowImagePage"> test show image page </button>
+      <button bindtap="goToShowArtistPage"> test show artist page </button>
+      <button bindtap="goToShowShopPage"> test show shop page </button>
+    </view>
   </view>
   <!-- <view wx:if="{{user already has shop}}" bindtap="goToShopShow">
   <block wx:else>
