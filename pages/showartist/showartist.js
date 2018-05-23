@@ -32,6 +32,7 @@ Page({
       url: `/pages/showshop/showshop`,
     })
   },
+  
   showStyle: function (e) {
     const data = e.currentTarget.dataset
     const shop = data.name
