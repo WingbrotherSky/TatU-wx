@@ -1,8 +1,7 @@
 // pages/browse/browse.js
 
 const app = getApp()
-const mock = require('./mock')
-const path = require('./mock')
+const paths = require('../../common/apiPaths')
 
 Page({
 
@@ -19,32 +18,24 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function () {
-
-
-    this.setData({ shops: mock.shops })
-  },
-
-  showShop: function (e) {
-    const data = e.currentTarget.dataset
-    const shop = data.name
-    console.log(2321, shop)
-    wx.navigateTo({
-      url: `/pages/showshop/showshop`,
+    const that = this
+    wx.request({
+      url: paths.getAllShops,
+      success:(res) => {
+          that.setData({shops: res.data.shops})
+      }
     })
   },
-  showStyle: function (e) {
-    const data = e.currentTarget.dataset
-    const shop = data.name
-    console.log(2323, shop)
-    wx.navigateTo({
-      url: `/pages/showimage/showimage`, 
-    })
 
-      // ?=${user.id }
-    wx.switchTab({
-      url: `/pages/show/show?=${user.id}`,
+  showArtist: function (e) {
+    const data = e.currentTarget.dataset
+    console.log(435, data)
+    const artistId = data.artistid
+    console.log(3333, artistId)
+
+    wx.navigateTo({
+      url: `/pages/showartist/showartist?id=${artistId}`,
     })
-    console.log(5555, shop.id)
   },
 
   showInput: function () {
