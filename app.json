@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/addshop/addshop",
     "pages/addartist/addartist",
     "pages/index/index",
     "pages/showshop/showshop",
