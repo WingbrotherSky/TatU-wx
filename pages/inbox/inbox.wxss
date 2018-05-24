@@ -71,3 +71,7 @@
   width: 150rpx;
   height: 150rpx;
 }
+
+button {
+  right: 5px;
+}
