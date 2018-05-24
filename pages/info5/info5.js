@@ -1,3 +1,5 @@
+const paths = require('../../common/apiPaths')
+
 // pages/info5/info5.js
 Page({
 
@@ -12,7 +14,20 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    const that = this
+    wx.request({
+      url: paths.getAllArtists,
+      success:res => {
+        that.setData({
+          artists: res.data.artists
+        })
+      }
+    })
+    this.setData({
+      heart: "../../image/heart.png",
+      chat: "../../image/chat2.png",
+      share: "../../image/share-2.png"
+    })
   },
 
   /**

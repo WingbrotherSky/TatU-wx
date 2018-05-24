@@ -54,22 +54,21 @@
 <!-- END SEARCH BAR  -->
 
 <!-- START CONTAINER CARD  -->
-<view class='shop-container' bindtap='showShop'>
-  <view wx:for="{{shops}}">
-  
-  <view class='shop-info'>
-    <!-- <view class='browse-info-card-flex'> -->
-    <view class='shop-info-flexbox-master'>
-      <view class='shop-info-flexbox-info'>
-        <view class='shop-name'>{{item.name}}</view>
-        <view class="location" bindtap='showShop'>
-          Location: {{item.location}}
-          Contact: {{item.phone_number}}
+<scroll-view scroll-y="true" class='shop-container' bindtap='showShop'>
+  <view wx:for="{{artists}}">
+    <view class='shop-info'>
+      <!-- <view class='browse-info-card-flex'> -->
+      <view class='shop-info-flexbox-master'>
+        <view class='shop-info-flexbox-info'>
+          <view class='shop-name'>{{item.name}}</view>
+          <view class="location" bindtap='showShop'>
+            Location: {{item.location}}
+            Contact: {{item.phone_number}}
+          </view>
         </view>
+        <image class='shop-logo' src="{{item.logo_url}}"> </image>
       </view>
-      <image class='shop-logo' src="{{item.logo_url}}"> </image>
     </view>
-  </view>
 
     <view class='featured-container'>
       <block wx:for="{{item.artists}}">
@@ -103,7 +102,7 @@
 
   <view class='blank-item'> </view>
   </view>
-</view>
+</scroll-view>
 
 <!-- END CARD LOOP -->
 </view>

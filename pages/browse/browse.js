@@ -13,16 +13,15 @@ Page({
     inputVal: "",
     shops: []
   },
-
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function () {
     const that = this
     wx.request({
-      url: paths.getAllShops,
+      url: paths.getAllArtists,
       success:(res) => {
-          that.setData({shops: res.data.shops})
+          that.setData({artists: res.data.artists})
       }
     })
   },

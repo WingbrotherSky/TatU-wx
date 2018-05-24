@@ -1,1 +1,94 @@
 /* pages/info5/info5.wxss */
+.artist-container {
+  height: 100vh;
+  background-color:black;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.CTA-container {
+  background-color: rgba(255,255,255,.6);
+  display: flex;
+  justify-content: space-around;
+  height: 85rpx;
+  width: 100vw;
+  position: absolute;
+  top: 5rpx;
+  z-index: 2;
+}
+
+.art-image {
+  height: 100%;
+  width: 100%;
+  border: solid 1px white;
+}
+
+.artist-info {
+  margin-top: 50rpx;
+  background-color: black;
+}
+
+.avatar {
+  height: 200rpx;
+  width: 200rpx;
+  border-radius: 50%;
+  margin: 10rpx;
+  border: solid 1px rgba(0,0,0,.4)
+}
+
+.artist-avatar {
+  position: absolute;
+  bottom: 620rpx;
+}
+
+.artist-name-container {
+  height: 400rpx;
+  font-size: 100rpx;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.artist-name {
+  color: white;
+}
+
+.work-info {
+  color: white;
+  background-color: black;
+  height: 220rpx;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-around;
+}
+
+.shop-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.shop-name {
+  color: white;
+  font-weight: bold;
+  font-size: 40rpx;
+}
+
+.shop-logo {
+  position: absolute;
+  right: 10rpx;
+  bottom: 620rpx;
+}
+
+.experience {
+  font-weight: bold;
+}
+
+
+
+.icon {
+  height: 75rpx;
+  width: 75rpx;
+}
