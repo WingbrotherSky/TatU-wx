@@ -1,21 +1,27 @@
 <page>
-<!--index.wxml-->
+<view class='splash'>
 <view class="splash-container">
-  <view class="container">
-    <view class="userinfo">
-      <button wx:if="{{!hasUserInfo && canIUse}}" class="splash-button" open-type="getUserInfo" bindgetuserinfo="getUserInfo"><image src="../../image/tatu.png"> Sign In</image></button>
-      <block wx:else>
-        <view class="enter-buttons-container">
-        <button class="splash-button-browse" bindtap="goToBrowsePage">Enter TatU</button>
-        <view class="splash-text-shop" bindtap="goToShowShopPage">I am an Artist</view>
-        </view>
-      </block>
-    </view>
+  <!-- <view class="container"> -->
+    <!-- <view class="userinfo"> -->
+       <!-- <button  class="splash-button" open-type="getUserInfo" bindgetuserinfo="getUserInfo" bindtap="goToBrowsePage"> -->
+       
+       <image src="../../image/tatu-black.png"  class='button' open-type="getUserInfo" bindgetuserinfo="getUserInfo" bindtap="goToBrowsePage"> Enter TatU </image>
+       <!-- </button>  -->
+
+       <!-- wx:if="{{!hasUserInfo && canIUse}}" -->
+      <!-- <block wx:else> -->
+        <!-- <view class="enter-buttons-container"> -->
+        <!-- <button class="splash-button-browse" bindtap="goToBrowsePage">Enter TatU</button> --> 
+        <!-- </view> -->
+      <!-- </block> -->
+      
+    <!-- </view> -->
     
-  </view>
+  <!-- </view> -->
   <!-- <view wx:if="{{user already has shop}}" bindtap="goToShopShow">
   <block wx:else>
   <view bindtap="goToCreateShopProfile"> Create a Shop </view>  -->
 </view>
-
+<view class="splash-text-shop" bindtap="goToShowShopPage">I am an Artist</view>
+</view>
 </page>
