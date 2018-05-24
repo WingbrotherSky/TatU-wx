@@ -46,6 +46,16 @@ Page({
     })
   },
 
+  showShop: function (e) {
+    const data = e.currentTarget.dataset
+    const shopId = data.shopid
+
+
+    wx.navigateTo({
+      url: `/pages/showshop/showshop?id=${shopId}`,
+    })
+  },
+
   showInput: function () {
     this.setData({
       inputShowed: true
