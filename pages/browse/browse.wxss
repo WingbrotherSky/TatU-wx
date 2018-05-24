@@ -59,6 +59,13 @@ padding: 5rpx;
   border-radius: 3px;
 
 }
+.artist-info-flexbox {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  background-color: rgba(0,0,0,0.5);
+}
 
 .featured-container {
   padding-top: 3rpx;
@@ -112,6 +119,7 @@ font-weight: lighter;
 .shop-info-flexbox-master {
   display: flex;
   flex-direction: row;
+  border-bottom: 1px solid rgba(185,10,3,0.6);
 }
 
 .shop-info-flexbox-info {
@@ -122,6 +130,7 @@ font-weight: lighter;
 
 .flex-container {
   position: relative;
+  box-shadow: 1px 1px rgba(0,0,0,0.2)
 }
 
 .flex-row {
@@ -171,14 +180,15 @@ justify-content: space-between;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  background-color: rgba(250, 250, 250, .6);
+  background-color: rgba(0,0,0,0.6);
+  border-bottom: 1px solid rgba(185,10,3,0.6);
 }
 
 
 .small-card {
   height: 75px;
   width: 75px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  box-shadow: 1px 1px 3px rgba(255,255,255,0.6);
   background-color: black;
   color: white;
   margin: 9px;

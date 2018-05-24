@@ -49,7 +49,6 @@
 
 <!-- START CONTAINER CARD  -->
 <view class='shop-container' bindtap='showShop'>
-
   <view wx:for="{{shops}}">
   
   <view class='shop-info'>
@@ -67,9 +66,11 @@
   </view>
 
     <view class='featured-container'>
-    <block wx:for="{{item.artists}}">
-      <view id='artist-name'>Artist: {{item.name}}</view>
-      <view id='tags'> [tags] [placeholder] [tag] [tag] [tag]</view>
+      <block wx:for="{{item.artists}}">
+        <view class='artist-info-flexbox'>
+          <view id='artist-name'>Artist: {{item.name}}</view>
+          <view id='tags'> [tags] [placeholder] [tag] [tag] [tag]</view>
+        </view>
       <view class='flex-container'>
         <view class='flex-row'>
           <image bindtap='showArtist' data-artistId="{{item.id}}" class="big-card" src='{{item.avatar_url}}'></image>
@@ -83,6 +84,7 @@
 
       <view class="small-cards">
         <image wx:for="{{item.art}}"  bindtap='showArt' data-artId="{{item.id}}" class='small-card' src="{{item.url}}"> </image>
+        <view class='blank-item'> </view>
       </view>
       </block>   
     </view>

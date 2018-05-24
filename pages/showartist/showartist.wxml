@@ -4,20 +4,20 @@
 
 <!-- START CONTAINER CARD  -->
 <view class='artist-container'>
-<view class='artist-info'>
+  <view class='artist-info'>
     <view class='artist-name'> {{artist.name}} </view>
-      <image class='artist-logo' src='{{artist.shop_logo_url}}' bindtap='showShop'></image>
+    <image class='artist-logo' src='{{artist.shop_logo_url}}' bindtap='showShop'></image>
     </view>
-    <view class='featured-container'>
+  <view class='featured-container'>
       <view bindtap='previewImages' data-url="{{artist.avatar_url}}"class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{artist.avatar_url}}')"> 
       </view>
     </view>
              
-              <view class="small-cards">
-               <view wx:for="{{artist.art}}">
-                <view bindtap='previewImages' data-url="{{item.url}}"class='small-card' style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{item.url}}');"> </view> 
-              </view>
-            </view>  
+  <view class="small-cards">
+    <view wx:for="{{artist.art}}">
+      <view bindtap='previewImages' data-url="{{item.url}}"class='small-card' style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{item.url}}');"> </view> 
+    </view>
+  </view>  
 
 <!-- 
            <view wx:if="{{items.length > 0}}" class="gallery">
