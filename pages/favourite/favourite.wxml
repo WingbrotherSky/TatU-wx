@@ -1,6 +1,19 @@
-<!--pages/favourite/favourite.wxml-->
-<text>pages/favourite/favourite.wxml</text>
+<page>
 
+<view class='shop-container' bindtap='showArtist'>
+  <view wx:for="{{shops}}">
+    <view class='featured-container'>
+      <view bindtap='showImage' data-artistId="{{item.id}}" class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{art.url}}');"> 
+        <view class='shop-name'>{{item.name}} </view>
+        <view>{{art.artist.name}}</view>
+           <image class='shop-logo' src="{{item.logo_url}}"> </image> 
+        </view>
+      </view> 
+
+
+      <view class='blank-item'> </view>
+    </view>
+</view>
 
 <!-- START TAB BAR -->
 
@@ -23,3 +36,7 @@
 
 
 <!-- END TAB BAR -->
+
+
+<!-- END CARD LOOP -->
+</page>
