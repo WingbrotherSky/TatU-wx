@@ -97,6 +97,39 @@ Page({
 
 
     })
+
+    // START TABBAR
+  //   goBack: function (e) {
+  //     console.log(333, "back")
+  //     wx.reLaunch({
+  //       url: '/pages/index/index',    //// change to one page before
+  //     })
+  //   },
+
+  // goBrowse: function (e) {
+  //   wx.reLaunch({
+  //     url: '/pages/browse/browse',
+  //   })
+  // },
+
+  // goAddShop: function (e) {
+  //   wx.reLaunch({
+  //     url: '/pages/addshop/addshop'
+  //   })
+  // },
+  // goInbox: function (e) {
+  //   wx.reLaunch({
+  //     url: '/pages/inbox/inbox',
+  //   })
+  // },
+  // goShowShop: function (e) {
+  //   wx.reLaunch({
+  //     url: '/pages/showshop/showshop'
+  //   })
+  // },
+
+  // END TABBAR
+
   },
   previewImage: function (e) {
     let that = this

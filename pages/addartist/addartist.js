@@ -24,15 +24,11 @@ Page({
 
   bindSubmit: function (e) {
     let name = e.detail.value.name;
-    let shop = e.detail.value.shop;
-    let location = e.detail.value.location;
     let style = e.detail.value.style
     let id = this.data.id;
 
     let artist = {
       name: name,
-      shop: shop,
-      location: location,
       style: style,
     }
 
@@ -90,6 +86,39 @@ Page({
 
 
     })
+
+    // START TABBAR
+  //   goBack: function (e) {
+  //     console.log(333, "back")
+  //     wx.reLaunch({
+  //       url: '/pages/index/index',    //// change to one page before
+  //     })
+  //   },
+
+  // goBrowse: function (e) {
+  //   wx.reLaunch({
+  //     url: '/pages/browse/browse',
+  //   })
+  // },
+
+  // goAddShop: function (e) {
+  //   wx.reLaunch({
+  //     url: '/pages/addshop/addshop'
+  //   })
+  // },
+  // goInbox: function (e) {
+  //   wx.reLaunch({
+  //     url: '/pages/inbox/inbox',
+  //   })
+  // },
+  // goShowShop: function (e) {
+  //   wx.reLaunch({
+  //     url: '/pages/showshop/showshop'
+  //   })
+  // },
+
+  // END TABBAR
+
   },
   previewImage: function (e) {
     let that = this

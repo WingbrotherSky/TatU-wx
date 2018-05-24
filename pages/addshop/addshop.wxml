@@ -49,3 +49,20 @@
         </view>
     </view>
 
+<view class='blank-item'> </view>
+<view class='nav'>
+  <view class='markey-container'>
+      <view class='extend-padding' bindtap='goBrowse'>
+      <image class='avatar-tab' src="../../image/search.png"></image>
+      </view>
+      <view class='extend-padding' bindtap='goAddShop'>
+      <image class='avatar-tab' src="../../image/photo-camera.png"></image>
+      </view>
+      <view class='extend-padding' bindtap='goInbox'>
+      <image class='avatar-tab' src="../../image/chat.png"></image>
+      </view>
+      <view class='extend-padding' bindtap='goShowShop'>
+      <image class='avatar-tab' src="../../image/user.png"></image>
+      </view>
+  </view>
+</view>
