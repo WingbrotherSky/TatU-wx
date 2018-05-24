@@ -1,9 +1,9 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/browse/browse",
-    "pages/showartist/showartist",
     "pages/favourite/favourite",
+    "pages/showartist/showartist",
+    "pages/browse/browse", 
     "pages/inbox/inbox",
     "pages/info/info",
     "pages/showshop/showshop",
