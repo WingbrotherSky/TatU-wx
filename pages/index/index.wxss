@@ -4,10 +4,10 @@
   flex-direction: column;
   align-items: center;
 }
-
+/* 
 .splash-container {
   background-color: #aaa;
-}
+} */
 
 .userinfo-avatar {
   width: 128rpx;
@@ -28,8 +28,10 @@
 .splash-button {
   background-color: black;
   color: whitesmoke;
-  margin: 10rpx;
-  margin-bottom: 25rpx;
+  /* margin: 10rpx;
+  margin-bottom: 25rpx; */
+  width: 320px;
+  height: 350px;
   }
 
 .splash-button-browse {
@@ -52,8 +54,12 @@
   .enter-buttons-container {
     display: flex;
     flex-direction: column;
-    margin: 25rpx;
-    background-color: aliceblue;
+    
+    
     border-radius: 5%;
     padding: 20rpx;
+  }
+
+  page {
+    background-color: black;
   }
