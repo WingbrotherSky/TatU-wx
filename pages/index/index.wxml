@@ -1,8 +1,9 @@
+<page>
 <!--index.wxml-->
 <view class="splash-container">
   <view class="container">
     <view class="userinfo">
-      <button wx:if="{{!hasUserInfo && canIUse}}" class="splash-button" open-type="getUserInfo" bindgetuserinfo="getUserInfo">Sign In</button>
+      <button wx:if="{{!hasUserInfo && canIUse}}" class="splash-button" open-type="getUserInfo" bindgetuserinfo="getUserInfo"><image src="../../image/tatu.png"> Sign In</image></button>
       <block wx:else>
         <view class="enter-buttons-container">
         <button class="splash-button-browse" bindtap="goToBrowsePage">Enter TatU</button>
@@ -10,19 +11,11 @@
         </view>
       </block>
     </view>
-    <view class="button-container">
-      <button bindtap="goToBrowsePage"> test browse page </button>
-      <button bindtap="goToFavouritePage"> test favourite page </button>
-      <button bindtap="goToInboxPage"> test inbox page </button>
-      <button bindtap="goToInfoPage"> test info page </button>
-      <button bindtap="goToShowImagePage"> test show image page </button>
-      <button bindtap="goToShowArtistPage"> test show artist page </button>
-      <button bindtap="goToShowShopPage"> test show shop page </button>
-    </view>
+    
   </view>
   <!-- <view wx:if="{{user already has shop}}" bindtap="goToShopShow">
   <block wx:else>
   <view bindtap="goToCreateShopProfile"> Create a Shop </view>  -->
 </view>
 
-
+</page>
