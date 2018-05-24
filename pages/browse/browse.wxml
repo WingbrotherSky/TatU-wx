@@ -53,26 +53,42 @@
   <view wx:for="{{shops}}">
   
   <view class='shop-info'>
-    <view class='shop-name'>{{item.name}}</view>
+    <!-- <view class='browse-info-card-flex'> -->
+    <view class='shop-info-flexbox-master'>
+      <view class='shop-info-flexbox-info'>
+        <view class='shop-name'>{{item.name}}</view>
+        <view class="location" bindtap='showShop'>
+          Location: {{item.location}}
+          Contact: {{item.phone_number}}
+        </view>
+      </view>
       <image class='shop-logo' src="{{item.logo_url}}"> </image>
+    </view>
   </view>
 
     <view class='featured-container'>
     <block wx:for="{{item.artists}}">
-      <view bindtap='showArtist' data-artistId="{{item.id}}" class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{item.avatar_url}}');">
-      </view>
-        <view class="small-cards">
-      <view wx:for="{{item.art}}"  bindtap='showArt' data-artId="{{item.id}}"class='small-card' style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{item.url}}');"> </view>
-    </view>
+      <view id='artist-name'>Artist: {{item.name}}</view>
+      <view id='tags'> [tags] [placeholder] [tag] [tag] [tag]</view>
+      <view class='flex-container'>
+        <view class='flex-row'>
+          <image bindtap='showArtist' data-artistId="{{item.id}}" class="big-card" src='{{item.avatar_url}}'></image>
+          <image src="/image/templetattoo.jpg" bindtap='showArt' data-artId="{{item.id}}" class='first-choice-art-on-profile'></image>
+          <!--How to add gradient to image src, how to get from url from image source  -->
+        </view>
 
-    <view class="location" bindtap='showShop'>
-      Location: {{item.location}}
-      Contact: {{item.phone_number}}
-    </view>
+        <view class="gradient"></view>
+      </view>
+
+
+      <view class="small-cards">
+        <image wx:for="{{item.art}}"  bindtap='showArt' data-artId="{{item.id}}" class='small-card' src="{{item.url}}"> </image>
+      </view>
       </block>   
     </view>
-
-    
+  
+  <image class='red-border' src="/image/red-border.jpg">
+  </image>
 
   <view class='blank-item'> </view>
   </view>
