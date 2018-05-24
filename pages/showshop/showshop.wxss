@@ -1,63 +1,32 @@
-/* pages/showshop/showshop.wxss */
-
-.searchbar-result{
-    margin-top: 4;
-    font-size: 14px;
-    color: #A1D484;
-}
-.searchbar-result:before{
-    display: none;
-}
-
-.weui-search-bar_input {
-color: black;
-padding: 0px;
-}
-
-.weui-cell{
-    padding: 0px;
-    color: black;
-}
-
-.navbar {
-  background-color: #676666;
-  color: white;
-  padding: 0px;
-}
-
-
-.card {
-  height: 175px;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
-  background-size: cover !important;
-  background-position: center;
-  color: white;
-  position: relative;
-}
-
-.cards-container{
-  width: 100vw
-}
+/* pages/browse/browse.wxss */
 
 /* START SHOP-CARD */
 
-.artist-container {
+.shop-container {
   margin: 6px;
-  background-color: white;
-  border-radius: 3px;
+  border-radius: 1px;
+  background: black;
+
 }
 
-.artist-info {
+.shop-info {
   display: flex;
   justify-content: space-between;
+  background: linear-gradient(to right, #262626, #A3A0A0);
   border-radius: 3px;
-  
+
 }
 
-.artist-name {
-  font-size: 18px;
+.featured-container {
+  padding-top: 3rpx;
+  background: linear-gradient(#A3A0A0, #262626);
+  margin-bottom: 15px;
+}
+.shop-name {
+  font-size: 20px;
   font-weight: bolder;
-  color: black;
+  color: whitesmoke;
+  text-shadow: 1px 1px 2px black;
   margin: 8px;
 
 } 
@@ -65,12 +34,13 @@ padding: 0px;
 .location {
   font-size: 12px;
   font-weight: bolder;
-  color: black;
+  color: whitesmoke;
+  text-shadow: 1px 1px 1px black;
   margin: 2px;
   left: 5px;
 }
 
-.artist-logo {
+.shop-logo {
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -79,32 +49,33 @@ padding: 0px;
 }
 
 .big-card {
-  height: 200px;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  height: 150px;
+  width: 100%;
   background-size: cover !important;
   background-position: center;
   color: white;
   position: relative;
-  margin: 9px;
+  margin: 0;
   margin-bottom: 5px;
-  border-radius: 3px;
-  padding: 10px;
 }
 
 .small-cards {
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
+  background-color: rgba(250, 250, 250, .6);
 }
 
 .small-card {
-  height: 115px;
-  width: 115px;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  height: 75px;
+  width: 75px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.6);
   background-position: center;
   color: white;
   margin: 9px;
   border-radius: 3px;
   padding: 10px;
+  background-size: cover;
 }
 
 .blank-item {
@@ -185,6 +156,11 @@ padding: 0px;
   border: white 1px solid;
 }
 
+.weui-icon-search_in-box {
+  margin: 10rpx;
+  margin-right: 13rpx;
+}
+
  /* START TAB BAR  */
 
  .icon-back {
@@ -224,8 +200,6 @@ padding: 0px;
 
  .whole-page {
    background-color: black;
-   margin: 0;
-
  }
 
  .previewing image{ 
