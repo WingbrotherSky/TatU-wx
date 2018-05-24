@@ -4,43 +4,49 @@
 
 <!-- START SEARCH BAR  -->
 
-<view class="navbar">
-  <view class="page">
-    <view class="page__bd">
+  <view class="navbar">
+    <view class="page">
+      <view class="page__bd">
         <view class="weui-search-bar">
-            <view class="weui-search-bar__form">
-                <view id="search-bar" class="weui-search-bar__box">
-                    <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
-                      <input type="text" class="weui-search-bar__input" placeholder="Search" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
-                      <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
-                        <icon type="clear" size="14"></icon>
-                      </view>
+          <view class="weui-search-bar__form">
+            <view id="search-bar" class="weui-search-bar__box">
+              <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+              <input type="text" class="weui-search-bar__input" placeholder="Search" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+                <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+                  <icon type="clear" size="14"></icon>
                 </view>
+                <view class="weui-btn-area">
+                  <picker class="picker-class" bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                    <view class='tag-picker'>Search Style
+                    </view>
+                  </picker>
+                </view>
+              </view>
             </view>
-            <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消            </view>
-        </view>
+          <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消            </view>
+          </view>
         <view class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}">
-            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
-                <view class="weui-cell__bd">
-                    <view>Cat</view>
-                </view>
-            </navigator>
-            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
-                <view class="weui-cell__bd">
-                    <view>Fish</view>
-                </view>
-            </navigator>
-            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
-                <view class="weui-cell__bd">
-                    <view>Dog</view>
-                </view>
-            </navigator>
-            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
-                <view class="weui-cell__bd">
-                    <view>Forrest style</view>
-                </view>
-            </navigator>
-        </view>
+        <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+          <view class="weui-cell__bd">
+            <view>Cat</view>
+          </view>
+        </navigator>
+        <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+          <view class="weui-cell__bd">
+            <view>Fish</view>
+          </view>
+        </navigator>
+        <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+          <view class="weui-cell__bd">
+            <view>Dog</view>
+          </view>
+        </navigator>
+        <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+          <view class="weui-cell__bd">
+            <view>Forrest style</view>
+          </view>
+        </navigator>
+      </view>
     </view>
   </view>
 </view>
@@ -69,7 +75,11 @@
       <block wx:for="{{item.artists}}">
         <view class='artist-info-flexbox'>
           <view id='artist-name'>Artist: {{item.name}}</view>
-          <view id='tags'> [tags] [placeholder] [tag] [tag] [tag]</view>
+        </view>
+        <view class='artist-tags-flexbox'>
+          <view>
+          <text class='tags'> Tag </text><text class='tags'> Tag </text><text class='tags'> Tag </text><text class='tags'> Tag </text><text class='tags'> Tag </text>
+          </view>
         </view>
       <view class='flex-container'>
         <view class='flex-row'>
@@ -84,7 +94,6 @@
 
       <view class="small-cards">
         <image wx:for="{{item.art}}"  bindtap='showArt' data-artId="{{item.id}}" class='small-card' src="{{item.url}}"> </image>
-        <view class='blank-item'> </view>
       </view>
       </block>   
     </view>
