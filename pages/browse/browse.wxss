@@ -100,6 +100,9 @@ padding: 5rpx;
   position: relative;
   margin: 0;
   margin-bottom: 5px;
+  border-top: 1rpx solid black;
+  border-bottom: 2px solid black;
+  box-shadow: 0 1px rgba(0,0,0,0.3);
 }
 
 .small-cards {
