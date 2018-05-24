@@ -14,13 +14,11 @@
     </view>
 
     <view class='button-container'>
-      <image class="button" src="../../image/share-2.png" bindtap=''></image>
-      <image class="button" src="../../image/heart.png" bindtap=''></image>
-       <image class="button" src="../../image/chat的副本.png" bindtap=''></image>
-      <image class="button" src="../../image/download-2.png" bindtap=''></image>
+      <button open-type='share' class='button-style'><image class="button" src="../../image/share-2.png" bindtap=''></image></button>
+      <button bindtap='sendLike' class='button-style'><image class="button" src="../../image/heart.png" bindtap=''></image></button>
+      <!-- <button class='button-style'><image class="button" src="../../image/chat的副本.png" bindtap=''></image></button> -->
     </view>
   </view>
-  
 </view>
 
 <!-- <tabbar-start> -->
