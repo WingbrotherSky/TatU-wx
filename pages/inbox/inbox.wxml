@@ -1,5 +1,19 @@
-<!--pages/inbox/inbox.wxml-->
-<text>pages/inbox/inbox.wxml</text>
+<page>
+<view class='status'>1 Unread message</view>
+    <view class='container'> 
+      <!-- <view wx:for="{{shops}}"> -->
+           <image class='avatar' src="https://tvax3.sinaimg.cn/crop.0.0.1242.1242.180/95af932ely8ff8je2p78ej20yi0yiq40.jpg"> </image> 
+           <!-- {{item.logo_url}} -->
+           <button><image class="delete-button" src="../../image/garbage.png" bindtap=''></image></button>
+           <view>Tattoo Temple</view>
+      <!-- </view> -->
+    </view>
+
+<view class='status'>2 Read messages</view>
+
+<view class='container'> 
+
+</view>
 
 
 <!-- START TAB BAR -->
@@ -23,3 +37,4 @@
 
 
 <!-- END TAB BAR -->
+</page>
