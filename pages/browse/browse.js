@@ -36,6 +36,13 @@ Page({
     })
   },
 
+  // bindPickerChange: function (e) {
+  //   console.log('Using picker', e.detail.value)
+  //   this.setData({
+  //     index: e.detail.value
+  //   })
+  // },
+  
   showMessageForm: function(e) {
     const artist = e.currentTarget.dataset.id
     this.setData({

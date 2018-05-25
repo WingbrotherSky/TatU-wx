@@ -20,12 +20,29 @@
 
 .share-btn {
  margin-top: 3px;
- background-color: transparent;
  color: white;
  border: 1px solid rgba(255,255,255,.3);
  background-color: rgba(61,200,0,.1);
 }
 
+.tag-picker {
+   margin-top: 3px;
+  color: white;
+  background-color: rgba(0,0,0,.1);
+  border: 1px solid rgba(255,255,255,.1);
+  color: rgba(255,255,255,.5);
+  font-size: 12px;
+  justify-content: center;
+  padding: 5px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  text-decoration: underline rgba(255,255,255,.1);
+}
+
+.tag-picker > text {
+  margin: 0;
+  padding: 0;
+}
 
 .heart-icon {
   height: 70rpx;
@@ -109,10 +126,8 @@
 }
 
 .experience {
-  font-weight: bold;
+  margin-bottom: 25px;
 }
-
-
 
 .book-button {
   border-radius: 5rpx;
@@ -124,8 +139,8 @@
   justify-content: center;
   align-items: center;
   background-color: black;
-  border: dotted white 5rpx;
-  color: white;
+  border: 1px solid rgba(255,255,255,.7);
+  color: rgba(255,255,255,.9);
   margin-bottom: 10rpx;
 }
 
