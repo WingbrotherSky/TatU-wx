@@ -328,6 +328,7 @@ justify-content: space-between;
   margin-right: 13rpx;
 }
 
+
  /* START TAB BAR  */
 
  .icon-back {
