@@ -1,5 +1,4 @@
-
-const host = "http://localhost:3000/api/v1/"
+const host = "https://tatu.wogengapp.cn/api/v1/"
 
 module.exports = {
   getAllShops: host + "shops",
