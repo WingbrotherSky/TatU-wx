@@ -1,11 +1,18 @@
 <!--pages/info5/info5.wxml-->
+<view style="position: relative;">
+<view class="message-container" hidden='true'>
+      <view style="background-color: black;">
+      <form class="message-form" bindsubmit='bindSubmit'>
+        <view  style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+          <textarea name="content" placeholder='What do you want to ask {{item.name}}?' style="text-align: center;"></textarea>
+          <button class="send-button" form-type='submit'>Send</button>
+        </view>
+      </form>
+      </view>
+      </view>
 <swiper vertical="true" style="height: 100vh; width: 100vw;">
   <block wx:for="{{artists}}">
     <swiper-item>
-     <view class="message-container">
-      <form class="message-form" bindsubmit='bindSubmit'>
-
-      </form>
      <view class="artist-container">
         <swiper style="width: 100vw; height: 50vh;" indicator-dots="true" circular="true">
           <block wx:for="{{item.art}}">
@@ -33,12 +40,11 @@
           <text class="shop-name">Working at: {{item.shop.name}}</text>
           <text class="experience">Experience: {{item.years_of_experience}} years</text>
         </view>
-      <button class="book-button" bindtap='showInbox' data-id="{{item.id}}">Book</button>
-    </view>
+      <button class="book-button" bindtap='showMessageForm' data-id="{{item.id}}">Book</button>
     </view>
     </swiper-item>
   </block>
 </swiper>
-
+</view>
 
 

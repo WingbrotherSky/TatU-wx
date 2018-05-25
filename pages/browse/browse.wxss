@@ -107,3 +107,28 @@
   color: white;
   margin-bottom: 10rpx;
 }
+
+.message-container {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,.6);
+  height: 100vh;
+  width: 100vw;
+}
+
+textarea {
+  background-color: white;
+  margin-bottom: 15rpx;
+}
+
+.send-button {
+  width: 100%;
+  color: white;
+  background: transparent;
+  font-size: 48rpx;
+  font-weight: bold;
+  border: dotted white 5rpx;
+}

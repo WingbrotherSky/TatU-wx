@@ -36,9 +36,9 @@ Page({
     })
   },
 
-  showInbox: function(e) {
+  showMessageForm: function(e) {
     const recipient = e.currentTarget.dataset.id
-    
+
   },
 
   /**
