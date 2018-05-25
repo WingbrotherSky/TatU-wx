@@ -22,6 +22,6 @@
   <block wx:else>
   <view bindtap="goToCreateShopProfile"> Create a Shop </view>  -->
     </view>
-    <view class="splash-text-shop" open-type="getUserInfo" bindgetuserinfo="getUserInfo">I am an Artist</view>
+    <!-- <view class="splash-text-shop" open-type="getUserInfo" bindgetuserinfo="getUserInfo">I am an Artist</view> -->
   </view>
 </page>
