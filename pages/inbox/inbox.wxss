@@ -1,5 +1,12 @@
 /* pages/inbox/inbox.wxss */
 
+.title {
+  color:white;
+  font-size: 40rpx;
+  font-weight: bold;
+  text-align: center;
+}
+
  /* START TAB BAR  */
 
 .avatar-tab {
