@@ -12,8 +12,10 @@
             <swiper-item>
               <view style="display: flex; justify-content: center;">
                  <view class="CTA-container">
-                <image bindtap="shareImage" data-id="{{item.id}}" class="icon" src="{{share}}" />
-                <image bindtap="favoriteImage" data-id="{{item.id}}" class="icon" src="{{heart}}" />
+                    <view bindtap="onShareAppMessage">
+                      <button class="share-btn" open-type="share" size="mini">Share</button>
+                    </view>
+                <image bindtap="favoriteImage" data-id="{{item.id}}" class="heart-icon" src="{{heart}}" />
                 <!-- <image bindtap="showInbox" data-id="item.id" class="icon" src="{{chat}}" />         -->
               </view>
               </view>
@@ -25,8 +27,8 @@
         <image class="avatar shop-logo" src="{{item.shop.logo_url}}" />
         <view class="artist-info">
           <view class="artist-name-container">
-            <view>Artist:</view>
-            <view class="artist-name">{{item.name}}</view>
+            <text class="artist-title">Artist:</text>
+            <text class="artist-name">{{item.name}}</text>
           </view>
         </view>
         <view class="work-info">

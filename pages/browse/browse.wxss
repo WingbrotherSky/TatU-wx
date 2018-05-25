@@ -18,6 +18,25 @@
   z-index: 2;
 }
 
+.share-btn {
+ margin-top: 3px;
+ background-color: transparent;
+ color: white;
+ border: 1px solid rgba(255,255,255,.3);
+ background-color: rgba(61,200,0,.1);
+}
+
+
+.heart-icon {
+  height: 70rpx;
+  width: 70rpx;
+  padding: 2px;
+  border: 1px solid rgba(255,255,255,.3);
+  background-color: rgba(250,0,0,.1);
+  border-radius: 30%;
+  
+}
+
 .art-image {
   height: 100%;
   width: 100%;
@@ -51,8 +70,15 @@
   align-items: center;
 }
 
+.artist-title {
+  color: antiquewhite;
+  font-size: 20px;
+}
+
 .artist-name {
-  color: white;
+  color: whitesmoke;
+  font-size: 30px;
+  text-decoration: underline double rgba(250,0,0,.3);
 }
 
 .work-info {
@@ -87,11 +113,6 @@
 }
 
 
-
-.icon {
-  height: 75rpx;
-  width: 75rpx;
-}
 
 .book-button {
   border-radius: 5rpx;
