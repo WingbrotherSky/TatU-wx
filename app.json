@@ -1,6 +1,8 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/addshop/addshop",
+    "pages/addartist/addartist",
     "pages/showshop/showshop",
     "pages/info/info",
     "pages/info1/info1",
@@ -13,6 +15,7 @@
     "pages/showartist/showartist",
     "pages/browse/browse", 
     "pages/showimage/showimage"
+    
   ],
   "window":{
     "backgroundTextStyle":"light",

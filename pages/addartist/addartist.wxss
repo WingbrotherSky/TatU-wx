@@ -1,0 +1,107 @@
+/* pages/addartist/addartist.wxss */
+
+
+.user-input {
+  width: 100%;
+  margin-bottom: 35rpx;
+}
+
+.input-height {
+  height: 10em;
+}
+
+.input-label {
+  font-size: 35rpx;
+}
+
+.wrap {
+  width: 100%;
+}
+
+textarea {
+  padding: 10rpx 0;
+  font-size: 35rpx;
+  width: 100%
+}
+
+.text-area-wrap {
+  padding: 15rpx 15rpx;
+  background-color: #fff;
+  margin-top: 8px;
+  border-radius: 2px;
+  border-left: 5px solid #9F9F9C;
+}
+
+button {
+  background-color: black; 
+  color: white;
+  align-items: center;
+}
+
+.button-location {
+  background-color: grey; 
+  color: white;
+}
+
+.button-photo {
+  background-color: grey; 
+  color: white;
+}
+
+.button-submit {
+  background-color: black;
+}
+
+.container { 
+ box-sizing: border-box; 
+ /* padding:40px;  */
+} 
+.previewing{ 
+ float:left; 
+ width:100%; 
+ height:200px; 
+ margin-top: ;
+  
+} 
+.previewing image{ 
+ width:100%; 
+ height:100%; 
+}
+
+
+ /* START TAB BAR  */
+
+ .icon-back {
+  width: 30px;
+  height: 30px;
+  opacity: 0.5;
+}
+
+.avatar-tab {
+  width: 22px;
+  height: 22px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden;
+  height: 45px;
+  border-top: 0.5px solid #dddddd;
+}
+
+.markey-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.extend-padding {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+ /* END TAB BAR  */

@@ -1,0 +1,56 @@
+
+    <view class="header">
+    <view class="h2-header"> Add your profile here </view>
+    </view>
+    <view class="container">
+    <view class="wrap">
+        <form bindsubmit="bindSubmit">
+
+        <view class="user-input">
+        <view class="text-area-wrap">
+            <textarea value="{{name}}" style="input-size" placeholder="Name: " class="input-height" name="name" maxlength="-1" auto-height />
+        </view>
+        </view>
+
+
+        <view class="user-input">
+        <view class="text-area-wrap">
+            <textarea value="{{style}}" style="input-size" placeholder="Your tattoo style:" class="input-height" name="style" maxlength="-1" auto-height />
+        </view>
+        </view>
+         </form>
+
+         <button class="button-submit" form-type="submit">Submit</button>
+
+         <button class="button-photo" bindtap="listenerBtnChooseImage">Upload Style Image</button> 
+
+        <span style="font-family:Comic Sans MS;font-size:18px;color:#333333;">
+        <view class="container"> 
+ <view class="previewing" style='background-color: black;'> 
+  <image src="{{image_url}}" data-src="{{image_url}}" bindtap="previewImage"></image> 
+ </view> 
+</view>
+</span>
+        
+        <view wx:if="{{item.image_url}}" class="flex-item-pic " style="background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('{{item.image_url}}')" data-index="{{itemsIndex}}" bindtap="previewImage"></view>
+      
+        </view>
+    </view>
+
+<view class='blank-item'> </view>
+<view class='nav'>
+  <view class='markey-container'>
+      <view class='extend-padding' bindtap='goBrowse'>
+      <image class='avatar-tab' src="../../image/search.png"></image>
+      </view>
+      <view class='extend-padding' bindtap='goAddShop'>
+      <image class='avatar-tab' src="../../image/photo-camera.png"></image>
+      </view>
+      <view class='extend-padding' bindtap='goInbox'>
+      <image class='avatar-tab' src="../../image/chat.png"></image>
+      </view>
+      <view class='extend-padding' bindtap='goShowShop'>
+      <image class='avatar-tab' src="../../image/user.png"></image>
+      </view>
+  </view>
+</view>

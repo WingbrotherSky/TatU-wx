@@ -36,6 +36,25 @@ goToShowShopPage: function (e) {
   })
 },
 
+sendLike: function () {
+  wx.showToast({
+    title: '赞'
+  })
+
+  // wx.request({
+  //   success: function () {
+  //     wx.showToast({
+  //       title: '赞'
+  //     })
+  //   },
+
+  //   // url: '',
+  // })
+  
+},
+
+
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -97,6 +116,8 @@ goToShowShopPage: function (e) {
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-  
+    wx.showShareMenu({
+      withShareTicket: true
+    })
   }
 })
