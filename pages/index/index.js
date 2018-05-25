@@ -58,6 +58,7 @@ Page({
   onLoad: function () {
    app.login()
   },
+  
   getUserInfo: function(e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo
@@ -78,6 +79,7 @@ Page({
       },
       success(res) {
         console.log("last", res)
+        that.goToBrowsePage()
       }})
     }
   })

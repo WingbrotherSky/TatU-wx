@@ -4,8 +4,8 @@
   <!-- <view class="container"> -->
     <!-- <view class="userinfo"> -->
        <!-- <button  class="splash-button" open-type="getUserInfo" bindgetuserinfo="getUserInfo" bindtap="goToBrowsePage"> -->
-       
-       <image src="../../image/tatu-black.png"  class='button' open-type="getUserInfo" bindgetuserinfo="getUserInfo" bindtap="goToBrowsePage"> Enter TatU </image>
+       <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" style="background: transparent;"><image src="../../image/tatu-black.png"  class='button'> Enter TatU </image></button>
+     
        <!-- </button>  -->
 
        <!-- wx:if="{{!hasUserInfo && canIUse}}" -->
@@ -22,6 +22,6 @@
   <block wx:else>
   <view bindtap="goToCreateShopProfile"> Create a Shop </view>  -->
 </view>
-<view class="splash-text-shop" bindtap="goToShowShopPage">I am an Artist</view>
+<view class="splash-text-shop" open-type="getUserInfo" bindgetuserinfo="getUserInfo">I am an Artist</view>
 </view>
 </page>
