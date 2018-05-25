@@ -10,6 +10,12 @@ Page({
   
   },
 
+  previewImages(e) {
+    wx.previewImage({
+      urls: [e.currentTarget.dataset.url]
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */

@@ -11,11 +11,11 @@
               <image bindtap="favoriteImage" data-id="{{item.id}}" class="icon" src="{{heart}}" />
               <image bindtap="showInbox" data-id="item.id" class="icon" src="{{chat}}" />        
             </view>
-              <image src="{{item.url}}" class="slide-image art-image" />  
+              <image bindtap='previewImages' data-url="{{item.url}}" src="{{item.url}}" class="slide-image art-image" />    
           </swiper-item>
         </block>
       </swiper>
-      <image class="avatar artist-avatar" src="{{item.avatar_url}}" />
+      <image bindtap='previewImages' data-url="{{item.avatar_url}}" class="avatar artist-avatar" src="{{item.avatar_url}}" />
       <image class="avatar shop-logo" src="{{item.shop.logo_url}}" />
       <view class="artist-info">
         <view class="artist-name-container">
