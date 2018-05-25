@@ -61,6 +61,11 @@
     padding: 20rpx;
   } */
 
+  .logo-button {
+    width: 90vw;
+    height: 40vh;
+  }
+
   page {
     background-color: black;
   }
@@ -93,10 +98,16 @@
 
    .splash-text-shop {
     text-align: center;
-    color: white;
+    color: rgba(255,255,255,0.9);
     font-size: 16px;
     margin-top: 40px;
     border-bottom: 20px;
+    
+    border-right: 1px solid rgba(255,255,255,0.5);
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    margin-right: 35vw;
+    margin-left: 35vw;
   }
 
   /* .splash-container {

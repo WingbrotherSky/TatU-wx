@@ -4,7 +4,7 @@
   <!-- <view class="container"> -->
     <!-- <view class="userinfo"> -->
        <!-- <button  class="splash-button" open-type="getUserInfo" bindgetuserinfo="getUserInfo" bindtap="goToBrowsePage"> -->
-       <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" style="background: transparent;"><image src="../../image/tatu-black.png"  class='button'> Enter TatU </image></button>
+       <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" style="background: transparent;"><image src="../../image/tatu-black.png"  class='logo-button'> Enter TatU </image></button>
      
        <!-- </button>  -->
 
@@ -21,7 +21,7 @@
   <!-- <view wx:if="{{user already has shop}}" bindtap="goToShopShow">
   <block wx:else>
   <view bindtap="goToCreateShopProfile"> Create a Shop </view>  -->
-</view>
-<view class="splash-text-shop" open-type="getUserInfo" bindgetuserinfo="getUserInfo">I am an Artist</view>
-</view>
+    </view>
+    <view class="splash-text-shop" open-type="getUserInfo" bindgetuserinfo="getUserInfo">I am an Artist</view>
+  </view>
 </page>
