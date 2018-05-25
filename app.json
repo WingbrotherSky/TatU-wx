@@ -15,7 +15,6 @@
     "pages/showartist/showartist",
     "pages/browse/browse", 
     "pages/showimage/showimage"
-    
   ],
   "window":{
     "backgroundTextStyle":"light",

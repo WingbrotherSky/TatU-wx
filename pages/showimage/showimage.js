@@ -36,10 +36,10 @@ goToShowShopPage: function (e) {
   })
 },
 
-sendLike: function () {
-  wx.showToast({
-    title: '赞'
-  })
+// sendLike: function () {
+//   wx.showToast({
+//     title: '赞'
+//   })
 
   // wx.request({
   //   success: function () {
