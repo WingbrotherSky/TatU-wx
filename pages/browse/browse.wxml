@@ -42,6 +42,11 @@
             </view>
           </view>
         <view class="work-info">
+        <view class="info-flex">
+    <view bindtap='goToInfoPage'>
+      <image class='info-icon' src="../../image/information.png"></image>
+      </view>
+    </view>
           <text class="shop-name">Working at: {{item.shop.name}}</text>
           <text class="experience">Experience: {{item.years_of_experience}} years</text>
         </view>

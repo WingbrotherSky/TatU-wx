@@ -2,8 +2,7 @@
 
 <view class='shop-container' bindtap='showInfo1'>
     <view class='featured-container'>
-      <view bindtap='' data-artistId="{{item.id}}" class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://wx4.sinaimg.cn/mw690/95af932egy1fosum18zo5j21hc1hcauo.jpg');"> 
-      Topic
+      <view bindtap='' data-artistId="{{item.id}}" class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://wx4.sinaimg.cn/mw690/95af932egy1fosum18zo5j21hc1hcauo.jpg');">
         <view class='shop-name'>{{item.name}} </view>
         <view>{{art.artist.name}}</view>
            <image class='shop-logo' src="{{item.logo_url}}"> </image> 
@@ -13,7 +12,7 @@
 
     <view class='shop-container' bindtap='showInfo2'>
     <view class='featured-container'>
-      <view bindtap='' data-artistId="{{item.id}}" class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://www.verygoodlight.com/wp-content/uploads/2017/07/Screen-Shot-2017-07-03-at-11.49.13-AM-400x397.png');"> Topic
+      <view bindtap='' data-artistId="{{item.id}}" class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://www.verygoodlight.com/wp-content/uploads/2017/07/Screen-Shot-2017-07-03-at-11.49.13-AM-400x397.png');"> Basic Tattoo Safety Guidelines
         <view class='shop-name'>{{item.name}} </view>
         <view>{{art.artist.name}}</view>
            <image class='shop-logo' src="{{item.logo_url}}"> </image> 
@@ -24,7 +23,7 @@
 
 <view class='shop-container' bindtap='showInfo3'>
     <view class='featured-container'>
-      <view bindtap='' data-artistId="{{item.id}}" class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://wx1.sinaimg.cn/mw690/95af932egy1fqmkfeq71tj20yi1pcb2a.jpg');"> Topic
+      <view bindtap='' data-artistId="{{item.id}}" class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://wx1.sinaimg.cn/mw690/95af932egy1fqmkfeq71tj20yi1pcb2a.jpg');"> Five Things to Ask Your Artist
         <view class='shop-name'>{{item.name}} </view>
         <view>{{art.artist.name}}</view>
            <image class='shop-logo' src="{{item.logo_url}}"> </image> 
@@ -34,7 +33,7 @@
 
 <view class='shop-container' bindtap='showInfo4'>
     <view class='featured-container'>
-      <view bindtap='' data-artistId="{{item.id}}" class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://wx1.sinaimg.cn/mw690/95af932egy1fr8yawd26zj21hc1hcwyk.jpg');"> Topic
+      <view bindtap='' data-artistId="{{item.id}}" class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://wx1.sinaimg.cn/mw690/95af932egy1fr8yawd26zj21hc1hcwyk.jpg');"> Body Shape and Tattoo Design
         <view class='shop-name'>{{item.name}} </view>
         <view>{{art.artist.name}}</view>
            <image class='shop-logo' src="{{item.logo_url}}"> </image> 
@@ -45,7 +44,7 @@
 
     <view class='shop-container' bindtap='showInfo5'>
     <view class='featured-container'>
-      <view bindtap='' data-artistId="{{item.id}}" class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://wx2.sinaimg.cn/mw690/756f3921gy1fqkq581uhjj224a1p1hdu.jpg');"> Topic
+      <view bindtap='' data-artistId="{{item.id}}" class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://wx2.sinaimg.cn/mw690/756f3921gy1fqkq581uhjj224a1p1hdu.jpg');"> "A Tattoo Lasts Forever"
         <view class='shop-name'>{{item.name}} </view>
         <view>{{art.artist.name}}</view>
            <image class='shop-logo' src="{{item.logo_url}}"> </image> 

@@ -1,1 +1,31 @@
 /* pages/info1/info1.wxss */
+.flex-for-text {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  background-color: black;
+  color: white;
+}
+
+.title-text {
+  text-decoration: underline rgba(0,0,0,0.6);
+  font-size: 25px;
+  font-weight: bold;
+
+}
+
+.body-text-first-pg {
+  font-size: 13px;
+  font-weight: lighter;
+}
+
+.body-text {
+font-size: 17px;
+}
+
+.red-border {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  height: 15px;
+  width: 100%;
+}

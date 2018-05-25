@@ -96,6 +96,19 @@
     
   }
 
+  .info-icon {
+    border: 1px solid white;
+    padding: 1px;
+    margin-top: 20vh;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+  }
+
+.info-flex {
+  display: flex;
+  justify-content: center;
+}
    .splash-text-shop {
     text-align: center;
     color: rgba(255,255,255,0.9);

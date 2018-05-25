@@ -54,6 +54,19 @@
   
 }
 
+.info-flex {
+  position: fixed;
+  right: 15px;
+}
+
+  .info-icon {
+    border: 1px solid white;
+    padding: 1px;
+    height: 15px;
+    width: 15px;
+    background-color: white;
+  }
+
 .art-image {
   height: 100%;
   width: 100%;
