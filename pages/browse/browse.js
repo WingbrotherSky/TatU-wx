@@ -37,8 +37,31 @@ Page({
   },
 
   showMessageForm: function(e) {
-    const recipient = e.currentTarget.dataset.id
+    const artist = e.currentTarget.dataset.id
+    this.setData({
+      bookedArtist: artist
+    })
+  },
 
+  bindSubmit: function(e) {
+    const that = this
+    let recipient_id = this.data.bookedArtist
+    let content = e.detail.value.content
+    wx.request({
+      url: paths.postMessage,
+      method: "post",
+      data: {
+        auth_key: wx.getStorageSync("auth_key"),
+        user_id: recipient_id,
+        content: content
+      },
+      success: res => {
+          that.setData({
+            bookedArtist: ""
+          })
+      }
+
+    })
   },
 
   /**
@@ -87,6 +110,8 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-  
+    wx.showShareMenu({
+      withShareTicket: true
+    })
   }
 })
