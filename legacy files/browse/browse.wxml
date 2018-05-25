@@ -1,0 +1,130 @@
+
+<view class='whole-page'>
+
+
+<!-- START SEARCH BAR  -->
+
+  <view class="navbar">
+    <view class="page">
+      <view class="page__bd">
+        <view class="weui-search-bar">
+          <view class="weui-search-bar__form">
+            <view id="search-bar" class="weui-search-bar__box">
+              <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+              <input type="text" class="weui-search-bar__input" placeholder="Search" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+                <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+                  <icon type="clear" size="14"></icon>
+                </view>
+                <view class="weui-btn-area">
+                  <picker class="picker-class" bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                    <view class='tag-picker'>Search Style
+                    </view>
+                  </picker>
+                </view>
+              </view>
+            </view>
+          <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消            </view>
+          </view>
+        <view class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}">
+        <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+          <view class="weui-cell__bd">
+            <view>Cat</view>
+          </view>
+        </navigator>
+        <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+          <view class="weui-cell__bd">
+            <view>Fish</view>
+          </view>
+        </navigator>
+        <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+          <view class="weui-cell__bd">
+            <view>Dog</view>
+          </view>
+        </navigator>
+        <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+          <view class="weui-cell__bd">
+            <view>Forrest style</view>
+          </view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- END SEARCH BAR  -->
+
+<!-- START CONTAINER CARD  -->
+<view class='shop-container' bindtap='showShop'>
+  <view wx:for="{{shops}}">
+  
+  <view class='shop-info'>
+    <!-- <view class='browse-info-card-flex'> -->
+    <view class='shop-info-flexbox-master'>
+      <view class='shop-info-flexbox-info'>
+        <view class='shop-name'>{{item.name}}</view>
+        <view class="location" bindtap='showShop'>
+          Location: {{item.location}}
+          Contact: {{item.phone_number}}
+        </view>
+      </view>
+      <image class='shop-logo' src="{{item.logo_url}}"> </image>
+    </view>
+  </view>
+
+    <view class='featured-container'>
+      <block wx:for="{{item.artists}}">
+        <view class='artist-info-flexbox'>
+          <view id='artist-name'>Artist: {{item.name}}</view>
+        </view>
+        <view class='artist-tags-flexbox'>
+          <view>
+          <text class='tags'> Tag </text><text class='tags'> Tag </text><text class='tags'> Tag </text><text class='tags'> Tag </text><text class='tags'> Tag </text>
+          </view>
+        </view>
+      <view class='flex-container'>
+        <view class='flex-row'>
+          <image bindtap='showArtist' data-artistId="{{item.id}}" class="big-card" src='{{item.avatar_url}}'></image>
+          <image src="/image/templetattoo.jpg" bindtap='showArt' data-artId="{{item.id}}" class='first-choice-art-on-profile'></image>
+          <!--How to add gradient to image src, how to get from url from image source  -->
+        </view>
+
+        <view class="gradient"></view>
+      </view>
+
+
+      <view class="small-cards">
+        <image wx:for="{{item.art}}"  bindtap='showArt' data-artId="{{item.id}}" class='small-card' src="{{item.url}}"> </image>
+      </view>
+      </block>   
+    </view>
+  
+  <image class='red-border' src="/image/red-border.jpg">
+  </image>
+
+  <view class='blank-item'> </view>
+  </view>
+</view>
+
+<!-- END CARD LOOP -->
+</view>
+<!-- START TAB BAR -->
+<view class='blank-item'> </view>
+<view class='nav'>
+  <view class='markey-container'>
+      <view class='extend-padding' bindtap='goBrowse'>
+      <image class='avatar-tab' src="../../image/search.png"></image>
+      </view>
+      <view class='extend-padding' bindtap='goFavourite'>
+      <image class='avatar-tab' src="../../image/star.png"></image>
+      </view>
+      <view class='extend-padding' bindtap='goInbox'>
+      <image class='avatar-tab' src="../../image/chat.png"></image>
+      </view>
+      <view class='extend-padding' bindtap='goInfo'>
+      <image class='avatar-tab' src="../../image/information.png"></image>
+      </view>
+  </view>
+</view>
+
+
+<!-- END TAB BAR -->

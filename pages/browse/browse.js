@@ -1,123 +1,34 @@
-// pages/browse/browse.js
-
-const app = getApp()
 const paths = require('../../common/apiPaths')
 
+// pages/info5/info5.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    inputShowed: false,
-    inputVal: "",
-    shops: []
+  
   },
+
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function () {
+  onLoad: function (options) {
     const that = this
     wx.request({
-      url: paths.getAllShops,
-      success:(res) => {
-          that.setData({shops: res.data.shops})
+      url: paths.getAllArtists,
+      success:res => {
+        that.setData({
+          artists: res.data.artists
+        })
       }
     })
-  },
-
-  // bindPickerChange: function (e) {
-  //   console.log('Using picker', e.detail.value)
-  //   this.setData({
-  //     index: e.detail.value
-  //   })
-  // },
-
-  showArtist: function (e) {
-    const data = e.currentTarget.dataset
-    const artistId = data.artistid
-
-    wx.navigateTo({
-      url: `/pages/showartist/showartist?id=${artistId}`,
-    })
-  },
-
-  showArt: function(e) {
-    const data = e.currentTarget.dataset
-    const artId = data.artid
-
-
-    wx.navigateTo({
-      url: `/pages/showimage/showimage?id=${artId}`,
-    })
-  },
-
-  showShop: function (e) {
-    const data = e.currentTarget.dataset
-    const shopId = data.shopid
-
-
-    wx.navigateTo({
-      url: `/pages/showshop/showshop?id=${shopId}`,
-    })
-  },
-
-  showInput: function () {
     this.setData({
-      inputShowed: true
-    });
-  },
-  hideInput: function () {
-    this.setData({
-      inputVal: "",
-      inputShowed: false
-    });
-  },
-  clearInput: function () {
-    this.setData({
-      inputVal: ""
-    });
-  },
-  inputTyping: function (e) {
-    this.setData({
-      inputVal: e.detail.value
-    });
-  },
-
-
-  // START TABBAR
-  goBack: function (e) {
-    console.log(333, "back")
-    wx.reLaunch({
-      url: '/pages/index/index',    //// change to one page before
+      heart: "../../image/heart.png",
+      chat: "../../image/chat2.png",
+      share: "../../image/share-2.png"
     })
   },
-
-  goBrowse: function (e) {
-    wx.reLaunch({
-      url: '/pages/browse/browse',
-    })
-  },
-
-  goFavourite: function (e) {
-    wx.reLaunch({
-      url: '/pages/favourite/favourite',
-    })
-  },
-  goInbox: function (e) {
-    wx.reLaunch({
-      url: '/pages/inbox/inbox',
-    })
-  },
-  goInfo: function (e) {
-    wx.reLaunch({
-      url: '/pages/showartist/showartist',
-    })
-  },
-
-  // END TABBAR
-
-
 
   /**
    * 生命周期函数--监听页面初次渲染完成
