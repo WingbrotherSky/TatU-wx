@@ -1,6 +1,6 @@
 <!--pages/info5/info5.wxml-->
 <view style="position: relative;">
-<view class="message-container" hidden='true'>
+<view class="message-container" hidden='{{bookedArtist ? false : true}}'>
       <view style="background-color: black;">
       <form class="message-form" bindsubmit='bindSubmit'>
         <view  style="display: flex; justify-content: center; align-items: center; flex-direction: column;">

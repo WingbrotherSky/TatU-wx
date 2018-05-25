@@ -5,8 +5,6 @@ module.exports = {
   getShop: host + "shops/",
   getAllArtists: host + "artists",
   getArtist: host + "artists/",
-  getAllArtistArt: function(artist_id) {
-    return `artists/${artist_id}/arts`
-  },
-  getArt: host + 'arts/'
+  getArt: host + 'arts/',
+  postMessage: host + 'messages'
 }
