@@ -51,7 +51,7 @@ goToShowShopPage: function (e) {
   //   // url: '',
   // })
   
-},
+
 
 
 
