@@ -14,10 +14,13 @@
 
     <view class='shop-bio'>
     <view class="location" bindtap='showShop'>
-        Location: {{item.location}}
-        Contact: {{item.phone_number}}
+        <view> Location: Chengdu. </view>
+        <view> Contact: {{item.phone_number}} </view>
       </view>
-      <button class="tags" data-id="{{item.id}}"><view class="tags-artist-style">rfe3ieoe3op3op3</view></button>
+      <button class="tags" data-id="{{item.id}}"><view class="tags-artist-style">New School</view></button>
+      <button class="tags" data-id="{{item.id}}"><view class="tags-artist-style">Japanese Traditional</view></button>
+      <button class="tags" data-id="{{item.id}}"><view class="tags-artist-style">American Classic</view></button>
+      <button class="tags" data-id="{{item.id}}"><view class="tags-artist-style">Hygenic</view></button>
     </view>
 
     <view class="message-container" hidden='{{bookedArtist ? false : true}}'>
@@ -39,7 +42,7 @@
         <view bindtap='showArtist' data-artistId="{{item.id}}" class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{item.avatar_url}}');"> Artist: {{item.name}}
         <view class='experience'> Experience: {{item.years_of_experience}} years</view>
         <view class="tags-artist" data-id="{{item.id}}">
-          <view class="tags-artist-style">rfe3ieoe3op3op3</view>
+          <view class="tags-artist-style">New School</view>
           </view>
         </view>
         </view>

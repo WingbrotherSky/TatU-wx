@@ -7,5 +7,7 @@ module.exports = {
   getArtist: host + "artists/",
   getArt: host + 'arts/',
   postMessage: host + 'messages',
+  getAllConversations:  host + 'conversations',
+  getConverstation: host + 'conversation/',
   newFavorite: host + 'favorites'
 }

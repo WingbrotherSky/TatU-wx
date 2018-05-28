@@ -7,7 +7,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    
   },
 
   previewImages(e) {
@@ -63,6 +63,7 @@ Page({
         content: content
       },
       success: res => {
+        console.log(res)
           that.setData({
             bookedArtist: ""
           })
