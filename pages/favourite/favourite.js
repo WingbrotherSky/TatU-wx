@@ -35,8 +35,8 @@ Page({
       
     })
   },
-  showShop: function (e) {
 
+  showShop: function (e) {
     wx.navigateTo({
       url: `/pages/showshop/showshop`,
     })
@@ -107,13 +107,6 @@ Page({
     })
   },
 
-  showSuccess: function () {
-    wx.showToast({
-      title: '成功',
-      icon: 'success',
-      duration: 2000
-    })
-  },
 
   showInput: function () {
     this.setData({

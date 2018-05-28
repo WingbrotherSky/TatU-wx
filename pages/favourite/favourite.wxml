@@ -1,6 +1,7 @@
 <page>
  
 
+
    
 <view class='shop-container'>
   <view wx:for="{{favorites}}" >
