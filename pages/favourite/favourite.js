@@ -2,6 +2,7 @@
 
 const app = getApp()
 const paths = require('../../common/apiPaths')
+const auth_key = wx.getStorageSync("auth_key")
 
 Page({
 
@@ -11,7 +12,7 @@ Page({
   data: {
     inputShowed: false,
     inputVal: "",
-    shops: []
+    favorites: []
   },
 
   /**
@@ -19,24 +20,19 @@ Page({
    */
   onLoad: function () {
     const that = this
-    const auth_key = wx.getStorageSync("auth_key")
     wx.request({
-      // url: paths.getAllShops,
       url: paths.getAllFavorites,
       data: {
         auth_key: auth_key
       },
       success:(res) => {
-        console.log(res)
-          // that.setData({shops: res.data.shops})
+          console.log(res.data)
           that.setData({favorites: res.data.favorites})
-          console.log(this.data.favorites)
       }
-      
     })
   },
-
   showShop: function (e) {
+
     wx.navigateTo({
       url: `/pages/showshop/showshop`,
     })
@@ -54,6 +50,7 @@ Page({
   showArtist: function (e) {
     const data = e.currentTarget.dataset
     const artistId = data.artistid
+    console.log(artistId)
 
     wx.navigateTo({
       url: `/pages/showartist/showartist?id=${artistId}`,
@@ -69,44 +66,6 @@ Page({
       url: `/pages/showimage/showimage?id=${artId}`,
     })
   },
-
-  previewImage: function (e) {
-    console.log(e)
-    wx.previewImage({
-      // current: '',
-      urls: [e.currentTarget.dataset.artUrl],
-    //   success: function(res) {},
-    //   fail: function(res) {},
-    //   complete: function(res) {},
-    })
-  },
-
-  Delete: function () {
-    wx.showModal({
-      title: '提示',
-      content: 'Delete?!',
-      success: function (res) {
-        if (res.confirm) {
-          console.log('用户点击确定')
-          wx.getSavedFileList({
-            success: function (res) {
-              if (res.fileList.length > 0) {
-                wx.removeSavedFile({
-                  filePath: res.fileList[0].filePath,
-                  complete: function (res) {
-                    console.log(res)
-                  }
-                })
-              }
-            }
-          })
-        } else if (res.cancel) {
-          console.log('用户点击取消')
-        }
-      }
-    })
-  },
-
 
   showInput: function () {
     this.setData({
@@ -134,30 +93,30 @@ Page({
   // START TABBAR
   goBack: function (e) {
     console.log(333, "back")
-    wx.navigateTo({
+    wx.reLaunch({
       url: '/pages/index/index',    //// change to one page before
     })
   },
 
   goBrowse: function (e) {
-    wx.navigateTo({
+    wx.reLaunch({
       url: '/pages/browse/browse',
     })
   },
 
   goFavourite: function (e) {
-    wx.navigateTo({
+    wx.reLaunch({
       url: '/pages/favourite/favourite',
     })
   },
   goInbox: function (e) {
-    wx.navigateTo({
+    wx.reLaunch({
       url: '/pages/inbox/inbox',
     })
   },
   goInfo: function (e) {
-    wx.navigateTo({
-      url: '/pages/info/info',
+    wx.reLaunch({
+      url: '/pages/showartist/showartist',
     })
   },
 
