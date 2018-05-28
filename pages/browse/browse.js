@@ -16,6 +16,15 @@ Page({
     })
   },
 
+  showArtist: function (e) {
+    const data = e.currentTarget.dataset
+    const artistId = data.artistid
+
+    wx.navigateTo({
+      url: `/pages/showartist/showartist?id=${artistId}`,
+    })
+  },
+  
   // START TABBAR
   goBack: function (e) {
     console.log(333, "back")
