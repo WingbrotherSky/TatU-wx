@@ -19,11 +19,9 @@
               <swiper-item>
                 <view style="display: flex; justify-content: center;">
                   <view class="CTA-container">
-                      
                     <button class="share-btn" open-type="share"><image class="share-img" src="/image/share-2.png"></image></button>
-                  
                         <picker class="picker-class" bindchange="bindPickerChange" value="{{index}}" range="{{array}}"> 
-                          <button class="tag-picker" size="mini">Search Style</button>
+                          <button class="tag-picker">Search Styles <image class="search-img" src="/image/searchcopy.png"></image></button>
                         </picker>
                     <image bindtap="favoriteImage" data-id="{{item.id}}" class="heart-icon" src="{{heart}}" />
                   <!-- <image bindtap="showInbox" data-id="item.id" class="icon" src="{{chat}}" />         -->
@@ -54,6 +52,8 @@
             </view>
           </view>
           <button class="book-button" bindtap='showMessageForm' data-id="{{item.id}}">Book</button>
+          <view class="view-next-artist-text"><image class="down-arrow-img" src="/image/down-arrow.png"></image> View Next Artist <image class="down-arrow-img" src="/image/down-arrow.png"></image>
+          </view>
           </view>
         </swiper-item>
       </block>
