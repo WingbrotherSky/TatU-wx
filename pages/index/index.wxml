@@ -1,4 +1,4 @@
-<page>
+
 <view class='splash'>
 <view class="splash-container">
   <!-- <view class="container"> -->
@@ -6,6 +6,7 @@
        <!-- <button  class="splash-button" open-type="getUserInfo" bindgetuserinfo="getUserInfo" bindtap="goToBrowsePage"> -->
        <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" style="background: transparent;"><image src="../../image/wetat.png"  class='logo-button'> Enter TatU </image></button>
      
+     <view class="enter-text"> Tap Above to Enter </view>
        <!-- </button>  -->
 
        <!-- wx:if="{{!hasUserInfo && canIUse}}" -->
@@ -24,4 +25,4 @@
     </view>
     <!-- <view class="splash-text-shop" open-type="getUserInfo" bindgetuserinfo="getUserInfo">I am an Artist</view> -->
   </view>
-</page>
+
