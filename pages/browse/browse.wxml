@@ -51,8 +51,8 @@
             <text class="see-more" bindtap='goToShowShopPage'>Go To {{item.shop.name}}</text>
             </view>
           </view>
-          <button class="book-button" bindtap='showMessageForm' data-id="{{item.id}}">Book</button>
-          <view class="view-next-artist-text"><image class="down-arrow-img" src="/image/down-arrow.png"></image> View Next Artist <image class="down-arrow-img" src="/image/down-arrow.png"></image>
+          <button class="book-button" bindtap='showMessageForm' data-id="{{item.id}}">Message {{item.shop.name}}</button>
+          <view class="view-next-artist-text"><image class="down-arrow-img" src="/image/down-arrow.png"></image> Swipe for Next Artist <image class="down-arrow-img" src="/image/down-arrow.png"></image>
           </view>
           </view>
         </swiper-item>
