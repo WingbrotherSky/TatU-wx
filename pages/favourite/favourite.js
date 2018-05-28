@@ -19,15 +19,24 @@ Page({
    */
   onLoad: function () {
     const that = this
+    const auth_key = wx.getStorageSync("auth_key")
     wx.request({
-      url: paths.getAllShops,
+      // url: paths.getAllShops,
+      url: paths.getAllFavorites,
+      data: {
+        auth_key: auth_key
+      },
       success:(res) => {
-          that.setData({shops: res.data.shops})
+        console.log(res)
+          // that.setData({shops: res.data.shops})
+          that.setData({favorites: res.data.favorites})
+          console.log(this.data.favorites)
       }
+      
     })
   },
-  showShop: function (e) {
 
+  showShop: function (e) {
     wx.navigateTo({
       url: `/pages/showshop/showshop`,
     })
@@ -60,6 +69,44 @@ Page({
       url: `/pages/showimage/showimage?id=${artId}`,
     })
   },
+
+  previewImage: function (e) {
+    console.log(e)
+    wx.previewImage({
+      // current: '',
+      urls: [e.currentTarget.dataset.artUrl],
+    //   success: function(res) {},
+    //   fail: function(res) {},
+    //   complete: function(res) {},
+    })
+  },
+
+  Delete: function () {
+    wx.showModal({
+      title: '提示',
+      content: 'Delete?!',
+      success: function (res) {
+        if (res.confirm) {
+          console.log('用户点击确定')
+          wx.getSavedFileList({
+            success: function (res) {
+              if (res.fileList.length > 0) {
+                wx.removeSavedFile({
+                  filePath: res.fileList[0].filePath,
+                  complete: function (res) {
+                    console.log(res)
+                  }
+                })
+              }
+            }
+          })
+        } else if (res.cancel) {
+          console.log('用户点击取消')
+        }
+      }
+    })
+  },
+
 
   showInput: function () {
     this.setData({
