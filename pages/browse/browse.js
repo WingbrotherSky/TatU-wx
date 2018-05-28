@@ -71,6 +71,23 @@ Page({
     })
   },
 
+  favoriteImage: function(e) {
+    const auth_key = wx.getStorageSync("auth_key")
+    const imageId = e.currentTarget.dataset.id
+    console.log(imageId)
+    wx.request({
+      url: paths.newFavorite,
+      method: "post",
+      data: {
+        auth_key: auth_key,
+        id: imageId
+      },
+      success: res => {
+        console.log(res)
+    }
+    })
+  },
+
 
   goToInfoPage: function (e) {
     wx.navigateTo({
