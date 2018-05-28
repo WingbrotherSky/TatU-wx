@@ -8,6 +8,6 @@ module.exports = {
   getArtist: host + "artists/",
   getArt: host + 'arts/',
   postMessage: host + 'messages',
-  newFavorite: host + 'favorites'
+  newFavorite: host + 'favorites',
   getAllFavorites: host + "favorites"
 }
