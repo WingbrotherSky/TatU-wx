@@ -1,19 +1,23 @@
 <page>
  
 
+   
 <view class='shop-container'>
   <view wx:for="{{favorites}}" >
-    <view  class='featured-container' bindlongtap='Delete'>
-      <view bindtap='previewImage' data-art-url="{{item.artists[0].art[0].url}}" class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{item.artists[0].art[0].url}}');"> 
+    
+    <view  class='featured-container'>
+      <view bindtap='previewImage' data-art-url="{{item.art.url}}" class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{item.art.url}}');"> 
         <!-- <view class='shop-name'>{{item.name}} </view> -->
-          <image  catchtap='showArtist'class='shop-logo-avatar' src="{{item.artists[0].avatar_url}}"></image>
+          <image  catchtap='showArtist'class='shop-logo-avatar' src="{{item.art.artist.avatar_url}}"></image>
         <!-- <view>{{art.artist.name}}</view> -->
-           <image catchtap='showShop' class='shop-logo-avatar' src="{{item.logo_url}}"></image> 
-        </view>
-      </view> 
-      <view class='blank-item'> </view>
-    </view>
+           <image catchtap='showShop' class='shop-logo-avatar' src="{{item.art.artist.shop.logo_url}}"></image> 
+      </view>
+    </view> 
+    
+    <view class='blank-item'> </view>
+  </view>
 </view>
+  
 
 <!-- START TAB BAR -->
 <view class='blank-item'> </view>

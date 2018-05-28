@@ -30,7 +30,9 @@ Page({
         console.log(res)
           // that.setData({shops: res.data.shops})
           that.setData({favorites: res.data.favorites})
+          console.log(this.data.favorites)
       }
+      
     })
   },
   showShop: function (e) {
@@ -102,6 +104,14 @@ Page({
           console.log('用户点击取消')
         }
       }
+    })
+  },
+
+  showSuccess: function () {
+    wx.showToast({
+      title: '成功',
+      icon: 'success',
+      duration: 2000
     })
   },
 
