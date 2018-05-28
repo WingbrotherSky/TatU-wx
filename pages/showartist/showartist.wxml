@@ -22,6 +22,7 @@
 <!-- END CARD LOOP -->
 </view>
 <!-- START TAB BAR -->
+
 <view class='blank-item'> </view>
 <view class='nav'>
   <view class='markey-container'>
@@ -39,6 +40,7 @@
       </view>
   </view>
 </view>
+<!-- END TAB BAR -->
 
 
 <!-- END TAB BAR -->
