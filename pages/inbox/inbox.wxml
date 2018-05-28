@@ -1,40 +1,28 @@
 <page>
-<view class='status'>1 Unread message</view>
-    <view class='container'> 
-      <!-- <view wx:for="{{shops}}"> -->
-           <image class='avatar' src="https://tvax3.sinaimg.cn/crop.0.0.1242.1242.180/95af932ely8ff8je2p78ej20yi0yiq40.jpg"> </image> 
-           <!-- {{item.logo_url}} -->
-           <button><image class="delete-button" src="../../image/garbage.png" bindtap=''></image></button>
-           <view>Tattoo Temple</view>
-      <!-- </view> -->
-    </view>
-
-<view class='status'>2 Read messages</view>
-
-<view class='container'> 
-
-</view>
-
-
-<!-- START TAB BAR -->
-
-<view class='nav'>
-  <view class='markey-container'>
-      <view class='extend-padding' bindtap='goBrowse'>
-      <image class='avatar-tab' src="../../image/search.png"></image>
-      </view>
-      <view class='extend-padding' bindtap='goFavourite'>
-      <image class='avatar-tab' src="../../image/star.png"></image>
-      </view>
-      <view class='extend-padding' bindtap='goInbox'>
-      <image class='avatar-tab' src="../../image/chat.png"></image>
-      </view>
-      <view class='extend-padding' bindtap='goInfo'>
-      <image class='avatar-tab' src="../../image/information.png"></image>
-      </view>
+  <view class="wrapper">
+    <view class="title" wx:if="{{inbox}}">Conversations</view>
+    <view class="title" wx:else>{{convName}}</view>
+    <scroll-view scroll-y="true" scroll-into-view="{{lastOne}}" class="inbox-container">
+      <block wx:for="{{items}}">
+          <view class="{{item.received || inbox ? 'other' : 'user'}}" id="{{items[items.length - 1] === item ? 'last' : ''}}">
+          <view bindtap="toggleInbox" data-user_id="{{item.user_id}}" data-name="{{item.name}}"  class="{{inbox ?  'conversation card' : 'message card'}}">
+            <view class="name">{{item.name}}</view>
+            <view class="message">{{item.content}}</view>
+            <block wx:if="{{!inbox}}">
+              <image class="user avatar" src='{{item.sender.avatar_url}}'></image>
+              <image class="other avatar" src="{{item.sender.shop.logo_url}}"></image>
+            </block>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+     <block wx:if="{{!inbox}}">
+     <form class="message-form" bindsubmit='bindSubmit'>
+        <view  style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+          <textarea name="content" placeholder="Enter message here" value="{{nada}}" style="text-align: center;"></textarea>
+          <button class="send-button" form-type='submit'>Send</button>
+        </view>
+      </form>
+      </block> 
   </view>
-</view>
-
-
-<!-- END TAB BAR -->
 </page>

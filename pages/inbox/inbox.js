@@ -2,6 +2,7 @@
 
 const app = getApp()
 const paths = require('../../common/apiPaths')
+const auth_key = wx.getStorageSync("auth_key")
 
 Page({
 
@@ -9,9 +10,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-    inputShowed: false,
     inputVal: "",
-    shops: []
+    inbox: true,
+    items: [],
+    nada: '',
+    lastOne: ''
+
   },
 
   /**
@@ -20,150 +24,82 @@ Page({
   onLoad: function () {
     const that = this
     wx.request({
-      url: paths.getAllShops,
-      success: (res) => {
-        that.setData({ shops: res.data.shops })
+      url: paths.getAllConversations,
+      data: {
+        auth_key: auth_key
+      },
+      success: res => {
+        console.log(res)
+        that.setData({
+          conversations: res.data.users
+        })
+        that.setData({
+          items: that.data.conversations
+        })
       }
     })
   },
-  showShop: function (e) {
 
-    wx.navigateTo({
-      url: `/pages/showshop/showshop`,
-    })
-  },
-
-  showImage: function (e) {
-    const data = e.currentTarget.dataset
-    const artistId = data.artistid
-
-    wx.navigateTo({
-      url: `/pages/showimage/showimage`,
-    })
-  },
-
-  showArtist: function (e) {
-    const data = e.currentTarget.dataset
-    const artistId = data.artistid
-
-    wx.navigateTo({
-      url: `/pages/showartist/showartist?id=${artistId}`,
-    })
-  },
-
-  showArt: function (e) {
-    const data = e.currentTarget.dataset
-    const artId = data.artid
-
-
-    wx.navigateTo({
-      url: `/pages/showimage/showimage?id=${artId}`,
-    })
-  },
-
-  showInput: function () {
+  toggleInbox: function(e) {
+   
+    const that = this
+    if (e.currentTarget.dataset.user_id) {
     this.setData({
-      inputShowed: true
-    });
-  },
-  hideInput: function () {
+      convName: e.currentTarget.dataset.name,
+      convId: e.currentTarget.dataset.user_id
+    })
     this.setData({
-      inputVal: "",
-      inputShowed: false
-    });
+      inbox: false
+    })
+    wx.request({
+      url: paths.getConverstation + `${e.currentTarget.dataset.user_id}`,
+      data: {
+        auth_key: auth_key
+      },
+      success: res => {
+        that.setData({
+          items: res.data.messages,
+          lastOne: "last"
+        })
+        console.log(res)
+      }
+    }) 
+    }
   },
-  clearInput: function () {
+  bindSubmit: function (e) {
+    console.log(e)
+    const that = this
+    let recipient_id = this.data.convId
+    let content = e.detail.value.content
     this.setData({
-      inputVal: ""
-    });
-  },
-  inputTyping: function (e) {
-    this.setData({
-      inputVal: e.detail.value
-    });
-  },
+      nada: '',
+      lastOne: ""
+    })
+    wx.request({
+      url: paths.postMessage,
+      method: "post",
+      data: {
+        auth_key: wx.getStorageSync("auth_key"),
+        user_id: recipient_id,
+        content: content
+      },
+      success: res => {
+        wx.request({
+          url: paths.getConverstation + `${that.data.convId}`,
+          data: {
+            auth_key: auth_key
+          },
+          success: res => {
+            that.setData({
+              items: res.data.messages,
+              lastOne: "last"
+            })
+            console.log(res)
+          }
+        })
+      }
 
-
-  // START TABBAR
-  goBack: function (e) {
-    console.log(333, "back")
-    wx.reLaunch({
-      url: '/pages/index/index',    //// change to one page before
     })
   },
-
-  goBrowse: function (e) {
-    wx.reLaunch({
-      url: '/pages/browse/browse',
-    })
-  },
-
-  goFavourite: function (e) {
-    wx.reLaunch({
-      url: '/pages/favourite/favourite',
-    })
-  },
-  goInbox: function (e) {
-    wx.reLaunch({
-      url: '/pages/inbox/inbox',
-    })
-  },
-  goInfo: function (e) {
-    wx.reLaunch({
-      url: '/pages/showartist/showartist',
-    })
-  },
-
-  // END TABBAR
-
-
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
+  
 })
