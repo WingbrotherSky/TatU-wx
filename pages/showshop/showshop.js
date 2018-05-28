@@ -27,6 +27,35 @@ Page({
     })
   },
 
+  showMessageForm: function (e) {
+    const artist = e.currentTarget.dataset.id
+    this.setData({
+      bookedArtist: artist
+    })
+  },
+
+  bindSubmit: function (e) {
+    const that = this
+    let recipient_id = this.data.bookedArtist
+    let content = e.detail.value.content
+    wx.request({
+      url: paths.postMessage,
+      method: "post",
+      data: {
+        auth_key: wx.getStorageSync("auth_key"),
+        user_id: recipient_id,
+        content: content
+      },
+      success: res => {
+        that.setData({
+          bookedArtist: ""
+        })
+      }
+
+    })
+  },
+
+
   showArtist: function (e) {
     const data = e.currentTarget.dataset
     const artistId = data.artistid
@@ -73,7 +102,7 @@ Page({
   goBack: function (e) {
     console.log(333, "back")
     wx.reLaunch({
-      url: '/pages/index/index',    //// change to one page before
+      url: '/pages/showshop/showshop',  //// change to one page before
     })
   },
 
