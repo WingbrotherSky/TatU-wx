@@ -82,29 +82,29 @@ Page({
   // START TABBAR
   goBack: function (e) {
     console.log(333, "back")
-    wx.reLaunch({
+    wx.navigateTo({
       url: '/pages/index/index',    //// change to one page before
     })
   },
 
   goBrowse: function (e) {
-    wx.reLaunch({
+    wx.navigateTo({
       url: '/pages/browse/browse',
     })
   },
 
   goFavourite: function (e) {
-    wx.reLaunch({
+    wx.navigateTo({
       url: '/pages/favourite/favourite',
     })
   },
   goInbox: function (e) {
-    wx.reLaunch({
+    wx.navigateTo({
       url: '/pages/inbox/inbox',
     })
   },
   goInfo: function (e) {
-    wx.reLaunch({
+    wx.navigateTo({
       url: '/pages/info/info',
     })
   },
