@@ -5,7 +5,9 @@
   align-items: center;
 }
  
-
+.artist-avatar {
+  height: 100px;
+}
 
 .userinfo-avatar {
   width: 128rpx;

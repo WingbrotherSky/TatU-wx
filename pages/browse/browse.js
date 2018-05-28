@@ -44,9 +44,9 @@ Page({
   // },
   
   showMessageForm: function(e) {
-    const artist = e.currentTarget.dataset.id
+    const artistId = e.currentTarget.dataset.id
     this.setData({
-      bookedArtist: artist
+      bookedArtist: this.data.artists.find(x => x.id == artistId)
     })
   },
 
@@ -92,6 +92,12 @@ Page({
   goToInfoPage: function (e) {
     wx.navigateTo({
       url: '/pages/info/info',
+    })
+  },
+
+  goToShowShopPage: function (e) {
+    wx.navigateTo({
+      url: '/pages/showshop/showshop',
     })
   },
 
