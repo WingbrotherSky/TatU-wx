@@ -29,33 +29,35 @@
                   <!-- <image bindtap="showInbox" data-id="item.id" class="icon" src="{{chat}}" />         -->
                     </view>
                   </view>
-                <image bindtap='previewImages' data-url="{{item.url}}" src="{{item.url}}" class="slide-image art-image" />    
+                 <view bindtap='previewImages' data-url="{{item.url}}" style="background-image: linear-gradient(-180deg, rgba(255,255,255,0.00) 21%, rgba(35,35,35,0.20) 97%, rgba(30,3,3,0.7) 100%),  url({{item.url}})" class="slide-image art-image" />
             </swiper-item>
             </block>
           </swiper>
           <image bindtap='previewImages' data-url="{{item.avatar_url}}" class="avatar artist-avatar" src="{{item.avatar_url}}" />
-          <image class="avatar shop-logo" src="{{item.shop.logo_url}}" />
-          <view class="artist-info">
-            <view class="artist-name-container">
-              <text class="artist-title">Artist:</text>
-              <text class="artist-name">{{item.name}}</text>
+          <image bindtap='goToShowShopPage' class="avatar shop-logo" src="{{item.shop.logo_url}}" />
+          <view class="artist-and-work-info-flex">
+            <view class="artist-info">
+              <view class="artist-name-container">
+                <text class="artist-title">Artist:</text>
+                <text class="artist-name">{{item.name}}</text>
+              </view>
+            </view>
+            <view class="work-info">
+              <view class="info-flex">
+                <view bindtap='goToInfoPage'>
+                  <image class='info-icon' src="../../image/information.png"></image>
+                </view>
+              </view>
+            <text class="shop-name">Working at: {{item.shop.name}}</text>
+            <text class="experience">Experience: {{item.years_of_experience}} years</text>
+            <text class="see-more" bindtap='goToShowShopPage'>Go To {{item.shop.name}}</text>
             </view>
           </view>
-        <view class="work-info">
-        <view class="info-flex">
-    <view bindtap='goToInfoPage'>
-      <image class='info-icon' src="../../image/information.png"></image>
-      </view>
-    </view>
-          <text class="shop-name">Working at: {{item.shop.name}}</text>
-          <text class="experience">Experience: {{item.years_of_experience}} years</text>
-          <text class="see-more" bindtap='goToShowShopPage'>Go To {{item.shop.name}}</text>
-        </view>
-      <button class="book-button" bindtap='showMessageForm' data-id="{{item.id}}">Book</button>
-      </view>
-      </swiper-item>
-    </block>
-  </swiper>
-</view>
+          <button class="book-button" bindtap='showMessageForm' data-id="{{item.id}}">Book</button>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
 
 
