@@ -13,21 +13,72 @@
 }
 
 .inbox-container {
-  height: calc(100vh - 22px);
+   height: 80vh; 
   width: 100vw;
   display: flex;
   flex-direction: column;
 }
 
 .card {
-  height: 5vh;
+  position: relative;
+  padding: 5px;
   width: 50vw;
   border: 3px solid white;
   border-radius: 10px;
   margin: 15px;
   color: white;
+  display: flex;
+  flex-direction: column;
+ justify-content: center;
 }
 
 .name {
   font-weight: bold;
 }
+
+.message {
+  word-wrap: break-word;
+}
+
+.other {
+  float: left;
+  margin-left: 3vw;
+}
+
+.user {
+  float: right;
+  margin-right: 3vw;
+  padding: 0;
+}
+
+
+.avatar {
+  position: absolute;
+  height: 5vh;
+  width: 5vh;
+  border-radius: 50%;
+  top: -2.5vh;
+  opacity: .95;
+}
+
+.user.avatar{
+  right: -5vh;
+}
+
+.other.avatar {
+  left: -5vh;
+}
+
+ textarea {
+   height: 10vh;
+  width: 100vw;
+  background-color: white;
+} 
+
+button {
+  width: 100vw;
+  background: transparent;
+  border: dotted white 5rpx;
+  color: white;
+}
+

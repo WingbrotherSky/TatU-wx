@@ -63,6 +63,7 @@ Page({
         content: content
       },
       success: res => {
+        console.log(res)
           that.setData({
             bookedArtist: ""
           })
