@@ -40,7 +40,7 @@
 }
 
 .big-card {
-  height: 200px;
+  height: 260px;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   background-size: cover !important;
   background-position: center;
@@ -72,49 +72,32 @@
     padding-right: 9rpx;
 }
 
-.small-cards::before, .small-cards::after, .small-card::before, .small-card::after {
-    content: '';
-    display: block;
-    position: absolute;
-    background-color: #e5e5e5;
+.big-card {
+  height: 170px;
+  width: 100%;
+  background-size: cover !important;
+  background-position: center;
+  color: white;
+  position: relative;
+  margin: 0;
+  margin-bottom: 0;
+  padding: 20rpx;
+  font-weight: bolder;
 }
-
-.small-cards::before, .small-cards::after {
-    top: 0;
-    left: 0;
-}
-
-.small-card::before, .small-card::after {
-    bottom: 0;
-    right: 0;
-} 
-
-.small-cards::before, .small-card::before {
-    width: 100%;
-    height: 1px;
-    transform: scaleY(0.5);
-}
-
-.small-cards::after, .small-card::after {
-    width: 1px;
-    height: 100%;
-    transform: scaleX(0.5);
+.small-cards {
+  display: flex;
+  justify-content: space-around;
+   flex-wrap: wrap; 
+  background-color: black;
+  margin-bottom: 6px;
 }
 
 .small-card {
-  /* original with 250rpx without margin  */
-     width: 270rpx;  
-    height: 270rpx;
-    overflow: hidden;
-    position: relative;
-    margin: 20rpx;
-    margin-bottom: 0; 
-    border-radius: 2%;
-    color: white;
-    padding: 10px;
-    background-size: cover;
+  height: 240rpx;
+  width: 235rpx;
+  background-size: cover;
 }
-  
+
 
 .gallery-item-cover {
     width: 100%;
@@ -149,7 +132,8 @@
 }
 
 .featured-container {
-
+  display: flex;
+  justify-content: space-between;
 }
 
 .card-description {
@@ -270,3 +254,50 @@
 page {
   background-color: black;
 }
+
+
+.experience {
+  top: 150px;
+}
+
+.tags {
+  border-radius: 4rpx;
+  /* width: 15vw; */
+  height: 50rpx;
+  font-size: 10px;
+  font-weight: lighter;
+  display: inline-flex;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  background-color: black;
+  border: 2px solid rgba(255,255,255,.7);
+  color: rgba(255,255,255,.9);
+  margin: 20rpx;
+  border-radius: 15px;
+  }
+
+  .tags-artist {
+  max-width: 940rpx;	
+	/* margin: 0 auto; */
+  height: 15rpx;
+  font-size: 10px;
+  font-weight: lighter;
+  display: inline-flex;
+  text-align: center;
+  background-color: black;
+  border: 2px solid rgba(255,255,255,.7);
+  color: white;
+  border-radius: 15px;
+  background-color: transparent;
+  padding: 6px;
+  position: absolute;
+  bottom: 20rpx;
+  }
+
+   .tags-artist-style {
+     display: flex;
+  justify-content: center;
+  align-items: center; 
+  /* margin: 15rpx; */
+  }
