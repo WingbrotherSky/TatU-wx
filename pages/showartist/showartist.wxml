@@ -4,13 +4,11 @@
 
 <!-- START CONTAINER CARD  -->
 <view class='artist-container'>
-  <view class='artist-info'>
-    <view class='artist-name'> {{artist.name}} </view>
-    <image class='artist-logo' src='{{artist.shop_logo_url}}' bindtap='showShop'></image>
-    </view>
   <view class='featured-container'>
-      <view bindtap='previewImages' data-url="{{artist.avatar_url}}"class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{artist.avatar_url}}')"> 
+      <view bindtap='previewImages' data-url="{{artist.avatar_url}}"class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{artist.avatar_url}}')"> {{artist.name}}
+          <view class="experience">Experience: {{item.years_of_experience}} years</view>
       </view>
+     
     </view>
              
   <view class="small-cards">
@@ -18,18 +16,6 @@
       <view bindtap='previewImages' data-url="{{item.url}}"class='small-card' style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{item.url}}');"> </view> 
     </view>
   </view>  
-
-<!-- 
-           <view wx:if="{{items.length > 0}}" class="gallery">
-          <view class="gallery-item">
-        <block wx:for="{{items}}" wx:for-item="item" wx:for-index="itemsIndex" class='small-card' wx:key="items" bindtap='showStyle'>
-        
-                <image class="gallery-item-cover" src="{{item.image_url}}" mode="aspectFill" data-index="{{itemsIndex}}" bindtap="showStyle"></image>          
-        </block>
-        </view>
-    </view>  -->
-
-
 </view>
 
 <!-- END CARD LOOP -->
