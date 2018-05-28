@@ -16,6 +16,38 @@ Page({
     })
   },
 
+  // START TABBAR
+  goBack: function (e) {
+    console.log(333, "back")
+    wx.reLaunch({
+      url: '/pages/showshop/showshop',  //// change to one page before
+    })
+  },
+
+  goBrowse: function (e) {
+    wx.reLaunch({
+      url: '/pages/browse/browse',
+    })
+  },
+
+  goFavourite: function (e) {
+    wx.reLaunch({
+      url: '/pages/favourite/favourite',
+    })
+  },
+  goInbox: function (e) {
+    wx.reLaunch({
+      url: '/pages/inbox/inbox',
+    })
+  },
+  goInfo: function (e) {
+    wx.reLaunch({
+      url: '/pages/showartist/showartist',
+    })
+  },
+
+  // END TABBAR
+
   /**
    * 生命周期函数--监听页面加载
    */
