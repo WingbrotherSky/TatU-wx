@@ -4,24 +4,24 @@
     <view style="background-color: black;">
       <form class="message-form" bindsubmit='bindSubmit'>
         <view  style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
-          <textarea name="content" placeholder='What do you want to ask {{item.name}}?' style="text-align: center;"></textarea>
-          <button class="send-button" form-type='submit'>Send</button>
-        </view>
-      </form>
-    </view>
+          <textarea name="content" placeholder='What do you want to ask {{ bookedArtist.shop.name }}?' style="text-align: center;"></textarea>
+        <button class="send-button" form-type='submit'>Send</button>
+      </view>
+    </form>
+  </view>
   </view>
   <swiper vertical="true" style="height: 100vh; width: 100vw;">
     <block wx:for="{{artists}}">
       <swiper-item>
         <view class="artist-container">
-          <swiper style="width: 100vw; height: 50vh;" indicator-dots="true" circular="true">
+          <swiper style="width: 100vw; height: 60vh;" indicator-dots="true" circular="true">
             <block wx:for="{{item.art}}">
               <swiper-item>
                 <view style="display: flex; justify-content: center;">
                   <view class="CTA-container">
-                      <view bindtap="onShareAppMessage">
-                        <button class="share-btn" open-type="share" size="mini">Share</button>
-                      </view>
+                      
+                    <button class="share-btn" open-type="share"><image class="share-img" src="/image/share-2.png"></image></button>
+                  
                         <picker class="picker-class" bindchange="bindPickerChange" value="{{index}}" range="{{array}}"> 
                           <button class="tag-picker" size="mini">Search Style</button>
                         </picker>
@@ -49,6 +49,7 @@
     </view>
           <text class="shop-name">Working at: {{item.shop.name}}</text>
           <text class="experience">Experience: {{item.years_of_experience}} years</text>
+          <text class="see-more" bindtap='goToShowShopPage'>Go To {{item.shop.name}}</text>
         </view>
       <button class="book-button" bindtap='showMessageForm' data-id="{{item.id}}">Book</button>
       </view>

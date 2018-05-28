@@ -19,10 +19,21 @@
 }
 
 .share-btn {
- margin-top: 3px;
- color: white;
- border: 1px solid rgba(255,255,255,.3);
- background-color: rgba(61,200,0,.1);
+ margin-top: 1vh;
+ margin-left: 0px;
+ display: cover;
+ height: 70rpx;
+  width: 70rpx;
+  padding: 2px;
+  border: 1px solid rgba(0,0,0,.3);
+  border-radius: 30%;
+  opacity: 0.5;
+}
+
+.share-img {
+  display: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .tag-picker {
@@ -45,8 +56,9 @@
 }
 
 .heart-icon {
-  height: 70rpx;
-  width: 70rpx;
+  margin-top: 1vh;
+  height: 60rpx;
+  width: 60rpx;
   padding: 2px;
   border: 1px solid rgba(255,255,255,.3);
   background-color: rgba(250,0,0,.1);
@@ -88,12 +100,13 @@
 
 .artist-avatar {
   position: absolute;
-  bottom: 620rpx;
+  left: 1vw;
+  bottom: 32vh;
 }
 
 .artist-name-container {
-  height: 400rpx;
-  font-size: 100rpx;
+  height: 15vh;
+  font-size: 50rpx;
   color: white;
   display: flex;
   flex-direction: column;
@@ -129,23 +142,32 @@
 .shop-name {
   color: white;
   font-weight: bold;
-  font-size: 40rpx;
+  font-size: 2.4vh;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+
 }
 
 .shop-logo {
   position: absolute;
-  right: 10rpx;
-  bottom: 620rpx;
+  right: 1vw;
+  bottom: 32vh;
 }
 
 .experience {
-  margin-bottom: 25px;
+  margin-bottom: .7vh;
+  font-size: 2.2vh;
+}
+
+.see-more {
+  text-decoration: underline solid rgba(255,255,255,0.4);
+  font-size: 2.2vh;
 }
 
 .book-button {
   border-radius: 5rpx;
   width: 95%;
-  height: 150rpx;
+  height: 4vh;
   font-size: 28px;
   font-weight: bold;
   display: flex;
@@ -154,7 +176,7 @@
   background-color: black;
   border: 1px solid rgba(255,255,255,.7);
   color: rgba(255,255,255,.9);
-  margin-bottom: 10rpx;
+  margin-bottom: 1vh;
 }
 
 .message-container {
