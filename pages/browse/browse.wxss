@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  margin-top: 6rpx;
 }
 
 .CTA-container {
@@ -21,26 +22,28 @@
 .share-btn {
  margin-top: 1vh;
  margin-left: 0px;
- display: cover;
+ 
  height: 70rpx;
-  width: 70rpx;
-  padding: 2px;
-  border: 1px solid rgba(0,0,0,.3);
+  width: 60rpx;
+  padding: 0px;
+  /* border: 0px solid rgba(0,0,0,.3);
   border-radius: 30%;
-  opacity: 0.5;
+   opacity: 0.5;  */
+  background-color: transparent;
 }
 
 .share-img {
-  display: cover;
+  /* background-image: cover !important; */
   width: 100%;
   height: 100%;
+
 }
 
 .share-img:hover {
-  opacity: 1;
+  background-color: greenyellow;
 }
 
-.search-btn {
+/* .search-btn {
  margin-top: 1rpx;
  margin-left: 0px;
  display: cover;
@@ -50,20 +53,52 @@
   border: 1px solid rgba(0,0,0,.1);
   border-radius: 30%;
   opacity: 0.1;
-}
+  background-color: white;
+  color: black;
+} */
+
+.tag-picker {
+  border-radius: 4rpx;
+  width: 65vw; 
+  height: 55rpx;
+  font-size: 14px;
+  font-weight: lighter;
+  display: inline-flex;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* background-color: black; */
+  /* border: 2px solid rgba(255,255,255,.7); */
+  /* color: rgba(255,255,255,.9); */
+  margin: 0rpx;
+  border-radius: 15px;
+  }
+
+
+.search {
+     display: flex;
+  justify-content: center;
+  align-items: center; 
+  color: black;
+  font-size: 15px;
+  /* margin: 15rpx; */
+  }
+
+  .search2 {
+    padding: 15rpx;
+  }
 
 .search-img {
 display: cover;
   width: 5vw;
   height: 2.5vh;
 }
-
+/* 
 .tag-picker {
-   margin-top: 3px;
-  color: white;
-  background-color: rgba(0,0,0,.3);
+  margin-top: 3px;
+  color: black;
+  background-color: white;
   border: 1px solid rgba(255,255,255,.1);
-  color: rgba(255,255,255,.8);
   font-size: 2vh;
   justify-content: center;
   padding: 2px !important;
@@ -71,7 +106,7 @@ display: cover;
   padding-bottom: 0px !important;
   text-decoration: underline rgba(255,255,255,.2);
   height: 4vh;
-}
+} */
 
 .picker-class {
   margin-right: 18vw;
@@ -91,14 +126,14 @@ color: white;
   margin-top: 1vh;
   height: 60rpx;
   width: 60rpx;
-  padding: 2px;
-  border: 1px solid rgba(255,255,255,.3);
-  background-color: rgba(250,0,0,.2);
+  padding: 0px;
+  /* border: 1px solid rgba(255,255,255,.3); */
+  background-color: transparent;
   border-radius: 30%;
 }
 
 .heart-icon:hover {
-  background-color: white;
+  background-color: red;
 }
 
 .info-flex {
@@ -117,7 +152,7 @@ color: white;
 .slide-image {
   height: 100%;
   width: 100%;
-  border: solid 1px rgba(255,255,255,.3);
+  /* border: solid 1px rgba(255,255,255,.3); */
 }
 
  .slide-image.art-image {
@@ -199,17 +234,17 @@ height: 75%;
   right: 1vw;
   bottom: 32vh;
 }
-
+/* 
 .experience {
   margin-bottom: .7vh;
   font-size: 2.2vh;
-}
+} */
 
 .see-more {
   text-decoration: underline solid rgba(255,255,255,0.4);
   font-size: 2.2vh;
   position: relative;
-  margin-top: 3vh;
+  margin-top: vh;
   margin-bottom: 1vh;
 }
 
@@ -228,14 +263,14 @@ height: 75%;
   color: rgba(255,255,255,0.8);
   font-size: 3vh;
   text-align: center;
-  border-right: 1px solid white;
+  /* border-right: 1px solid white;
   border-left: 1px solid white;
   border-bottom: 1px solid white;
-  border-top: 1px solid rgba(255,255,255,.1);
+  border-top: 1px solid rgba(255,255,255,.1); */
   margin-left: 3vw;
   margin-right: 3vw;
   margin-bottom: 1vh;
-  box-shadow: 1px 1px 1px rgba(255,255,255,.3);
+  /* box-shadow: 1px 1px 1px rgba(255,255,255,.3); */
 }
 
 @keyframes nudge {
@@ -302,3 +337,94 @@ height: 75%;
   font-weight: bold;
   border: dotted white 5rpx;
 }
+
+ /* START TAB BAR  */
+
+ .icon-back {
+  width: 30px;
+  height: 30px;
+  opacity: 0.5;
+}
+
+.avatar-tab {
+  width: 22px;
+  height: 22px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden;
+  height: 45px;
+  border-top: 0.5px solid #dddddd;
+}
+
+.markey-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.extend-padding:hover {
+background-color: grey;
+color: red;
+}
+
+ /* END TAB BAR  */
+
+ page {
+   background-color: black;
+ }
+
+
+.tags {
+  border-radius: 4rpx;
+  /* width: 15vw; */
+  height: 50rpx;
+  font-size: 12px;
+  font-weight: lighter;
+  display: inline-flex;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  background-color: black;
+  border: 2px solid rgba(255,255,255,.7);
+  color: rgba(255,255,255,.9);
+  margin: 20rpx;
+  border-radius: 15px;
+  }
+
+  .tags-artist {
+  max-width: 940rpx;	
+	/* margin: 0 auto; */
+  height: 15rpx;
+  font-size: 10px;
+  font-weight: lighter;
+  display: inline-flex;
+  text-align: center;
+  background-color: black;
+  border: 2px solid rgba(255,255,255,.7);
+  color: white;
+  border-radius: 15px;
+  background-color: transparent;
+  padding: 6px;
+  position: absolute;
+  bottom: 20rpx;
+  }
+
+  .tags-artist-style {
+     display: flex;
+  justify-content: center;
+  align-items: center; 
+  color: white;
+  /* margin: 15rpx; */
+  }
+
+
+  .swipe-down {
+    font-size: 26rpx;
+  }

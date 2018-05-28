@@ -57,14 +57,14 @@
 
 
 <!-- START TAB BAR -->
-
+<view class='blank-item'> </view>
 <view class='nav'>
   <view class='markey-container'>
       <view class='extend-padding' bindtap='goBrowse'>
-      <image class='avatar-tab' src="../../image/search.png"></image>
+      <image class='avatar-tab' src="../../image/magnifying-glass.png"></image>
       </view>
       <view class='extend-padding' bindtap='goFavourite'>
-      <image class='avatar-tab' src="../../image/star.png"></image>
+      <image class='avatar-tab' src="../../image/favourite.png"></image>
       </view>
       <view class='extend-padding' bindtap='goInbox'>
       <image class='avatar-tab' src="../../image/chat.png"></image>
@@ -74,8 +74,6 @@
       </view>
   </view>
 </view>
-
-
 <!-- END TAB BAR -->
 
 
