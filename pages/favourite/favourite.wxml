@@ -8,7 +8,7 @@
     <view  class='featured-container'>
       <view bindtap='previewImage' data-art-url="{{item.art.url}}" class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{item.art.url}}');"> 
         <!-- <view class='shop-name'>{{item.name}} </view> -->
-          <image  catchtap='showArtist'class='shop-logo-avatar' src="{{item.art.artist.avatar_url}}"></image>
+          <image  catchtap='showArtist' data-artistid="{{item.art.artist.id}}" class='shop-logo-avatar' src="{{item.art.artist.avatar_url}}"></image>
         <!-- <view>{{art.artist.name}}</view> -->
            <image catchtap='showShop' class='shop-logo-avatar' src="{{item.art.artist.shop.logo_url}}"></image> 
       </view>
