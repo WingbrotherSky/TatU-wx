@@ -11,7 +11,9 @@ Page({
   data: {
     inputShowed: false,
     inputVal: "",
-    shops: []
+    inbox: false,
+    shopName: "Demo Shop",
+    items: [{name: "Temple"},{ name:"Toast"}]
   },
 
   /**
