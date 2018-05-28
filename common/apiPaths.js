@@ -6,5 +6,6 @@ module.exports = {
   getAllArtists: host + "artists",
   getArtist: host + "artists/",
   getArt: host + 'arts/',
-  postMessage: host + 'messages'
+  postMessage: host + 'messages',
+  newFavorite: host + 'favorites'
 }
