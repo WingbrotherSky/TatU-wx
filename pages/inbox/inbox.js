@@ -29,7 +29,7 @@ Page({
         auth_key: auth_key
       },
       success: res => {
-        console.log(res)
+        console.log(11111,res)
         that.setData({
           conversations: res.data.users
         })
@@ -39,6 +39,37 @@ Page({
       }
     })
   },
+  // START TABBAR
+  goBack: function (e) {
+    console.log(333, "back")
+    wx.navigateTo({
+      url: '/pages/showshop/showshop',  //// change to one page before
+    })
+  },
+
+  goBrowse: function (e) {
+    wx.navigateTo({
+      url: '/pages/browse/browse',
+    })
+  },
+
+  goFavourite: function (e) {
+    wx.navigateTo({
+      url: '/pages/favourite/favourite',
+    })
+  },
+  goInbox: function (e) {
+    wx.navigateTo({
+      url: '/pages/inbox/inbox',
+    })
+  },
+  goInfo: function (e) {
+    wx.navigateTo({
+      url: '/pages/info/info',
+    })
+  },
+
+  // END TABBAR
 
   toggleInbox: function(e) {
    

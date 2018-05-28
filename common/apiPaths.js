@@ -1,3 +1,4 @@
+// const host = "https://tatu.wogengapp.cn/api/v1/"
 const host = "http://localhost:3000/api/v1/"
 
 module.exports = {
@@ -9,5 +10,6 @@ module.exports = {
   postMessage: host + 'messages',
   getAllConversations:  host + 'conversations',
   getConverstation: host + 'conversation/',
-  newFavorite: host + 'favorites'
+  newFavorite: host + 'favorites',
+  getAllFavorites: host + "favorites"
 }
