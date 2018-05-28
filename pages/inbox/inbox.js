@@ -92,6 +92,7 @@ Page({
           success: res => {
             that.setData({
               items: res.data.messages,
+              lastOne: "last"
             })
             console.log(res)
           }
@@ -99,7 +100,6 @@ Page({
       }
 
     })
-    this.setData({lastOne: "last"})
   },
   
 })
