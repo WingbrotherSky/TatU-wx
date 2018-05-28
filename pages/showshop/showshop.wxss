@@ -27,21 +27,21 @@
 .artist {
   display: flex;
   justify-content: space-between;
-  font-size: 24px;
+  font-size: 19px;
 }
 
 .shop-name {
   font-size: 56rpx;
   font-weight: bolder;
-  color: whitesmoke;
+  color: white;
   margin: 20rpx;
 
 } 
 
 .location {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: lighter;
-  color: whitesmoke;
+  color: white;
   margin: 4px;
   left: 5px;
   padding: 5px;
@@ -73,6 +73,7 @@
   justify-content: space-around;
    flex-wrap: wrap; 
   background-color: black;
+  margin-bottom: 6px;
 }
 
 .small-card {
@@ -238,28 +239,27 @@ textarea {
 
 .book-button {
   border-radius: 5rpx;
-  width: 25%;
+  width: 50%;
   height: 55rpx;
   font-size: 15px;
   font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
-  border: 2px solid rgba(255,255,255,.7);
-  color: rgba(255,255,255,.9);
+  background-color: white;
+  /* border: 2px solid white; */
+  color: black;
   margin-bottom: 10rpx;
-  border-radius: 5px;
-  right: 10px;
+  /* border-radius: 5px; */
 }
 
 .experience {
   font-weight: lighter;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .shop-bio {
-  display: flex;
+  /* display: flex; */
 }
 
 .button {
@@ -278,3 +278,46 @@ textarea {
   border-radius: 5px;
   right: 10px;
 }
+
+.tags {
+  border-radius: 4rpx;
+  /* width: 15vw; */
+  height: 50rpx;
+  font-size: 10px;
+  font-weight: lighter;
+  display: inline-flex;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  background-color: black;
+  border: 2px solid rgba(255,255,255,.7);
+  color: rgba(255,255,255,.9);
+  margin: 20rpx;
+  border-radius: 15px;
+  }
+
+  .tags-artist {
+  max-width: 940rpx;	
+	/* margin: 0 auto; */
+  height: 15rpx;
+  font-size: 10px;
+  font-weight: lighter;
+  display: inline-flex;
+  text-align: center;
+  background-color: black;
+  border: 2px solid rgba(255,255,255,.7);
+  color: white;
+  border-radius: 15px;
+  background-color: transparent;
+  padding: 6px;
+  position: absolute;
+  bottom: 20rpx;
+  }
+
+  .tags-artist-style {
+     display: flex;
+  justify-content: center;
+  align-items: center; 
+  color: white;
+  /* margin: 15rpx; */
+  }

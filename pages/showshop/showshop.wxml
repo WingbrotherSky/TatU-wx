@@ -17,6 +17,7 @@
         Location: {{item.location}}
         Contact: {{item.phone_number}}
       </view>
+      <button class="tags" data-id="{{item.id}}"><view class="tags-artist-style">rfe3ieoe3op3op3</view></button>
     </view>
 
     <view class="message-container" hidden='{{bookedArtist ? false : true}}'>
@@ -37,6 +38,9 @@
     <view class='artist'>
         <view bindtap='showArtist' data-artistId="{{item.id}}" class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{item.avatar_url}}');"> Artist: {{item.name}}
         <view class='experience'> Experience: {{item.years_of_experience}} years</view>
+        <view class="tags-artist" data-id="{{item.id}}">
+          <view class="tags-artist-style">rfe3ieoe3op3op3</view>
+          </view>
         </view>
         </view>
 

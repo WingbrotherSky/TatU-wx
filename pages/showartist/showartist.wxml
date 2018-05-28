@@ -7,6 +7,7 @@
   <view class='featured-container'>
       <view bindtap='previewImages' data-url="{{artist.avatar_url}}"class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{artist.avatar_url}}')"> {{artist.name}}
           <view class="experience">Experience: {{item.years_of_experience}} years</view>
+          <view class="tags-artist" data-id="{{item.id}}"><view class="tags-artist-style">rfe3ieoe3op3op3</view></view>
       </view>
      
     </view>

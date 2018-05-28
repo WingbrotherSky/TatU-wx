@@ -40,7 +40,7 @@
 }
 
 .big-card {
-  height: 200px;
+  height: 260px;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   background-size: cover !important;
   background-position: center;
@@ -84,17 +84,17 @@
   padding: 20rpx;
   font-weight: bolder;
 }
-
 .small-cards {
   display: flex;
   justify-content: space-around;
    flex-wrap: wrap; 
   background-color: black;
+  margin-bottom: 6px;
 }
 
 .small-card {
-  height: 200rpx;
-  width: 200rpx;
+  height: 240rpx;
+  width: 235rpx;
   background-size: cover;
 }
 
@@ -259,3 +259,45 @@ page {
 .experience {
   top: 150px;
 }
+
+.tags {
+  border-radius: 4rpx;
+  /* width: 15vw; */
+  height: 50rpx;
+  font-size: 10px;
+  font-weight: lighter;
+  display: inline-flex;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  background-color: black;
+  border: 2px solid rgba(255,255,255,.7);
+  color: rgba(255,255,255,.9);
+  margin: 20rpx;
+  border-radius: 15px;
+  }
+
+  .tags-artist {
+  max-width: 940rpx;	
+	/* margin: 0 auto; */
+  height: 15rpx;
+  font-size: 10px;
+  font-weight: lighter;
+  display: inline-flex;
+  text-align: center;
+  background-color: black;
+  border: 2px solid rgba(255,255,255,.7);
+  color: white;
+  border-radius: 15px;
+  background-color: transparent;
+  padding: 6px;
+  position: absolute;
+  bottom: 20rpx;
+  }
+
+   .tags-artist-style {
+     display: flex;
+  justify-content: center;
+  align-items: center; 
+  /* margin: 15rpx; */
+  }
