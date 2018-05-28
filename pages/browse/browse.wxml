@@ -11,9 +11,9 @@
   </view>
   </view>
 
-   <picker class="picker-class" bindchange="bindPickerChange" value="{{index}}" range="{{array}}"> 
+   <!-- <picker class="picker-class" bindchange="bindPickerChange" value="{{index}}" range="{{array}}"> 
                           <button class="tag-picker"><view class="search"><image class="search-img" src="/image/search (1).png"></image><view class="search2">Search Styles</view> </view></button>
-                        </picker>
+                        </picker> -->
 
   <swiper vertical="true" style="height: 100vh; width: 100vw;">
     <block wx:for="{{artists}}">
@@ -41,7 +41,7 @@
               <view class="artist-name-container">
                 <text class="artist-title">Artist:</text>
                 <text class="artist-name">{{item.name}}</text>
-                <button class="tags" data-id="{{item.id}}"><view class="tags-artist-style">rfe3ieoe3op3op3</view></button>
+                <button class="tags" data-id="{{item.id}}"><view class="tags-artist-style">New School</view></button>
                 <text class="see-more" bindtap='goToShowShopPage'>Go To {{item.shop.name}}</text> 
     
               </view>

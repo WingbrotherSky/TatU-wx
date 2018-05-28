@@ -124,7 +124,7 @@ Page({
   },
   goInfo: function (e) {
     wx.navigateTo({
-      url: '/pages/showartist/showartist',
+      url: '/pages/info/info',
     })
   },
 

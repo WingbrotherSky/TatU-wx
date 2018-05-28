@@ -178,13 +178,14 @@ height: 75%;
   width: 200rpx;
   border-radius: 50%;
   margin: 10rpx;
-  border: solid 1px rgba(0,0,0,.4)
+  border: solid 1px rgba(0,0,0,.4);
 }
 
 .artist-avatar {
   position: absolute;
   left: 1vw;
   bottom: 32vh;
+  z-index: 9001;
 }
 
 .artist-name-container {
@@ -233,6 +234,7 @@ height: 75%;
   position: absolute;
   right: 1vw;
   bottom: 32vh;
+   z-index: 9001;
 }
 /* 
 .experience {
