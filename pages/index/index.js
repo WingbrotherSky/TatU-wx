@@ -3,6 +3,7 @@
 const app = getApp()
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 // const host = "https://tatu.wogengapp.cn/"
 const host = "http://localhost:3000/"
 =======
@@ -11,6 +12,9 @@ const host = "https://wogengapp.cn/"
 =======
 const host = "https://wogengapp.cn/"
 >>>>>>> rebasing
+=======
+const host = "https://tatu.wogengapp.cn/"
+>>>>>>> fixed login and message sending
 
 Page({
   data: {
