@@ -118,6 +118,7 @@ Page({
     const auth_key = wx.getStorageSync("auth_key")
     const imageId = e.currentTarget.dataset.id
     console.log(imageId)
+    const that = this;
     wx.request({
       url: paths.newFavorite,
       method: "post",
@@ -126,7 +127,26 @@ Page({
         id: imageId
       },
       success: res => {
-        // setData artist.favorited
+        // setData artists.art.favorited: true
+        // loop through the artists, then loop through the art to find the art that fits the id we have. arts.foreach(art.foreach(if art.id =that.id, art.favorited = true))
+        // for (artistIndex in that.data.artists) {
+        //   for (artIndex in that.data.artists[artistIndex].art) {
+        //   }
+        // }
+        that.data.artists.forEach((artist) => {
+          artist.art.forEach((a) => {
+            if (a.id == imageId) {
+              a.favorited = true
+              console.log()
+            }
+          });
+        });
+        // const targetArt = that.data.artists.?????
+        // targetArt.favorited = true
+        
+        that.setData({
+          artists: that.data.artists
+        })
     }
     })
   },
