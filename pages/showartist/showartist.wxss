@@ -198,11 +198,10 @@
 }
 
 .avatar-tab {
-  width: 28px;
-  height: 28px;
+  width: 22px;
+  height: 22px;
   margin-left: 5px;
   margin-top: 5px;
-  color: white;
 }
 
 .nav {
@@ -218,13 +217,12 @@
 .markey-container {
   display: flex;
   justify-content: space-around;
-  background-color: #A3A0A0;
 }
-/* rgba(255, 255, 255, 0) */
 
-.extend-padding {
-  padding-left: 20px;
-  padding-right: 20px;
+
+.extend-padding:hover {
+background-color: grey;
+color: red;
 }
 
  /* END TAB BAR  */
