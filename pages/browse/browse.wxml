@@ -48,8 +48,10 @@
     
               </view>
               <view class="view-next-artist-text">
-              <view class='swipe-down'>Swipe down for more </view>
-              <image class="down-arrow-img" src="/image/down-arrow.png"></image> </view>
+                <image class="down-arrow-img" src="/image/down-arrow.png"></image>
+                <text class='swipe-down'>Swipe down for more</text>
+                <image class="down-arrow-img" src="/image/down-arrow.png"></image>
+              </view>
             </view>
             <view class="work-info">
               <view class="info-flex">

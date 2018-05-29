@@ -141,7 +141,7 @@ Page({
   goToShowShopPage: function (e) {
     console.log(6666, e.currentTarget.dataset)
     let shopid = e.currentTarget.dataset.shopid
-    wx.reLaunch({
+    wx.navigateTo({
       url: '/pages/showshop/showshop?shopid=' + shopid,
     })
   },

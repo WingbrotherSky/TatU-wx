@@ -15,7 +15,7 @@ Page({
 
   //事件处理函数
   goToBrowsePage: function() {
-    wx.navigateTo({
+    wx.reLaunch({
       url: '/pages/browse/browse'
     })
   },
@@ -81,6 +81,9 @@ Page({
       success(res) {
         console.log("last", res)
         that.goToBrowsePage()
+      },
+      fail: res => {
+        console.log(res)
       }})
     }
   })

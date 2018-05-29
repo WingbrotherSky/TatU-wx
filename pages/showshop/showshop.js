@@ -2,6 +2,7 @@
 
 const app = getApp()
 const paths = require('../../common/apiPaths')
+const auth_key = wx.getStorageSync("auth_key")
 
 Page({
 
@@ -23,6 +24,7 @@ Page({
     const that = this
     wx.request({
       url: paths.getShop + shopid,
+      data: {auth_key: auth_key},
       success: (res) => {
         console.log(222, res)
         that.setData({ shop: res.data })
@@ -104,9 +106,8 @@ Page({
 
   // START TABBAR
   goBack: function (e) {
-    console.log(333, "back")
-    wx.navigateTo({
-      url: '/pages/showshop/showshop',  //// change to one page before
+    this.setData({
+      bookedShop: ''
     })
   },
 
