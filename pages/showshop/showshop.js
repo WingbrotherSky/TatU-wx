@@ -23,6 +23,7 @@ Page({
       url: paths.getAllShops,
       success: (res) => {
         that.setData({ shops: res.data.shops })
+        console.log(555555,that.data.shops)
       }
     })
   },

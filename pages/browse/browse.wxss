@@ -133,7 +133,7 @@ color: white;
 }
 
 .heart-icon:hover {
-  background-color: red;
+  background-color: #F66764;
 }
 
 .info-flex {
