@@ -35,8 +35,9 @@
             </swiper-item>
             </block>
           </swiper>
+          
           <image bindtap='showArtist' data-artistId="{{item.id}}" data-url="{{item.avatar_url}}" class="avatar artist-avatar" src="{{item.avatar_url}}" />
-          <image bindtap='goToShowShopPage' class="avatar shop-logo" src="{{item.shop.logo_url}}" />
+          <image bindtap='goToShowShopPage' data-shopId="{{item.shop.id}}" class="avatar shop-logo" src="{{item.shop.logo_url}}" />
           <view class="artist-and-work-info-flex">
             <view class="artist-info">
               <view class="artist-name-container">

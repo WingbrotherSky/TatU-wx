@@ -139,8 +139,10 @@ Page({
   },
 
   goToShowShopPage: function (e) {
-    wx.navigateTo({
-      url: '/pages/showshop/showshop',
+    console.log(6666, e.currentTarget.dataset)
+    let shopid = e.currentTarget.dataset.shopid
+    wx.reLaunch({
+      url: '/pages/showshop/showshop?shopid=' + shopid,
     })
   },
 

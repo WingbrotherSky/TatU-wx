@@ -11,19 +11,22 @@ Page({
   data: {
     inputShowed: false,
     inputVal: "",
-    shops: []
+    shop: {}
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function () {
+  onLoad: function (options) {
+    console.log(11111111, options)
+    let shopid = options.shopid
     const that = this
     wx.request({
-      url: paths.getAllShops,
+      url: paths.getShop + shopid,
       success: (res) => {
-        that.setData({ shops: res.data.shops })
-        console.log(555555,that.data.shops)
+        console.log(222, res)
+        that.setData({ shop: res.data })
+        console.log(555555,that.data.shop)
       }
     })
   },
