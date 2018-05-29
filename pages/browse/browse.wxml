@@ -57,8 +57,7 @@
                 </view> -->
               </view>
             <!-- <text class="shop-name">Working at: {{item.shop.name}}</text>
-            <text class="experience">Experience: {{item.years_of_experience}} years</text> -->
-             
+            <text class="experience">Experience: {{item.years_of_experience}} years</text> -->          
             </view>
           </view>
           <!-- <button class="book-button" bindtap='showMessageForm' data-id="{{item.id}}">Message {{item.shop.name}}</button> -->
