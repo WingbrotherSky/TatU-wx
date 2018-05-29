@@ -22,21 +22,20 @@
 <!-- END CARD LOOP -->
 </view>
 <!-- START TAB BAR -->
-
 <view class='blank-item'> </view>
 <view class='nav'>
   <view class='markey-container'>
       <view class='extend-padding' bindtap='goBrowse'>
-      <image class='avatar-tab' src="../../image/magnifying-glass.png"></image>
+      <image class='avatar-tab' src="../../image/search2red.png"></image>
       </view>
       <view class='extend-padding' bindtap='goFavourite'>
-      <image class='avatar-tab' src="../../image/favourite.png"></image>
+      <image class='avatar-tab' src="../../image/devilred.png"></image>
       </view>
       <view class='extend-padding' bindtap='goInbox'>
-      <image class='avatar-tab' src="../../image/chat.png"></image>
+      <image class='avatar-tab' src="../../image/messagesred.png"></image>
       </view>
       <view class='extend-padding' bindtap='goInfo'>
-      <image class='avatar-tab' src="../../image/information.png"></image>
+      <image class='avatar-tab' src="../../image/infored.png"></image>
       </view>
   </view>
 </view>
