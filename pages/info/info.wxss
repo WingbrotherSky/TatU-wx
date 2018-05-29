@@ -34,12 +34,31 @@
   height: 100px;
   width: 500px;
   color: white;
-  transform: rotate(10deg);
+  transform: rotate(7deg);
   padding: 10px;
   font-weight: bold;
+  margin-top: 5rpx;
+  margin-right: 8rpx;
 
 }
 
+.big-card.card-one {
+  text-decoration: underline;
+  padding-left: 170rpx;
+  font-weight: normal;
+  font-size: 35rpx;
+}
+
+.info-one {
+  text-decoration: none;
+  font-size: 40rpx;
+}
+
+.empty {
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  content: none;
+}
 
 
 /* END SHOP-CARD  */
