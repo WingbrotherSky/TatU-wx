@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 // const host = "https://tatu.wogengapp.cn/api/v1/"
 const host = "http://localhost:3000/api/v1/"
+=======
+const host = "https://tatu.wogengapp.cn/api/v1/"
+>>>>>>> updated api paths to production server
 
 module.exports = {
   getAllShops: host + "shops",
