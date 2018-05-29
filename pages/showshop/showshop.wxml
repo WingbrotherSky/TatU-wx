@@ -26,7 +26,7 @@
       </view>
     </view>
 
-    <view class="message-container" hidden='{{bookedArtist ? false : true}}'>
+    <view class="message-container" hidden='{{bookedShop ? false : true}}'>
         <view style="background-color: black;">
         
           <form class="message-form" bindsubmit='bindSubmit'>
