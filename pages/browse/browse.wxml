@@ -26,7 +26,7 @@
                   <view class="CTA-container">
                     <button class="share-btn" open-type="share"><image class="share-img" src="/image/share-2.png"></image></button>
                        
-                    <image bindtap="favoriteImage" data-id="{{item.id}}" class="heart-icon" src="{{heart}}" />
+                    <image bindtap="favoriteImage" data-id="{{item.id}}" class="heart-icon" src="{{heart}}" style="{{item.favorited ? 'background-color: red !important;' : ''}}" />
                   <!-- <image bindtap="showInbox" data-id="item.id" class="icon" src="{{chat}}" />         -->
                     </view>
                   </view>
