@@ -15,6 +15,38 @@ Page({
   
   },
 
+  // START TABBAR
+  goBack: function (e) {
+    console.log(333, "back")
+    wx.navigateTo({
+      url: '/pages/showshop/showshop',  //// change to one page before
+    })
+  },
+
+  goBrowse: function (e) {
+    wx.navigateTo({
+      url: '/pages/browse/browse',
+    })
+  },
+
+  goFavourite: function (e) {
+    wx.navigateTo({
+      url: '/pages/favourite/favourite',
+    })
+  },
+  goInbox: function (e) {
+    wx.navigateTo({
+      url: '/pages/inbox/inbox',
+    })
+  },
+  goInfo: function (e) {
+    wx.navigateTo({
+      url: '/pages/info/info',
+    })
+  },
+
+  // END TABBAR
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
