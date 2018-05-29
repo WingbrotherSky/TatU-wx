@@ -140,7 +140,7 @@ color: white;
 }
 
 .heart-icon:hover {
-  background-image: url('/image/devilred.png') !important;
+  /* background-image: url('/image/devilred.png') !important; */
   background-size: cover; 
   background-position: center, center;
   z-index: 9001;
