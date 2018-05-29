@@ -28,15 +28,15 @@ Page({
   },
 
   showMessageForm: function (e) {
-    const artist = e.currentTarget.dataset.id
+    const shop = e.currentTarget.dataset.id
     this.setData({
-      bookedArtist: artist
+      bookedShop: shop
     })
   },
 
   bindSubmit: function (e) {
     const that = this
-    let recipient_id = this.data.bookedArtist
+    let recipient_id = this.data.bookedShop
     let content = e.detail.value.content
     wx.request({
       url: paths.postMessage,
@@ -48,7 +48,7 @@ Page({
       },
       success: res => {
         that.setData({
-          bookedArtist: ""
+          bookedShop: ""
         })
       }
 
