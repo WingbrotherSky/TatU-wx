@@ -2,11 +2,15 @@
 //获取应用实例
 const app = getApp()
 <<<<<<< HEAD
+<<<<<<< HEAD
 // const host = "https://tatu.wogengapp.cn/"
 const host = "http://localhost:3000/"
 =======
 const host = "https://wogengapp.cn/"
 >>>>>>> updated api paths to production server
+=======
+const host = "https://wogengapp.cn/"
+>>>>>>> rebasing
 
 Page({
   data: {
