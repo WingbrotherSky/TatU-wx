@@ -1,7 +1,7 @@
 /* pages/inbox/inbox.wxss */
 
 .wrapper {
-  height: 100vh;
+  height: 93.5vh;
   background-color: black;
   display: flex;
   flex-direction: column;
