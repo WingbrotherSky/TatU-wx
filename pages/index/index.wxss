@@ -57,8 +57,9 @@
   } */
 
   .logo-button {
-    width: 600rpx;
-    height: 500rpx;
+    width: 290px;
+    height: 250px;
+    padding-bottom: 13vh;
     animation: 
     stretch
     9s
@@ -107,7 +108,7 @@
 
 .enter-text {
   color: white;
-  font-size: 30px;
+  font-size: 45rpx;
    animation: pulse 30s infinite;
    text-align: center;
   }
