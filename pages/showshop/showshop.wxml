@@ -17,10 +17,13 @@
         <view> Location: Chengdu. </view>
         <view> Contact: {{item.phone_number}} </view>
       </view>
-      <button class="tags" data-id="{{item.id}}"><view class="tags-artist-style">New School</view></button>
-      <button class="tags" data-id="{{item.id}}"><view class="tags-artist-style">Japanese Traditional</view></button>
-      <button class="tags" data-id="{{item.id}}"><view class="tags-artist-style">American Classic</view></button>
-      <button class="tags" data-id="{{item.id}}"><view class="tags-artist-style">Hygenic</view></button>
+      <button class="tags" data-tag="{{item.style_list[0]}}"><view class="tags-artist-style">{{item.style_list}}</view></button>
+      <button class="tags" data-tag="{{item.style_list[0]}}"><view class="tags-artist-style">{{item.style_list}}</view></button>
+      <button class="tags" data-tag="{{item.style_list[0]}}"><view class="tags-artist-style">{{item.style_list}}</view></button>
+      <button class="tags" data-tag="{{item.style_list[0]}}"><view class="tags-artist-style">{{item.style_list}}</view></button>
+      <view wx:for="{{item.style_list}}">
+        {{item}}
+      </view>
     </view>
 
     <view class="message-container" hidden='{{bookedArtist ? false : true}}'>

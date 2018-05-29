@@ -26,10 +26,10 @@
  height: 70rpx;
   width: 60rpx;
   padding: 0px;
-  /* border: 0px solid rgba(0,0,0,.3);
+   border: 1px solid rgba(255,255,255,.3);
   border-radius: 30%;
-   opacity: 0.5;  */
-  background-color: transparent;
+   /* opacity: 0.5;   */
+  background-color: rgba(255,255,255,.3);
 }
 
 .share-img {
@@ -127,13 +127,13 @@ color: white;
   height: 60rpx;
   width: 60rpx;
   padding: 0px;
-  /* border: 1px solid rgba(255,255,255,.3); */
-  background-color: transparent;
+   border: 1px solid rgba(255,255,255,.3); 
+  background-color: rgba(255,255,255,.3);
   border-radius: 30%;
 }
 
 .heart-icon:hover {
-  background-color: red;
+  background-color: #F66764;
 }
 
 .info-flex {
