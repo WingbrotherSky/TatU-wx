@@ -107,8 +107,7 @@
 
 
 .extend-padding:hover {
-background-color: grey;
-color: red;
+
 }
 
  /* END TAB BAR  */

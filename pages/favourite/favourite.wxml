@@ -10,7 +10,7 @@
         <!-- <view class='shop-name'>{{item.name}} </view> -->
           <image  catchtap='showArtist' data-artistid="{{item.art.artist.id}}" class='shop-logo-avatar' src="{{item.art.artist.avatar_url}}"></image>
         <!-- <view>{{art.artist.name}}</view> -->
-           <image catchtap='showShop' class='shop-logo-avatar' src="{{item.art.artist.shop.logo_url}}"></image> 
+           <image catchtap='goToShowShopPage' data-shopId="{{item.art.artist.shop.id}}" class="shop-logo-avatar" src="{{item.art.artist.shop.logo_url}}" />
       </view>
     </view> 
     
