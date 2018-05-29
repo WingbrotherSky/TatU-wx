@@ -14,7 +14,7 @@
              
   <view class="small-cards">
     <view wx:for="{{artist.art}}">
-      <view bindtap='previewImages' data-url="{{item.url}}"class='small-card' style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{item.url}}');"> </view> 
+      <view bindtap='previewImages' data-url="{{item.url}}" class='small-card' style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{item.url}}');"> </view> 
     </view>
   </view>  
 </view>

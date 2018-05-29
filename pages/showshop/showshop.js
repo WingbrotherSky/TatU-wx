@@ -71,15 +71,13 @@ Page({
     })
   },
 
-  showArt: function (e) {
-    const data = e.currentTarget.dataset
-    const artId = data.artid
+    previewImages(e) {
+      console.log('ready to preview');
+      wx.previewImage({
+        urls: [e.currentTarget.dataset.url]
+      })
+    },
 
-
-    wx.navigateTo({
-      url: `/pages/showimage/showimage?id=${artId}`,
-    })
-  },
 
   showInput: function () {
     this.setData({
