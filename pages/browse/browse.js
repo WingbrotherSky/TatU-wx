@@ -119,6 +119,16 @@ Page({
     const imageId = e.currentTarget.dataset.id
     console.log(imageId)
     const that = this;
+    let art = undefined
+    this.data.artists.forEach((artist) => {
+      artist.art.forEach((a) => {
+        if (a.id == imageId) {
+          art = a
+        }
+      })
+    })
+
+    if (art.favorited == false) {
     wx.request({
       url: paths.newFavorite,
       method: "post",
@@ -127,28 +137,28 @@ Page({
         id: imageId
       },
       success: res => {
-        // setData artists.art.favorited: true
-        // loop through the artists, then loop through the art to find the art that fits the id we have. arts.foreach(art.foreach(if art.id =that.id, art.favorited = true))
-        // for (artistIndex in that.data.artists) {
-        //   for (artIndex in that.data.artists[artistIndex].art) {
-        //   }
-        // }
-        that.data.artists.forEach((artist) => {
-          artist.art.forEach((a) => {
-            if (a.id == imageId) {
-              a.favorited = true
-              console.log()
-            }
-          });
-        });
-        // const targetArt = that.data.artists.?????
-        // targetArt.favorited = true
+        art.favorited = true
         
         that.setData({
           artists: that.data.artists
         })
     }
     })
+    } else {
+        wx.request({
+          url: paths.deleteFavorite + `${imageId}`,
+          method: "delete",
+          data: {
+            auth_key: wx.getStorageSync("auth_key")
+          },
+          success: res => {
+              art.favorited = false
+              that.setData({
+                artists: that.data.artists
+              })
+          }
+        })
+    }
   },
 
 
