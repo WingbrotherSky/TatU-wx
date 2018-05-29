@@ -45,23 +45,23 @@ Page({
   },
 
   goBrowse: function (e) {
-    wx.navigateTo({
+    wx.reLaunch({
       url: '/pages/browse/browse',
     })
   },
 
   goFavourite: function (e) {
-    wx.navigateTo({
+    wx.reLaunch({
       url: '/pages/favourite/favourite',
     })
   },
   goInbox: function (e) {
-    wx.navigateTo({
+    wx.reLaunch({
       url: '/pages/inbox/inbox',
     })
   },
   goInfo: function (e) {
-    wx.navigateTo({
+    wx.reLaunch({
       url: '/pages/info/info',
     })
   },

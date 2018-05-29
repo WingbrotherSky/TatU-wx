@@ -1,69 +1,97 @@
 <!-- START CONTAINER CARD  -->
+
+<!-- Shop Banner -->
 <view class='shop-container'>
+    <view>
+      <view class='shop-info'>
+        <image class='shop-logo' src="{{shop.logo_url}}"> </image>
 
-  <view wx:for="{{shops}}">
-  
-    <view class='shop-info'>
-      <image class='shop-logo' src="{{item.logo_url}}"> </image>
-
-      <view>
-        <view class='shop-name'>{{item.name}}</view>
-        <button class="book-button" bindtap='showMessageForm' data-id="{{item.id}}">Book</button>
+              <view>
+                  <view class='shop-name'>{{shop.name}}</view>
+                  <button class="book-button" bindtap='showMessageForm' data-id="{{shop.id}}">Book</button>
+              </view>
       </view>
     </view>
+</view>
+<!-- Shop Banner -->
 
+
+
+<!-- Shop information  -->
     <view class='shop-bio'>
-    <view class="location">
-        <view> Location: Chengdu. </view>
-        <view> Contact: {{item.phone_number}} </view>
-      </view>
-      <button class="tags" data-tag="{{item.style_list[0]}}"><view class="tags-artist-style">{{item.style_list}}</view></button>
-      <button class="tags" data-tag="{{item.style_list[0]}}"><view class="tags-artist-style">{{item.style_list}}</view></button>
-      <button class="tags" data-tag="{{item.style_list[0]}}"><view class="tags-artist-style">{{item.style_list}}</view></button>
-      <button class="tags" data-tag="{{item.style_list[0]}}"><view class="tags-artist-style">{{item.style_list}}</view></button>
-      <view wx:for="{{item.style_list}}">
-        {{item}}
-      </view>
+        <view class="location">
+            <view> Location: Chengdu </view>
+            <view> Contact: {{shop.phone_number}} </view>
+        </view>
     </view>
+<!-- Shop information  -->
+
+<!-- Shop tags -->
+<view class="tags-banner-box">
+<block wx:for="{{shop.artists}}">
+      <block wx:for="{{item.tags}}">
+        <button class="tags-banner" data-tag="{{item.style}}"><text class="tags-artist-style">{{item.style}}</text></button>
+    </block>
+</block>
+</view>
+<!-- Shop tags -->
 
     <view class="message-container" hidden='{{bookedShop ? false : true}}'>
         <view style="background-color: black;">
-        
+
           <form class="message-form" bindsubmit='bindSubmit'>
-             <view  style="display: flex; justify-content: center; align-items: right; flex-direction: column;"> 
-                <textarea name="content" placeholder='What do you want to ask {{item.name}}?' style="text-align: center;"></textarea>
+             <view  style="display: flex; justify-content: center; align-items: right; flex-direction: column;">
+                <textarea name="content" placeholder='What do you want to ask {{shop.name}}?' style="text-align: center;"></textarea>
               <button class="button" form-type='submit'>Send</button>
               <button class='button' bindtap='goBack'>Leave booking</button>
-             </view> 
+             </view>
           </form>
         </view>
-      </view>
+    </view>
+<!-- Booking Message -->
 
-      <view class='featured-container'>
-    <block wx:for="{{item.artists}}">
-    <view class='artist'>
-        <view bindtap='showArtist' data-artistId="{{item.id}}" class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{item.avatar_url}}');"> Artist: {{item.name}}
-        <view class='experience'> Experience: {{item.years_of_experience}} years</view>
-        <view class="tags-artist" data-id="{{item.id}}">
-          <view class="tags-artist-style">New School</view>
-          </view>
-        </view>
-        </view>
+<!-- Artists banner -->
+<view class='featured-container'>
 
-        <view class="small-cards">
-        <view wx:for="{{item.art}}"  bindtap='showArt' data-artId="{{item.id}}"class='small-card' style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{item.url}}');"></view>
-      </view>
-    </block>   
- 
+    <!-- Block for Artisits -->
+    <block wx:for="{{shop.artists}}">
 
-    
+            <!-- Artist Card -->
+            <view class='artist'>
+                <view bindtap='showArtist' data-artistId="{{item.id}}" class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{item.avatar_url}}');">
+                  <view>Artist: {{item.name}}</view>
+
+
+
+                      <view class='experience'> Experience: {{item.years_of_experience}} years</view>
+                      <!-- Block for tags -->
+                      <block wx:for="{{item.tags}}">
+                          <view class="tags-artist" data-id="{{item.style}}">
+                            <view class="tags-artist-style">
+                                {{item.style}}
+                            </view>
+                          </view>
+                      </block>
+                      <!-- Block for tags -->
+
+                </view>
+            </view>
+            <!-- Artist Card -->
+
+              <!-- Multiple pictures inside gallery -->
+              <view class="small-cards">
+                      <view wx:for="{{item.art}}"  bindtap='showArt' data-artId="{{item.id}}"class='small-card' style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{item.url}}');"></view>
+              </view>
+              <!-- Multiple pictures inside gallery -->
+    </block>
+    <!-- Block for Artisits -->
 
   <view class='blank-item'> </view>
-  </view>
 </view>
+<!-- Artists banner -->
 
 <!-- END CARD LOOP -->
-</view>
+
 <!-- START TAB BAR -->
 <view class='blank-item'> </view>
 <view class='nav'>

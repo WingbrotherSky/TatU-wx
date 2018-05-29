@@ -8,15 +8,16 @@
   background: black;
   display: flex;
   justify-content: space-between;
+  height: 205rpx;
 
 }
 
 .shop-info {
-  display: flex;
+   display: flex;
   justify-content: space-between;
   background: black;
   border-radius: 0;
-  height: 90px;
+
 
 }
 
@@ -36,7 +37,7 @@
   color: white;
   margin: 20rpx;
 
-} 
+}
 
 .location {
   font-size: 12px;
@@ -66,19 +67,22 @@
   margin-bottom: 0;
   padding: 20rpx;
   font-weight: bolder;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .small-cards {
   display: flex;
   justify-content: space-around;
-   flex-wrap: wrap; 
+   flex-wrap: wrap;
   background-color: black;
-  margin-bottom: 6px;
+  margin-bottom: 16rpx;
 }
 
 .small-card {
-  height: 240rpx;
-  width: 240rpx;
+  height: 250rpx;
+  width: 250rpx;
   background-size: cover;
 }
 
@@ -198,20 +202,20 @@
    background-color: black;
  }
 
- .previewing image{ 
- width:100%; 
- height:100%; 
+ .previewing image{
+ width:100%;
+ height:100%;
 }
 
 .button-photo {
-  background-color: #00BED9; 
+  background-color: #00BED9;
   color: white;
 }
 
-.container { 
- box-sizing: border-box; 
+.container {
+ box-sizing: border-box;
  /* padding:40px;  */
-} 
+}
 
 page {
   background-color: black;
@@ -259,7 +263,7 @@ textarea {
 }
 
 .shop-bio {
-  /* display: flex; */
+   display: flex;
 }
 
 .button {
@@ -279,6 +283,23 @@ textarea {
   right: 10px;
 }
 
+.tags-banner {
+  border-radius: 4rpx;
+  /* width: 15vw; */
+  /* height: 50rpx; */
+  font-size: 10px;
+  font-weight: lighter;
+  display: inline-flex;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  background-color: black;
+  border: 2px solid rgba(255,255,255,.7);
+  color: rgba(255,255,255,.9);
+  margin: 2rpx;
+  border-radius: 15px;
+  }
+
 .tags {
   border-radius: 4rpx;
   /* width: 15vw; */
@@ -297,7 +318,7 @@ textarea {
   }
 
   .tags-artist {
-  max-width: 940rpx;	
+  max-width: 940rpx;
 	/* margin: 0 auto; */
   height: 15rpx;
   font-size: 10px;
@@ -310,14 +331,21 @@ textarea {
   border-radius: 15px;
   background-color: transparent;
   padding: 6px;
-  position: absolute;
-  bottom: 20rpx;
+  margin: 3rpx;
+  /* position: absolute;
+  bottom: 20rpx; */
   }
 
   .tags-artist-style {
      display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   color: white;
   /* margin: 15rpx; */
   }
+
+.tags-banner-box {
+
+  justify-content: space-around;
+  margin: 10px;
+}
