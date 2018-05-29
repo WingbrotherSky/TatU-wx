@@ -41,7 +41,7 @@
 
           <form class="message-form" bindsubmit='bindSubmit'>
              <view  style="display: flex; justify-content: center; align-items: right; flex-direction: column;">
-                <textarea name="content" placeholder='What do you want to ask {{shop.name}}?' style="text-align: center;"></textarea>
+                <textarea name="content" value="{{formValue}}" placeholder='What do you want to ask {{shop.name}}?' style="text-align: center;"></textarea>
               <button class="button" form-type='submit'>Send</button>
               <button class='button' bindtap='goBack'>Leave booking</button>
              </view>

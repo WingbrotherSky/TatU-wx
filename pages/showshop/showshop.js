@@ -56,6 +56,10 @@ Page({
         that.setData({
           bookedShop: ""
         })
+        wx.showToast({
+          title: 'Sent!',
+        })
+        that.setData({formValue: ""})
       }
 
     })
