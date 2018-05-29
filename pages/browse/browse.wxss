@@ -23,24 +23,31 @@
  margin-top: 1vh;
  margin-left: 0px;
  
- height: 70rpx;
+ height: 60rpx;
   width: 60rpx;
   padding: 0px;
-   border: 1px solid rgba(255,255,255,.3);
-  border-radius: 30%;
+   border: 1px solid rgba(255,255,255,.1);
+  border-top-left-radius: 20%;
+  border-bottom-left-radius: 20%;
+  border-top-right-radius: 20%;
+  border-bottom-right-radius: 20%;
    /* opacity: 0.5;   */
-  background-color: rgba(255,255,255,.3);
+  background-color: rgba(28,25,25,0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .share-img {
-  /* background-image: cover !important; */
-  width: 100%;
-  height: 100%;
+  background-size: cover;
+  background-position: center, center;
+  width: 90%;
+  height: 88%;
 
 }
 
 .share-img:hover {
-  background-color: greenyellow;
+
 }
 
 /* .search-btn {
@@ -127,13 +134,16 @@ color: white;
   height: 60rpx;
   width: 60rpx;
   padding: 0px;
-   border: 1px solid rgba(255,255,255,.3); 
-  background-color: rgba(255,255,255,.3);
-  border-radius: 30%;
+   border: 1px solid rgba(255,255,255,.1); 
+  background-color: rgba(28,25,25,.1);
+  border-radius: 20%;
 }
 
 .heart-icon:hover {
-  background-color: #F66764;
+  background-image: url('/image/devilred.png') !important;
+  background-size: cover; 
+  background-position: center, center;
+  z-index: 9001;
 }
 
 .info-flex {
@@ -246,7 +256,7 @@ height: 75%;
   text-decoration: underline solid rgba(255,255,255,0.4);
   font-size: 2.2vh;
   position: relative;
-  margin-top: vh;
+  margin-top: 1vh;
   margin-bottom: 1vh;
 }
 
@@ -259,6 +269,7 @@ height: 75%;
   border: 1px solid rgba(255,255,255,.1);
   border-radius: 30%;
   animation: nudge 2s linear infinite alternate;
+  margin-bottom: 2vh !important;
 }
 
 .view-next-artist-text {
@@ -359,9 +370,9 @@ height: 75%;
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #fff;
+  background-color: #1C1919;
   overflow: hidden;
-  height: 45px;
+  height: 6.5vh;
   border-top: 0.5px solid #dddddd;
 }
 

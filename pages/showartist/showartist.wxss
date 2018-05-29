@@ -198,33 +198,31 @@
 }
 
 .avatar-tab {
-  width: 28px;
-  height: 28px;
+  width: 22px;
+  height: 22px;
   margin-left: 5px;
   margin-top: 5px;
-  color: white;
 }
 
 .nav {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #fff;
+  background-color: #1C1919;
   overflow: hidden;
-  height: 45px;
+  height: 6.5vh;
   border-top: 0.5px solid #dddddd;
 }
 
 .markey-container {
   display: flex;
   justify-content: space-around;
-  background-color: #A3A0A0;
 }
-/* rgba(255, 255, 255, 0) */
 
-.extend-padding {
-  padding-left: 20px;
-  padding-right: 20px;
+
+.extend-padding:hover {
+background-color: grey;
+color: red;
 }
 
  /* END TAB BAR  */
