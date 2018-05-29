@@ -2,6 +2,7 @@
 
 const app = getApp()
 const paths = require('../../common/apiPaths')
+const auth_key = wx.getStorageSync("auth_key")
 
 Page({
 
@@ -26,6 +27,7 @@ Page({
     const that = this
     wx.request({
       url: paths.getArtist + options.id,
+      data: {auth_key: auth_key},
       success: res => {
         that.setData({ artist: res.data })
       }
