@@ -283,22 +283,6 @@ textarea {
   right: 10px;
 }
 
-.tags-banner {
-  border-radius: 4rpx;
-  /* width: 15vw; */
-  /* height: 50rpx; */
-  font-size: 10px;
-  font-weight: lighter;
-  display: inline-flex;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  background-color: black;
-  border: 2px solid rgba(255,255,255,.7);
-  color: rgba(255,255,255,.9);
-  margin: 2rpx;
-  border-radius: 15px;
-  }
 
 .tags {
   border-radius: 4rpx;
@@ -317,6 +301,8 @@ textarea {
   border-radius: 15px;
   }
 
+
+
   .tags-artist {
   max-width: 940rpx;
 	/* margin: 0 auto; */
@@ -334,7 +320,10 @@ textarea {
   margin: 3rpx;
   /* position: absolute;
   bottom: 20rpx; */
+  
   }
+
+  
 
   .tags-artist-style {
      display: flex;
@@ -349,3 +338,20 @@ textarea {
   justify-content: space-around;
   margin: 10px;
 }
+
+.tags-banner {
+  border-radius: 4rpx;
+  /* width: 15vw; */
+  /* height: 50rpx; */
+  font-size: 10px;
+  font-weight: lighter;
+  display: inline-flex;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  background-color: black;
+  border: 2px solid rgba(255,255,255,.7);
+  color: rgba(255,255,255,.9);
+  margin: 2rpx;
+  border-radius: 15px;
+  }
