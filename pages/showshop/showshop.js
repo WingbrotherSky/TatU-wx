@@ -21,9 +21,14 @@ Page({
     console.log(11111111, options)
     let shopid = options.shopid
     const that = this
+    const auth_key = wx.getStorageSync("auth_key")
     wx.request({
       url: paths.getShop + shopid,
+      data: {
+        auth_key: auth_key
+      },
       success: (res) => {
+        
         console.log(222, res)
         that.setData({ shop: res.data })
         console.log(555555,that.data.shop)
@@ -42,11 +47,12 @@ Page({
     const that = this
     let recipient_id = this.data.bookedArtist
     let content = e.detail.value.content
+    const auth_key = wx.getStorageSync("auth_key")
     wx.request({
       url: paths.postMessage,
       method: "post",
       data: {
-        auth_key: wx.getStorageSync("auth_key"),
+        auth_key: auth_key,
         user_id: recipient_id,
         content: content
       },

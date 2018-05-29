@@ -62,7 +62,6 @@
             </view>
           </view>
           <!-- <button class="book-button" bindtap='showMessageForm' data-id="{{item.id}}">Message {{item.shop.name}}</button> -->
-          
           </view>
         </swiper-item>
       </block>

@@ -17,7 +17,7 @@ App({
               code: res.code
             },
             success: res => {
-              console.log(1, res)
+              console.log(11111111, res)
               wx.setStorage({
                 key: 'auth_key',
                 data: res.data.auth_key,

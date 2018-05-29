@@ -62,8 +62,12 @@ Page({
    */
   onLoad: function (options) {
     const that = this
+    const auth_key = wx.getStorageSync("auth_key")
     wx.request({
       url: paths.getAllArtists,
+      data: {
+        auth_key: auth_key
+      },
       success:res => {
         that.setData({
           artists: res.data.artists
