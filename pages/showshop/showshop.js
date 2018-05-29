@@ -2,7 +2,6 @@
 
 const app = getApp()
 const paths = require('../../common/apiPaths')
-const auth_key = wx.getStorageSync("auth_key")
 
 Page({
 
@@ -20,6 +19,7 @@ Page({
    */
   onLoad: function (options) {
     console.log(11111111, options)
+    const auth_key = wx.getStorageSync("auth_key")
     let shopid = options.shopid
     const that = this
     wx.request({

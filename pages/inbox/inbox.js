@@ -2,7 +2,7 @@
 
 const app = getApp()
 const paths = require('../../common/apiPaths')
-const auth_key = wx.getStorageSync("auth_key")
+
 
 Page({
 
@@ -23,6 +23,7 @@ Page({
    */
   onLoad: function () {
     const that = this
+    const auth_key = wx.getStorageSync("auth_key")
     wx.request({
       url: paths.getAllConversations,
       data: {
@@ -74,6 +75,7 @@ Page({
   toggleInbox: function(e) {
    
     const that = this
+    const auth_key = wx.getStorageSync("auth_key")
     if (e.currentTarget.dataset.user_id) {
     this.setData({
       convName: e.currentTarget.dataset.name,

@@ -2,7 +2,7 @@
 
 const app = getApp()
 const paths = require('../../common/apiPaths')
-const auth_key = wx.getStorageSync("auth_key")
+
 
 Page({
 
@@ -25,6 +25,7 @@ Page({
    */
   onLoad: function (options) {
     const that = this
+    const auth_key = wx.getStorageSync("auth_key")
     wx.request({
       url: paths.getArtist + options.id,
       data: {auth_key: auth_key},
@@ -37,6 +38,7 @@ Page({
   showShop: function (e) {
     const data = e.currentTarget.dataset
     const shop = data.name
+    const auth_key = wx.getStorageSync("auth_key")
     console.log(2321, shop)
     wx.navigateTo({
       url: `/pages/showshop/showshop`,
