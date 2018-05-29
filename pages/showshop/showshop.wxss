@@ -243,7 +243,6 @@ textarea {
 
 .book-button {
   border-radius: 5rpx;
-  width: 50%;
   height: 55rpx;
   font-size: 15px;
   font-weight: bold;

@@ -126,7 +126,7 @@ Page({
         id: imageId
       },
       success: res => {
-        console.log(res)
+        // setData artist.favorited
     }
     })
   },

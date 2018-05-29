@@ -266,9 +266,8 @@ height: 75%;
   padding: 0rpx;
   padding-bottom: 0px;
   padding-top: 5rpx;
-  border: 1px solid rgba(255,255,255,.1);
   border-radius: 30%;
-  animation: nudge 2s linear infinite alternate;
+  animation: nudge 3s linear infinite alternate;
   margin-bottom: 2vh !important;
 }
 
@@ -295,11 +294,11 @@ height: 75%;
   }
   
   50% {
-    transform: translate(0rpx, -7rpx);
+    transform: translate(0rpx, -5rpx);
   }
   
   100% {
-    transform: translate(0rpx, 7rpx);
+    transform: translate(0rpx, 5rpx);
   }
 }
 

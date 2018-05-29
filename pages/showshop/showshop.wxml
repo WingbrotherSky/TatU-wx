@@ -8,7 +8,7 @@
 
               <view>
                   <view class='shop-name'>{{shop.name}}</view>
-                  <button class="book-button" bindtap='showMessageForm' data-id="{{shop.id}}">Book</button>
+                  <button class="book-button" bindtap='showMessageForm' data-id="{{shop.id}}">Message {{shop.name}}</button>
               </view>
       </view>
     </view>
@@ -80,7 +80,8 @@
 
               <!-- Multiple pictures inside gallery -->
               <view class="small-cards">
-                      <view wx:for="{{item.art}}"  bindtap='showArt' data-artId="{{item.id}}"class='small-card' style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{item.url}}');"></view>
+                
+                <view wx:for="{{item.art}}" view bindtap='previewImages' data-url="{{item.url}}" class='small-card' style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{item.url}}');"></view>
               </view>
               <!-- Multiple pictures inside gallery -->
     </block>
