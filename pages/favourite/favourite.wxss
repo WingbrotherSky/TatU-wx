@@ -19,7 +19,9 @@
   padding-top: 3rpx;
   background: linear-gradient(#A3A0A0, #262626);
   margin-bottom: 15px;
+  position: relative;
 }
+
 .shop-name {
   font-size: 20px;
   font-weight: bolder;
@@ -43,7 +45,7 @@
   width: 60px;
   height: 60px;
   margin: 1px;
-
+  transform: rotate(10deg)
 }
 
 .big-card {
@@ -52,11 +54,27 @@
   background-size: cover !important;
   background-position: center;
   color: white;
+  transform: rotate(-10deg);
   margin: 0;
   margin-bottom: 2px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; 
+   /* position: absolute;    */
+  /* background-color: red; */
+  align-items: center;
 
+}
+
+.item .remove{  
+    width: 60px;  
+    height: 100%;  
+    background-color: red;  
+    position: absolute;  
+    top: 0;  
+    right: -60px;  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
 }
 
 .small-cards {
@@ -82,6 +100,18 @@
   height: 1px;
 
 }
+
+.heart-icon {
+  margin-top: 1vh;
+  height: 60rpx;
+  width: 60rpx;
+  padding: 0px;
+   border: 1px solid rgba(255,255,255,.1); 
+  background-color: rgba(28,25,25,.1);
+  border-radius: 20%;
+}
+
+
 
 
 /* END SHOP-CARD  */

@@ -3,19 +3,21 @@
 
    
 <view class='shop-container'>
-  <view wx:for="{{favorites}}" >
-    
-    <view  class='featured-container'>
-      <view bindtap='previewImage' data-art-url="{{item.art.url}}" class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{item.art.url}}');"> 
-        <!-- <view class='shop-name'>{{item.name}} </view> -->
-          <image  catchtap='showArtist' data-artistid="{{item.art.artist.id}}" class='shop-logo-avatar' src="{{item.art.artist.avatar_url}}"></image>
-        <!-- <view>{{art.artist.name}}</view> -->
-           <image catchtap='goToShowShopPage' data-shopId="{{item.art.artist.shop.id}}" class="shop-logo-avatar" src="{{item.art.artist.shop.logo_url}}" />
-      </view>
-    </view> 
-    
-    <view class='blank-item'> </view>
-  </view>
+
+
+  <view wx:for="{{favorites}}" bindtouchstart='drawStart' data-favorite-id='{{item.id}}' bindtouchmove='drawMove' bindtouchend='drawEnd' class='featured-container' style='right:{{item.right}}px; '>
+    <view   catchtap='previewImage' data-art-url="{{item.art.url}}" class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{item.art.url}}'); "> 
+      <!-- <view class='shop-name'>{{item.name}} </view> -->
+        <image  catchtap='showArtist' data-artistid="{{item.art.artist.id}}" class='shop-logo-avatar' src="{{item.art.artist.avatar_url}}"></image>
+      <!-- <view>{{art.artist.name}}</view> -->
+        <image catchtap='showShop' class='shop-logo-avatar' src="{{item.art.artist.shop.logo_url}}"></image> 
+    </view>
+        <!-- <view bindtap="favoriteImage" data-id="{{item.id}}" class="heart-icon" style="background-image: url({{item.favorited ? '/image/devilred.png' : '/image/devilwhite.png'}}); background-size: cover; background-position: center, center;" >
+
+        </view> -->
+  </view> 
+  <!-- <view class='blank-item'> </view> -->
+
 </view>
   
 

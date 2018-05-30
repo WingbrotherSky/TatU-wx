@@ -2,6 +2,13 @@
 
 const app = getApp()
 const paths = require('../../common/apiPaths')
+let key;
+let maxRight = 100;
+let maxLift = 100;
+let startX;
+let startY;
+let endX;
+let endY;
 
 Page({
 
@@ -30,7 +37,24 @@ Page({
         console.log(res)
           // that.setData({shops: res.data.shops})
           that.setData({favorites: res.data.favorites})
-          console.log(this.data.favorites)
+          // console.log(9999999,this.data.favorites)
+
+          let _fav = that.data.favorites
+
+          for (var k in _fav) {
+            _fav[k].right = 0
+            _fav[k].startRight = 0
+            _fav[k].lift = 0
+            _fav[k].startLift = 0
+            // console.log(5555, _fav[k])
+          }
+          that.setData({favorites: _fav})
+          // console.log(3333,that.data.favorites)
+
+      },
+      fail:(res) => {
+        console.log("hey fail request T T")
+        console.log(res)
       }
       
     })
@@ -175,6 +199,114 @@ Page({
   inputTyping: function (e) {
     this.setData({
       inputVal: e.detail.value
+    });
+  },
+
+  drawStart: function (e) {
+    // console.log("drawStart");  
+    // console.log(3333,e)
+    var touch = e.touches[0];
+    const startX = touch.clientX;
+    const startY = touch.clientY;
+    var favorites = this.data.favorites;
+    for (var i in favorites) {
+      // var data = favorites[i];
+      favorites[i].startRight = startX;
+      favorites[i].startLift = startX;
+    }
+    // key = true;
+  },
+
+  drawEnd: function (e) {
+    // console.log("drawEnd");
+    // console.log(4444,e)
+    var favorites = this.data.favorites;
+    for (var i in favorites) {
+      console.log(3333,data)
+      var data = favorites[i];
+      if (data.right <= -50 )   {
+          data.right = -100;
+      }else if (data.right >-49 && data.right <49) {
+          data.right = 0
+      }else if (data.right > 50) {
+          data.right = 100;
+      }
+
+    }
+    this.setData({
+      favorites: favorites
+    });
+  },
+
+  drawMove: function (e) {
+    //console.log("drawMove");
+    console.log(6666,e)
+    var self = this;
+    var dataId = e.currentTarget.dataset.favoriteId;
+    const favorites = this.data.favorites;
+    const currentTarget = this.data.favorites.find(f => f.id == dataId);
+    // console.log(this.data.favorites);
+    console.log(dataId);
+    console.log(currentTarget);
+    // if (key) {
+      var touch = e.touches[0];
+      const endX = touch.clientX;
+      const endY = touch.clientY;
+      console.log("startX=" + startX + " endX=" + endX);
+      // if (endX - startX == 0)
+      //   return;
+      // var res = favorites;
+      //从右往左  
+
+      currentTarget.lift = currentTarget.startLift - endX;
+      currentTarget.right = currentTarget.startRight - endX;
+
+      // if ((endX - startX) < 0) {
+      //   for (var k in res) {
+      //     var data = res[k];
+      //     if (res[k].id == dataId) {
+      //       var startRight = res[k].startRight;
+      //       var change = startX - endX;
+      //       startRight += change;
+      //       if (startRight > maxRight)
+      //         startRight = maxRight;
+      //       res[k].right = startRight;
+      //     }
+      //   }
+      // } else {//从左往右  
+      //   for (var k in res) {
+      //     var data = res[k];
+      //     if (res[k].id == dataId) {
+      //       var startRight = res[k].startRight;
+      //       var change = endX - startX;
+      //       startRight -= change;
+      //       if (startRight < 0)
+      //         startRight = 0;
+      //       res[k].right = startRight;
+      //     }
+      //   }
+      // }
+      self.setData({
+        favorites: favorites
+      });
+
+    // }
+  },
+
+  //删除item  
+  delItem: function (e) {
+    var dataId = e.target.dataset.id;
+    console.log("删除" + dataId);
+    var favorites = this.data.favorites;
+    var newfavorites = [];
+    for (var i in favorites) {
+      var item = favorites[i];
+      if (item.id != dataId) {
+        newfavorites.push(item);
+      }
+    }
+    this.setData({
+      favorites: newfavorites
     });
   },
 
