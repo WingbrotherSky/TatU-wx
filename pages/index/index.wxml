@@ -6,6 +6,7 @@
        <!-- <button  class="splash-button" open-type="getUserInfo" bindgetuserinfo="getUserInfo" bindtap="goToBrowsePage"> -->
        <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" style="background: transparent;"><image src="../../image/wetat.png"  class='logo-button'> Enter TatU </image></button>
      
+     <view class="enter-text"> 点击进入: </view>
      <view class="enter-text"> Tap Above to Enter </view>
        <!-- </button>  -->
 

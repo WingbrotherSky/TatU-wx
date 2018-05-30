@@ -8,7 +8,7 @@
 
               <view>
                   <view class='shop-name'>{{shop.name}}</view>
-                  <button class="book-button" bindtap='showMessageForm' data-id="{{shop.id}}">Message {{shop.name}}</button>
+                  <button class="book-button" bindtap='showMessageForm' data-id="{{shop.id}}">发信息: Message {{shop.name}}</button>
               </view>
       </view>
     </view>
@@ -20,8 +20,8 @@
 <!-- Shop information  -->
     <view class='shop-bio'>
         <view class="location">
-            <view> Location: Chengdu </view>
-            <view> Contact: {{shop.phone_number}} </view>
+            <view> 地址：Location: Chengdu </view>
+            <view> 电话：Contact: {{shop.phone_number}} </view>
         </view>
     </view>
 <!-- Shop information  -->
@@ -59,18 +59,20 @@
             <!-- Artist Card -->
             <view class='artist'>
                 <view bindtap='showArtist' data-artistId="{{item.id}}" class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{item.avatar_url}}');">
-                  <view>Artist: {{item.name}}</view>
+                  <view>纹身师 Artist: {{item.name}}</view>
 
 
 
-                      <view class='experience'> Experience: {{item.years_of_experience}} years</view>
+                      <view class='experience'> 经验 Experience: {{item.years_of_experience}} 年 Years</view>
                       <!-- Block for tags -->
                       <block wx:for="{{item.tags}}">
-                          <view class="tags-artist" data-id="{{item.style}}">
+                          <!-- <view class="tags-artist-flex"> -->
+                           <view class="tags-artist" data-id="{{item.style}}">
                             <view class="tags-artist-style">
                                 {{item.style}}
                             </view>
                           </view>
+                        <!-- </view> -->
                       </block>
                       <!-- Block for tags -->
 
