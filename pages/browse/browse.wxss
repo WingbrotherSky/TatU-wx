@@ -216,8 +216,8 @@ align-items: center;
 .artist-avatar {
   /* position: absolute;
   left: 1vw;
-  bottom: 32vh;
-  z-index: 9001; */
+  /* bottom: 32vh; */
+   z-index: 9001;
   border: 1rpx solid rgba(0,0,0,0.7); 
   box-shadow: 1rpx 4rpx 3rpx 3rpx rgba(255,255,255,0.3);
 animation: 
@@ -276,8 +276,8 @@ animation:
 .shop-logo {
   /* position: absolute;
   right: 1vw;
-  bottom: 32vh;
-  z-index: 9001; */
+  bottom: 32vh; */
+   z-index: 9001;
   border: 1rpx solid rgba(0,0,0,0.8); 
   box-shadow: 1rpx 4rpx 3rpx 3rpx rgba(255,255,255,0.4);
   animation: 
@@ -362,6 +362,12 @@ animation:
 }
 
 .view-next-artist-text {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 6vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -372,8 +378,8 @@ animation:
   border-left: 1px solid white;
   border-bottom: 1px solid white;
   border-top: 1px solid rgba(255,255,255,.1); */
-  margin-left: 3vw;
-  margin-right: 3vw;
+  
+  
   margin-bottom: 1vh;
   /* box-shadow: 1px 1px 1px rgba(255,255,255,.3); */
 }

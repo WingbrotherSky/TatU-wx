@@ -50,15 +50,15 @@
                 <!-- <text class="artist-title">纹身师: Artist:</text> -->
                 <!-- <text class="artist-name">{{item.name}}</text> -->
                 <button class="tags" data-id="{{item.id}}"><view class="tags-artist-style">New School</view></button>
-                <text class="see-more" bindtap='goToShowShopPage'>进入: Go To {{item.shop.name}}</text> 
+                <!-- <text class="see-more" bindtap='goToShowShopPage'>进入: Go To {{item.shop.name}}</text>  -->
     
               </view>
-              <view class="view-next-artist-text">
+            </view>
+            <view class="view-next-artist-text">
                 <image class="down-arrow-img" src="/image/down-arrow.png"></image>
                 <text class='swipe-down'>发现更多: Swipe down for more</text>
                 <image class="down-arrow-img" src="/image/down-arrow.png"></image>
               </view>
-            </view>
           </view>
           <!-- <button class="book-button" bindtap='showMessageForm' data-id="{{item.id}}">Message {{item.shop.name}}</button> -->
           
