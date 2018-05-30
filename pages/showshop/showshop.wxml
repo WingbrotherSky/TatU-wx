@@ -67,7 +67,7 @@
                       <!-- Block for tags -->
                       <block wx:for="{{item.tags}}">
                           <!-- <view class="tags-artist-flex"> -->
-                           <view class="tags-artist" data-id="{{item.style}}">
+                           <view class="tags-artist" data-tag="{{item.style}}" >
                             <view class="tags-artist-style">
                                 {{item.style}}
                             </view>
