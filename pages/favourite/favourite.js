@@ -2,6 +2,7 @@
 
 const app = getApp()
 const paths = require('../../common/apiPaths')
+const requests = require("../../common/apiClient")
 
 Page({
 
@@ -20,12 +21,9 @@ Page({
   onLoad: function () {
     const that = this
     const auth_key = wx.getStorageSync("auth_key")
-    wx.request({
+    requests.get({
       // url: paths.getAllShops,
       url: paths.getAllFavorites,
-      data: {
-        auth_key: auth_key
-      },
       success:(res) => {
         console.log(res)
           // that.setData({shops: res.data.shops})
