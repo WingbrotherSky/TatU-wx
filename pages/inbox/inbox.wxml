@@ -5,7 +5,7 @@
     <scroll-view scroll-y="true" scroll-into-view="{{lastOne}}" class="inbox-container">
       <block wx:for="{{items}}">
           <view class="{{item.received || inbox ? 'other' : 'user'}}" id="{{items[items.length - 1] === item ? 'last' : ''}}">
-          <view bindtap="toggleInbox" data-user_id="{{item.user_id}}" data-name="{{item.name}}"  class="{{inbox ?  'conversation card' : 'message card'}}">
+          <view bindtap="toggleInbox" data-shop_id="{{item.shop.id}}" data-name="{{item.name}}"  class="{{inbox ?  'conversation card' : 'message card'}}">
             <view class="name">{{item.name}}</view>
             <view class="message">{{item.content}}</view>
             <block wx:if="{{!inbox}}">

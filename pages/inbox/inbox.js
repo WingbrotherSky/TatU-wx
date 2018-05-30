@@ -76,16 +76,16 @@ Page({
    
     const that = this
     const auth_key = wx.getStorageSync("auth_key")
-    if (e.currentTarget.dataset.user_id) {
+    if (e.currentTarget.dataset.shop_id) {
     this.setData({
       convName: e.currentTarget.dataset.name,
-      convId: e.currentTarget.dataset.user_id
+      convId: e.currentTarget.dataset.shop_id
     })
     this.setData({
       inbox: false
     })
     wx.request({
-      url: paths.getConverstation + `${e.currentTarget.dataset.user_id}`,
+      url: paths.getConverstation + `${e.currentTarget.dataset.shop_id}`,
       data: {
         auth_key: auth_key
       },
@@ -113,7 +113,7 @@ Page({
       method: "post",
       data: {
         auth_key: wx.getStorageSync("auth_key"),
-        user_id: recipient_id,
+        shop_id: recipient_id,
         content: content
       },
       success: res => {
