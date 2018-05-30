@@ -15,6 +15,7 @@ Page({
     shop: {}
 
   },
+  
   previewImages(e) {
     console.log('ready to preview');
     wx.previewImage({

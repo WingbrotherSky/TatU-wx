@@ -33,6 +33,13 @@ Page({
     })
   },
 
+  previewImages(e) {
+    console.log('ready to preview');
+    wx.previewImage({
+      urls: [e.currentTarget.dataset.url]
+    })
+  },
+  
   showMessageForm: function (e) {
     const shop = e.currentTarget.dataset.id
     this.setData({
