@@ -2,7 +2,7 @@
 App({
   login: function() {
     const that = this
-    const host = "https://tatu.wogengapp.cn/"
+    const host = "http://localhost:3000/"
     console.log("Logging in")
     const auth_key = wx.getStorageSync("auth_key")
     if (!auth_key) {
