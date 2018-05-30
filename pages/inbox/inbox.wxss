@@ -9,7 +9,23 @@
 }
 
 .title {
- color: white;
+ height: 5vh;
+  color: #bf2a32;
+  background-color: #1C1919;
+  margin-bottom: 0;
+  /* border: 1rpx solid rgba(0,0,0,0.7);  */
+  /* box-shadow: 1rpx 4rpx 3rpx 3rpx rgba(255,255,255,.2); */
+animation: 
+stretch
+    10s
+    alternate
+    infinite
+    none
+    running;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+
 }
 
 .inbox-container {
@@ -110,6 +126,8 @@ button {
 .markey-container {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  height: 6.5vh;
 }
 
 
