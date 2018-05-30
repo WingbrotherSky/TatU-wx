@@ -284,10 +284,10 @@ textarea {
   right: 10px;
 }
 
-.tags-banner {
+.tags {
   border-radius: 4rpx;
   /* width: 15vw; */
-  /* height: 50rpx; */
+   height: 50rpx; 
   font-size: 10px;
   font-weight: lighter;
   display: inline-flex;
@@ -298,23 +298,6 @@ textarea {
   border: 2px solid rgba(255,255,255,.7);
   color: rgba(255,255,255,.9);
   margin: 2rpx;
-  border-radius: 15px;
-  }
-
-.tags {
-  border-radius: 4rpx;
-  /* width: 15vw; */
-  height: 50rpx;
-  font-size: 10px;
-  font-weight: lighter;
-  display: inline-flex;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  background-color: black;
-  border: 2px solid rgba(255,255,255,.7);
-  color: rgba(255,255,255,.9);
-  margin: 20rpx;
   border-radius: 15px;
   }
 
@@ -350,3 +333,38 @@ textarea {
   justify-content: space-around;
   margin: 10px;
 }
+
+.tags-banner {
+  border-radius: 4rpx;
+  /* width: 15vw; */
+  /* height: 50rpx; */
+  font-size: 10px;
+  font-weight: lighter;
+  display: inline-flex;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  background-color: black;
+  border: 2px solid rgba(255,255,255,.7);
+  color: rgba(255,255,255,.9);
+  margin: 2rpx;
+  border-radius: 15px;
+  }
+
+
+ /* .tags {
+  border-radius: 4rpx;
+   width: 15vw; 
+  height: 50rpx;
+  font-size: 10px;
+  font-weight: lighter;
+  display: inline-flex;
+   display: flex;
+  justify-content: center;
+  align-items: center; 
+  background-color: black;
+  border: 2px solid rgba(255,255,255,.7);
+  color: rgba(255,255,255,.9);
+  margin: 20rpx;
+  border-radius: 15px;
+  }  */
