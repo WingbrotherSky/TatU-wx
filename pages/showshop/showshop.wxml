@@ -8,7 +8,7 @@
 
               <view>
                   <view class='shop-name'>{{shop.name}}</view>
-                  <button class="book-button" bindtap='showMessageForm' data-id="{{shop.id}}">Message {{shop.name}}</button>
+                  <button class="book-button" bindtap='showMessageForm' data-id="{{shop.id}}">发信息: Message {{shop.name}}</button>
               </view>
       </view>
     </view>
@@ -66,11 +66,13 @@
                       <view class='experience'> 经验 Experience: {{item.years_of_experience}} 年 Years</view>
                       <!-- Block for tags -->
                       <block wx:for="{{item.tags}}">
-                          <view class="tags-artist" data-id="{{item.style}}">
+                          <!-- <view class="tags-artist-flex"> -->
+                           <view class="tags-artist" data-id="{{item.style}}">
                             <view class="tags-artist-style">
                                 {{item.style}}
                             </view>
                           </view>
+                        <!-- </view> -->
                       </block>
                       <!-- Block for tags -->
 
