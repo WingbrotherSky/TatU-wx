@@ -1,4 +1,4 @@
-
+<picker mode="selector" bindchange='bindPickerChange' custom-item="All Styles" value="{{index}}" range="{{tags}}">  <view style="color: white;"> Style: {{inputVal || "All"}} </view></picker>
 <view style="position: relative;">
   <view class="message-container" hidden='{{bookedArtist ? false : true}}'>
     <view style="background-color: black;">
@@ -54,15 +54,14 @@
     
               </view>
             </view>
-            <view class="view-next-artist-text">
+              <view wx:if="{{item.id != artists[artists.length - 1].id}}" class="view-next-artist-text">
                 <image class="down-arrow-img" src="/image/down-arrow.png"></image>
-                <text class='swipe-down'>发现更多: Swipe down for more</text>
+                <text  class='swipe-down'>发现更多: Swipe down for more</text>
                 <image class="down-arrow-img" src="/image/down-arrow.png"></image>
               </view>
-          </view>
-          <!-- <button class="book-button" bindtap='showMessageForm' data-id="{{item.id}}">Message {{item.shop.name}}</button> -->
-          
-          </view>
+
+              </view> 
+            </view>
         </swiper-item>
       </block>
     </swiper>

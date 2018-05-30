@@ -7,7 +7,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    
+    index: 0
   },
 
   previewImages(e) {
@@ -62,11 +62,18 @@ Page({
    */
   onLoad: function (options) {
     const that = this
+   
     wx.request({
       url: paths.getAllArtists,
       data: {auth_key: wx.getStorageSync("auth_key")},
       success:res => {
+        const tags = []
+        let tagsObjjs = res.data.tags
+        tagsObjjs.forEach((o) => {
+          tags.push(o.style)
+        })
         that.setData({
+          tags:tags,
           artists: res.data.artists
         })
       }
@@ -161,6 +168,26 @@ Page({
     }
   },
 
+bindPickerChange: function(e) {
+  const that = this
+  const auth_key = wx.getStorageSync("auth_key")
+  this.setData({
+    inputVal: this.data.tags[e.detail.value]
+  })
+  if (this.data.inputVal == "All") {
+    that.onLoad()
+  } else {
+  wx.request({
+    url: paths.searchStyles + `${that.data.inputVal}`,
+    data: {auth_key: auth_key},
+    success: res => {
+      that.setData({
+        artists: res.data.artists
+      })
+    }
+  })
+  }
+},
 
   goToInfoPage: function (e) {
     wx.navigateTo({
