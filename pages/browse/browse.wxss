@@ -258,7 +258,7 @@ align-items: center;
   /* bottom: 32vh; */
    z-index: 9001;
   border: 1rpx solid rgba(0,0,0,0.7); 
-  box-shadow: 1rpx 4rpx 3rpx 3rpx rgba(255,255,255,0.3);
+  box-shadow: 2rpx 3rpx 3rpx 2rpx rgba(255,255,255,0.5);
 animation: 
     stretch
     6s
@@ -318,8 +318,8 @@ animation:
   bottom: 32vh; */
    z-index: 9001;
   border: 1rpx solid rgba(0,0,0,0.8); 
-  box-shadow: 1rpx 4rpx 3rpx 3rpx rgba(255,255,255,0.4);
-  animation: 
+  box-shadow: 2rpx 3rpx 3rpx 2rpx rgba(255,255,255,0.6);
+   animation: 
     stretch
     6s
     ease-out
@@ -327,16 +327,17 @@ animation:
     alternate
     infinite
     none
-    running;
+    running; 
 }
 
 .artist-name-container {
-  font-size: 10vh;
+  font-size: 15vh;
   color: white;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 3vh;
+  /* flex-direction: column; */
+  justify-content: center;
+  margin-top: 18vh;
+  flex-wrap: wrap;
 }
 
 .artist-title {
@@ -517,6 +518,8 @@ animation:
 .markey-container {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  height: 6.5vh;
 }
 
 
