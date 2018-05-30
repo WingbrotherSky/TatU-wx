@@ -2,9 +2,10 @@
 <view class="empty"></view>
 <view class='shop-container' >
     <view class='featured-container'>
-      <view bindtap='' data-artistId="{{item.id}}" class="big-card card-one" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://wx4.sinaimg.cn/mw690/95af932egy1fosum18zo5j21hc1hcauo.jpg');"> <view class ="info-one">Information and Safety:</view>
-      <view class="empty">  </view>
-      <view>   Click Topic Below </view>
+      <view bindtap='' data-artistId="{{item.id}}" class="big-card card-one" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://wx4.sinaimg.cn/mw690/95af932egy1fosum18zo5j21hc1hcauo.jpg');"> <view class ="info-one">信息及安全须知:</view>
+      <view class ="info-one">Information and Safety:</view>
+      <view class="empty">点击下面的标题</view>
+      <view>Click Topic Below</view>
         <view class='shop-name'>{{item.name}} </view>
         <view>{{art.artist.name}}</view>
            <image class='shop-logo' src="{{item.logo_url}}"> </image> 

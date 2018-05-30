@@ -5,9 +5,16 @@
 <!-- START CONTAINER CARD  -->
 <view class='artist-container'>
   <view class='featured-container'>
-      <view bindtap='previewImages' data-url="{{artist.avatar_url}}"class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{artist.avatar_url}}')"> {{artist.name}}
-          <view class="experience">Experience: {{item.years_of_experience}} years</view>
-          <view class="tags-artist" data-id="{{item.id}}"><view class="tags-artist-style">New School</view></view>
+      <view bindtap='previewImages' data-url="{{artist.avatar_url}}"class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{artist.avatar_url}}')"> 纹身师 Artist: {{artist.name}}
+          <view class="experience">经验 Experience: {{artist.years_of_experience}} years</view>
+          <!-- <block wx:for="{{artist}}">
+                          <view class="tags-artist" data-id="{{item.tags.style}}">
+                            <view class="tags-artist-style">
+                                {{item.tags.style}}
+                            </view>
+                          </view>
+                      </block> -->
+                       <view class="tags-artist" data-id="{{item.id}}"><view class="tags-artist-style">New School</view></view> 
       </view>
      
     </view>
