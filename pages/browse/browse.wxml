@@ -1,4 +1,5 @@
-<picker mode="selector" bindchange='bindPickerChange' custom-item="All Styles" value="{{index}}" range="{{tags}}">  <view style="color: white;"> Style: {{inputVal || "All"}} </view></picker>
+<picker mode="selector" bindchange='bindPickerChange' custom-item="All Styles" value="{{index}}" range="{{tags}}">  <view class="choose-style" style="color: #bf2a32;"> Style: {{inputVal || "All"}} <image src='/../../image/drop-down-arrow.png' class="dropdown"></image> </view>
+</picker>
 <view style="position: relative;">
   <view class="message-container" hidden='{{bookedArtist ? false : true}}'>
     <view style="background-color: black;">
