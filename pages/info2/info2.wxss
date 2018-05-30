@@ -1,4 +1,37 @@
-/* pages/info2/info2.wxss */
+/* pages/info1/info1.wxss */
+.flex-for-text {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  background-color: black;
+  color: white;
+}
+
+.title-text {
+  text-decoration: underline rgba(0,0,0,0.6);
+  font-size: 25px;
+  font-weight: bold;
+  padding-left: 30rpx;
+
+}
+
+.body-text-first-pg {
+  font-size: 13px;
+  font-weight: lighter;
+  padding-left: 30rpx;
+}
+
+.body-text {
+font-size: 17px;
+padding-left: 30rpx;
+}
+
+.red-border {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  height: 15px;
+  width: 100%;
+}
 
 
  /* START TAB BAR  */
@@ -35,8 +68,7 @@
 
 
 .extend-padding:hover {
-background-color: grey;
-color: red;
+
 }
 
  /* END TAB BAR  */

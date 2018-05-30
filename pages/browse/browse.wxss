@@ -36,6 +36,7 @@ stretch
   flex: space-between;
   color: #bf2a32;
   font-weight: bolder;
+  text-shadow: 1px 1px rgba(0,0,0,0.6);
 }
 
 .artist-container {
