@@ -331,12 +331,12 @@ animation:
 }
 
 .artist-name-container {
-  font-size: 10vh;
+  font-size: 15vh;
   color: white;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 3vh;
+  /* flex-direction: column; */
+  justify-content: center;
+  margin-top: 18vh;
 }
 
 .artist-title {

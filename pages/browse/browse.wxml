@@ -58,8 +58,8 @@
             </view>
               <view wx:if="{{item.id != artists[artists.length - 1].id}}" class="view-next-artist-text">
                 <image class="down-arrow-img" src="/image/down-arrow.png"></image>
-                <text  class='swipe-down'>发现更多: Swipe down for more</text>
-                <image class="down-arrow-img" src="/image/down-arrow.png"></image>
+                <!-- <text  class='swipe-down'>发现更多: Swipe down for more</text> -->
+                <!-- <image class="down-arrow-img" src="/image/down-arrow.png"></image> -->
               </view>
 
               </view> 
