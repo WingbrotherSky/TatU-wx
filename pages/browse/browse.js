@@ -1,4 +1,5 @@
 const paths = require('../../common/apiPaths')
+const requests = require('../../common/apiClient')
 
 // pages/info5/info5.js
 Page({
@@ -63,10 +64,10 @@ Page({
   onLoad: function (options) {
     const that = this
    
-    wx.request({
+    requests.get({
       url: paths.getAllArtists,
-      data: {auth_key: wx.getStorageSync("auth_key")},
-      success:res => {
+      success: res => {
+        console.log("res", res)
         const tags = []
         let tagsObjjs = res.data.tags
         tagsObjjs.forEach((o) => {
@@ -103,11 +104,9 @@ Page({
     const that = this
     let recipient_id = this.data.bookedArtist
     let content = e.detail.value.content
-    wx.request({
+    requests.post({
       url: paths.postMessage,
-      method: "post",
       data: {
-        auth_key: wx.getStorageSync("auth_key"),
         user_id: recipient_id,
         content: content
       },
@@ -136,11 +135,9 @@ Page({
     })
 
     if (art.favorited == false) {
-    wx.request({
+    requests.post({
       url: paths.newFavorite,
-      method: "post",
       data: {
-        auth_key: auth_key,
         id: imageId
       },
       success: res => {
@@ -152,12 +149,8 @@ Page({
     }
     })
     } else {
-        wx.request({
+        requests.delete({
           url: paths.deleteFavorite + `${imageId}`,
-          method: "delete",
-          data: {
-            auth_key: wx.getStorageSync("auth_key")
-          },
           success: res => {
               art.favorited = false
               that.setData({
@@ -177,9 +170,8 @@ bindPickerChange: function(e) {
   if (this.data.inputVal == "All") {
     that.onLoad()
   } else {
-  wx.request({
+  requests.get({
     url: paths.searchStyles + `${that.data.inputVal}`,
-    data: {auth_key: auth_key},
     success: res => {
       that.setData({
         artists: res.data.artists

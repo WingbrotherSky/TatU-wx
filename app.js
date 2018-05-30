@@ -1,6 +1,6 @@
 //app.js
 App({
-  login: function() {
+  login: function(callback) {
     const that = this
     const host = "https://tatu.wogengapp.cn/"
     console.log("Logging in")
@@ -21,6 +21,9 @@ App({
                 key: 'auth_key',
                 data: res.data.auth_key,
               })
+              if (callback){
+                callback()
+              }
             }
           })
         }
@@ -35,13 +38,16 @@ App({
         success: function (res) {
           console.log(22323232323232323, res)
           that.globalData.userInfo = res.data.userInfo
-          if (res.data.errors) {
-            wx.setStorage({
-              key: 'auth_key',
-              data: undefined,
-            })
-            that.login()
+          if (callback) {
+            callback()
           }
+          // if (res.data.errors) {
+          //   wx.setStorage({
+          //     key: 'auth_key',
+          //     data: undefined,
+          //   })
+          //   that.login()
+          // }
         }
       })
     }
