@@ -1,4 +1,10 @@
 /* pages/info5/info5.wxss */
+
+picker {
+  height: 5vh;
+  color: white;
+}
+
 .artist-container {
   height: 100vh;
   background-color:black;
@@ -367,7 +373,7 @@ animation:
   margin-right: auto;
   left: 0;
   right: 0;
-  bottom: 6vh;
+  bottom: 12vh;
   display: flex;
   flex-direction: row;
   justify-content: center;

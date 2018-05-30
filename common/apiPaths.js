@@ -12,5 +12,6 @@ module.exports = {
   getConverstation: host + 'conversation/',
   newFavorite: host + 'favorites',
   getAllFavorites: host + "favorites",
-  deleteFavorite: host + "favorites/"
+  deleteFavorite: host + "favorites/",
+  searchStyles: host + "artists/search/"
 }
