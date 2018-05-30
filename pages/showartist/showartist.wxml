@@ -7,7 +7,22 @@
   <view class='featured-container'>
       <view bindtap='previewImages' data-url="{{artist.avatar_url}}"class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{artist.avatar_url}}')"> {{artist.name}}
           <view class="experience">Experience: {{item.years_of_experience}} years</view>
-          <view class="tags-artist" data-id="{{item.id}}"><view class="tags-artist-style">New School</view></view>
+          <!-- Block for tags -->
+          <!-- <view wx:for="{{shop.artists}}"> -->
+                      <view class='tags-banner-box'>
+                      <view wx:for="{{artist.tags}}">              
+                          <view class="tags-artist" data-id="{{item.style}}">
+                            <view class="tags-artist-style">
+                                {{item.style}}
+                            </view>
+                          </view>
+                      </view>
+                      </view>
+                      <!-- </view> -->
+                      <!-- Block for tags -->
+          
+          
+          </view>
       </view>
      
     </view>
@@ -20,7 +35,7 @@
 </view>
 
 <!-- END CARD LOOP -->
-</view>
+
 <!-- START TAB BAR -->
 <view class='blank-item'> </view>
 <view class='nav'>

@@ -52,15 +52,7 @@
   padding: 10px;
 }
 
-.small-cards {
-      display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 60rpx;
-    position: relative;
-    padding-left: 9rpx;
-    padding-right: 9rpx;
-    padding-bottom: 5rpx;
-}
+
 
 /* For Gallery  */
 .gallery {
@@ -87,17 +79,16 @@
 .small-cards {
   display: flex;
   justify-content: space-around;
-   flex-wrap: wrap; 
+   flex-wrap: wrap;
   background-color: black;
-  margin-bottom: 6px;
+  margin-bottom: 16rpx;
 }
 
 .small-card {
-  height: 240rpx;
-  width: 235rpx;
+  height: 250rpx;
+  width: 250rpx;
   background-size: cover;
 }
-
 
 .gallery-item-cover {
     width: 100%;

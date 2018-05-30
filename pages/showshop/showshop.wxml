@@ -53,35 +53,40 @@
 <!-- Artists banner -->
 <view class='featured-container'>
 
-    <!-- Block for Artisits -->
+    <!-- Block for Artists -->
+
     <block wx:for="{{shop.artists}}">
 
             <!-- Artist Card -->
+
             <view class='artist'>
+
                 <view bindtap='showArtist' data-artistId="{{item.id}}" class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{item.avatar_url}}');">
+                <view>
                   <view>Artist: {{item.name}}</view>
-
-
-
-                      <view class='experience'> Experience: {{item.years_of_experience}} years</view>
+                  <view class='experience'> Experience: {{item.years_of_experience}} years</view>
+                </view>
+                     
                       <!-- Block for tags -->
+                      <view class='tags-banner-box'>
                       <block wx:for="{{item.tags}}">
+                        
                           <view class="tags-artist" data-id="{{item.style}}">
                             <view class="tags-artist-style">
                                 {{item.style}}
                             </view>
                           </view>
                       </block>
+                      </view>
                       <!-- Block for tags -->
-
                 </view>
             </view>
+
             <!-- Artist Card -->
 
               <!-- Multiple pictures inside gallery -->
               <view class="small-cards">
-                
-                <view wx:for="{{item.art}}" view bindtap='previewImages' data-url="{{item.url}}" class='small-card' style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{item.url}}');"></view>
+                <view wx:for="{{item.art}}"  bindtap='showArt' data-artId="{{item.id}}"class='small-card' style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{item.url}}');"></view>
               </view>
               <!-- Multiple pictures inside gallery -->
     </block>
