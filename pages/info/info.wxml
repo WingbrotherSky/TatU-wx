@@ -2,7 +2,7 @@
 <view class="empty"></view>
 <view class='shop-container' >
     <view class='featured-container'>
-      <view bindtap='' data-artistId="{{item.id}}" class="big-card card-one" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://wx4.sinaimg.cn/mw690/95af932egy1fosum18zo5j21hc1hcauo.jpg');"> <view class ="info-one">信息及安全须知:</view>
+      <view bindtap='' data-artistId="{{item.id}}" class="big-card card-one"> <view class ="info-one">信息及安全须知:</view>
       <view class ="info-one">Information and Safety:</view>
       <view class ="info-two">点击下面的标题</view>
       <view class ="info-two">Click Topic Below</view>
