@@ -5,7 +5,7 @@
 <!-- START CONTAINER CARD  -->
 <view class='artist-container'>
   <view class='featured-container'>
-      <view bindtap='previewImages' data-url="{{artist.avatar_url}}"class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{artist.avatar_url}}')"> 纹身师 Artist: {{artist.name}}
+      <view bindtap='previewImages' data-url="{{artist.avatar_url}}" class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{artist.avatar_url}}')"> 纹身师 Artist: {{artist.name}}
           <view class="experience">经验 Experience: {{item.years_of_experience}} years</view>
         <!-- Block for tags -->
           <!-- <view wx:for="{{shop.artists}}"> -->
