@@ -3,7 +3,6 @@
 .artist-container {
   margin: 6px;
   border-radius: 3px;
-  background: linear-gradient(white, black);
 }
 
 .artist-info {
@@ -57,8 +56,8 @@
     flex-wrap: wrap;
     margin-bottom: 60rpx;
     position: relative;
-    padding-left: 9rpx;
-    padding-right: 9rpx;
+    padding-left: 2rpx;
+    padding-right: 2rpx;
     padding-bottom: 5rpx;
 }
 
@@ -68,8 +67,7 @@
     flex-wrap: wrap;
     margin-bottom: 60rpx;
     position: relative;
-    padding-left: 9rpx;
-    padding-right: 9rpx;
+    padding: 9rpx;
 }
 
 .big-card {
@@ -89,7 +87,10 @@
   justify-content: space-around;
    flex-wrap: wrap; 
   background-color: black;
-  margin-bottom: 6px;
+  margin-top: 6rpx;
+  margin-bottom: 6rpx;
+  padding: 3rpx;
+  border: 2px solid rgba(255,255,255,0.8);
 }
 
 .small-card {
