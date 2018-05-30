@@ -12,6 +12,8 @@ Page({
   data: {
     inputShowed: false,
     inputVal: "",
+    shop: {}
+
   },
   previewImages(e) {
     console.log('ready to preview');
@@ -24,16 +26,20 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    console.log(11111221, options)
     const that = this
     const auth_key = wx.getStorageSync("auth_key")
     wx.request({
       url: paths.getArtist + options.id,
-      data: {auth_key: auth_key},
+      data: { auth_key: auth_key },
       success: res => {
+        console.log(2332, res)
         that.setData({ artist: res.data })
+        console.log(554455, that.data.artist)
       }
     })
   },
+
 
   showShop: function (e) {
     const data = e.currentTarget.dataset

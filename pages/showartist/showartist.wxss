@@ -299,3 +299,8 @@ page {
   align-items: center; 
   /* margin: 15rpx; */
   }
+
+  .tags-banner-box {
+  justify-content: space-around;
+  margin: 10px;
+}
