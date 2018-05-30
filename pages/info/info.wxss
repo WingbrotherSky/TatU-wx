@@ -34,24 +34,33 @@
   height: 100px;
   width: 500px;
   color: white;
-  transform: rotate(7deg);
+  transform: rotate(5deg);
   padding: 10px;
   font-weight: bold;
+  border-top: 1px solid rgba(255,255,255,0.6);
+  border-bottom: 1px solid rgba(255,255,255,0.6);
   margin-top: 5rpx;
   margin-right: 8rpx;
+  margin-bottom: 10rpx;
 
 }
 
 .big-card.card-one {
   text-decoration: underline;
-  padding-left: 170rpx;
+  padding-left: 150rpx;
   font-weight: normal;
-  font-size: 35rpx;
+  font-size: 45rpx;
 }
 
 .info-one {
   text-decoration: none;
-  font-size: 40rpx;
+  font-size: 30rpx;
+  margin-left: 70rpx;
+  margin-bottom: 12rpx;
+}
+
+.info-two {
+  font-size: 25rpx;
 }
 
 .empty {
