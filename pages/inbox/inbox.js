@@ -104,6 +104,7 @@ Page({
     const that = this
     let recipient_id = this.data.convId
     let content = e.detail.value.content
+    const auth_key = wx.getStorageSync("auth_key")
     this.setData({
       nada: '',
       lastOne: ""
