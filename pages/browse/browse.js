@@ -174,6 +174,9 @@ bindPickerChange: function(e) {
   this.setData({
     inputVal: this.data.tags[e.detail.value]
   })
+  if (this.data.inputVal == "All") {
+    that.onLoad()
+  } else {
   wx.request({
     url: paths.searchStyles + `${that.data.inputVal}`,
     data: {auth_key: auth_key},
@@ -183,6 +186,7 @@ bindPickerChange: function(e) {
       })
     }
   })
+  }
 },
 
   goToInfoPage: function (e) {
