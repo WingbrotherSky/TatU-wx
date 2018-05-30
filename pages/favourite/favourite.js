@@ -101,9 +101,12 @@ Page({
   // END TABBAR
   
   showShop: function (e) {
+    const data = e.currentTarget.dataset
+    const shopId = data.shopid
+    console.log(7777,e)
 
     wx.navigateTo({
-      url: `/pages/showshop/showshop`,
+      url: `/pages/showshop/showshop?id=${shopId}`,
     })
   },
 
