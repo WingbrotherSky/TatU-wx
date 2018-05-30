@@ -1,5 +1,30 @@
 /* pages/inbox/inbox.wxss */
 
+.text {
+ height: 5vh;
+  color: #bf2a32;
+  background-color: #1C1919;
+  margin-bottom: 15px;
+  /* border: 1rpx solid rgba(0,0,0,0.7);  */
+  box-shadow: 1rpx 4rpx 3rpx 3rpx rgba(255,255,255,.2);
+/* animation: 
+stretch
+    10s
+    alternate
+    infinite
+    none
+    running; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.shop-container {
+  margin: 1px;
+  border-radius: 1px;
+  background: black;
+
+}
 .wrapper {
   height: 93.5vh;
   background-color: black;

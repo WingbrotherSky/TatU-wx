@@ -3,10 +3,10 @@
 
    
 <view class='shop-container'>
+  <view class="text">View Favorites Below:</view>
   <view wx:for="{{favorites}}" >
     
     <view  class='featured-container'> 
-    <view class="text">View your favorites below</view>
       <view bindtap='previewImage' data-art-url="{{item.art.url}}" class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{item.art.url}}');"> 
         <!-- <view class='shop-name'>{{item.name}} </view> -->
           <image  catchtap='showArtist' data-artistid="{{item.art.artist.id}}" class='shop-logo-avatar' src="{{item.art.artist.avatar_url}}"></image>

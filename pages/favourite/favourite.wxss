@@ -4,19 +4,19 @@
  height: 5vh;
   color: #bf2a32;
   background-color: #1C1919;
-  margin-bottom: 0;
+  margin-bottom: 15px;
   /* border: 1rpx solid rgba(0,0,0,0.7);  */
   box-shadow: 1rpx 4rpx 3rpx 3rpx rgba(255,255,255,.2);
-animation: 
+/* animation: 
 stretch
     10s
     alternate
     infinite
     none
-    running;
+    running; */
     display: flex;
     align-items: center;
-    justify-content: space-around; 
+    justify-content: space-around;
 
 }
 
@@ -37,8 +37,7 @@ stretch
 
 .featured-container {
   padding-top: 3rpx;
-  background: linear-gradient(#A3A0A0, #262626);
-  margin-bottom: 15px;
+  margin-bottom: 15rpx;
 }
 .shop-name {
   font-size: 20px;
@@ -62,7 +61,8 @@ stretch
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  margin: 1px;
+  margin: 7rpx;
+  box-shadow: 1rpx 1rpx 1rpx 1rpx rgba(255,255,255,0.3);
 
 }
 
@@ -73,10 +73,11 @@ stretch
   background-position: center;
   color: white;
   margin: 0;
-  margin-bottom: 2px;
+  margin-bottom: 1rpx;
   display: flex;
   justify-content: space-between;
-
+  border: 1rpx solid rgba(255,255,255,0.4);
+  
 }
 
 .small-cards {
@@ -209,6 +210,8 @@ stretch
 .markey-container {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  height: 6.5vh;
 }
 
 

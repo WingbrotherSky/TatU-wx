@@ -1,6 +1,7 @@
 
   <view class="wrapper">
-    <view class="title" wx:if="{{inbox}}">Conversations</view>
+  <view class='shop-container'>
+    <view class="text" wx:if="{{inbox}}">Conversations</view>
     <view class="title" wx:else>{{convName}}</view>
     <scroll-view scroll-y="true" scroll-into-view="{{lastOne}}" class="inbox-container">
       <block wx:for="{{items}}">
@@ -45,6 +46,7 @@
       <view class='extend-padding' bindtap='goInfo'>
       <image class='avatar-tab' src="../../image/infored.png"></image>
       </view>
+  </view>
   </view>
 </view>
 <!-- END TAB BAR -->

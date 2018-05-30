@@ -112,6 +112,8 @@
 .markey-container {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  height: 6.5vh;
 }
 
 
