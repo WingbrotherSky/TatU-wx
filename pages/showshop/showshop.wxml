@@ -1,27 +1,23 @@
 <!-- START CONTAINER CARD  -->
-
 <!-- Shop Banner -->
 <view class='shop-container'>
     <view>
       <view class='shop-info'>
         <image class='shop-logo' src="{{shop.logo_url}}"> </image>
-
               <view>
                   <view class='shop-name'>{{shop.name}}</view>
-                  <button class="book-button" bindtap='showMessageForm' data-id="{{shop.id}}">发信息: Message {{shop.name}}</button>
+                  <button class="book-button" bindtap='showMessageForm' data-id="{{shop.id}}">Message {{shop.name}}</button>
               </view>
       </view>
     </view>
 </view>
 <!-- Shop Banner -->
 
-
-
 <!-- Shop information  -->
     <view class='shop-bio'>
         <view class="location">
-            <view> 地址：Location: Chengdu </view>
-            <view> 电话：Contact: {{shop.phone_number}} </view>
+            <view> Location: Chengdu </view>
+            <view> Contact: {{shop.phone_number}} </view>
         </view>
     </view>
 <!-- Shop information  -->
@@ -38,7 +34,6 @@
 
     <view class="message-container" hidden='{{bookedShop ? false : true}}'>
         <view style="background-color: black;">
-
           <form class="message-form" bindsubmit='bindSubmit'>
              <view  style="display: flex; justify-content: center; align-items: right; flex-direction: column;">
                 <textarea name="content" value="{{formValue}}" placeholder='What do you want to ask {{shop.name}}?' style="text-align: center;"></textarea>
@@ -53,18 +48,22 @@
 <!-- Artists banner -->
 <view class='featured-container'>
 
-    <!-- Block for Artisits -->
+    <!-- Block for Artists -->
+
     <block wx:for="{{shop.artists}}">
 
             <!-- Artist Card -->
+
             <view class='artist'>
+
                 <view bindtap='showArtist' data-artistId="{{item.id}}" class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{item.avatar_url}}');">
-                  <view>纹身师 Artist: {{item.name}}</view>
-
-
-
-                      <view class='experience'> 经验 Experience: {{item.years_of_experience}} 年 Years</view>
+                <view>
+                  <view>Artist: {{item.name}}</view>
+                  <view class='experience'> Experience: {{item.years_of_experience}} years</view>
+                </view>
+                     
                       <!-- Block for tags -->
+                      <view class='tags-banner-box'>
                       <block wx:for="{{item.tags}}">
                           <!-- <view class="tags-artist-flex"> -->
                            <view class="tags-artist" data-tag="{{item.style}}" >
@@ -72,18 +71,17 @@
                                 {{item.style}}
                             </view>
                           </view>
-                        <!-- </view> -->
                       </block>
+                      </view>
                       <!-- Block for tags -->
-
                 </view>
             </view>
+
             <!-- Artist Card -->
 
               <!-- Multiple pictures inside gallery -->
               <view class="small-cards">
-                
-                <view wx:for="{{item.art}}" view bindtap='previewImages' data-url="{{item.url}}" class='small-card' style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{item.url}}');"></view>
+                <view wx:for="{{item.art}}"  bindtap='showArt' data-artId="{{item.id}}"class='small-card' style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{item.url}}');"></view>
               </view>
               <!-- Multiple pictures inside gallery -->
     </block>
