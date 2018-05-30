@@ -2,10 +2,7 @@
 <view class="flex-for-text">
   <view class="title-text"> Basic Tattoo Safety Guidelines </view>
   <image class='red-border' src="/image/red-border.jpg" />
-<text class="body-text-first-pg">
-This information is adapted from the Alliance of Professional Tattooists (APT). Their website can be accessed
-at www.safe-tattoos.com.
-</text>
+
 <text class="body-text">
 Tattooing has increased in popularity over the last several years. It is important to be informed of the potential risks involved
 ingetting tattoos, and take appropriate steps to protect yourself. The following questions and answers will be helpful in learningthe
@@ -113,6 +110,11 @@ http://www.tattooaftercare.net/howTo.htm
 http://www.city.milwaukee.gov/display/displayFile.aspx?docid=9229&filename=/Groups/healthAuthors/
 CEH/PDFs/ Tattoo_aftercare.pdf 
     </text>
+
+    <text class="body-text-first-pg">
+This information is adapted from the Alliance of Professional Tattooists (APT). Their website can be accessed
+at www.safe-tattoos.com.
+</text>
   </text>
 
   <!-- START TAB BAR -->

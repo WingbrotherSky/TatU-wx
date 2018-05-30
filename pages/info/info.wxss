@@ -42,21 +42,24 @@
   margin-top: 5rpx;
   margin-right: 8rpx;
   margin-bottom: 10rpx;
+  background-color: #bf2a32;
 
 }
 
 .big-card.card-one {
-  text-decoration: underline;
-  padding-left: 150rpx;
-  font-weight: normal;
-  font-size: 45rpx;
+  /* text-decoration: underline; */
+  padding-left: 40rpx;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  font-size: 150rpx;
+  
 }
 
 .info-one {
   text-decoration: none;
   font-size: 30rpx;
-  margin-left: 70rpx;
-  margin-bottom: 12rpx;
+  /* margin-left: 10rpx;
+  margin-bottom: 12rpx; */
 }
 
 .info-two {
@@ -112,6 +115,8 @@
 .markey-container {
   display: flex;
   justify-content: space-around;
+  height: 6.5vh;
+  align-items: center;
 }
 
 
