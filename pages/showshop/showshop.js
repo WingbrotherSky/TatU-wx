@@ -49,7 +49,7 @@ Page({
       method: "post",
       data: {
         auth_key: wx.getStorageSync("auth_key"),
-        user_id: recipient_id,
+        shop_id: recipient_id,
         content: content
       },
       success: res => {
