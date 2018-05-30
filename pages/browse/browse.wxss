@@ -22,11 +22,11 @@ stretch
 }
 
 .dropdown {
-  width: 5vw;
-  height: 5vh;
-  padding-top: 2rpx;
+  width: 6vw;
+  height: 4vh;
+  padding-top: 0rpx;
   padding-left: 14rpx;
-  /* top: 10rpx; */
+
 }
 
 .choose-style {
@@ -211,7 +211,7 @@ color: white;
 }
 
 .artist-info {
-  margin-top: 20rpx;
+  margin-top: 15rpx;
   background-color: black;
 }
 
@@ -336,6 +336,7 @@ animation:
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 3vh;
 }
 
 .artist-title {
@@ -390,8 +391,8 @@ animation:
 }
 
 .down-arrow-img {
-  height: 2.8vh;
-  width: 7vw;
+  height: 2.5vh;
+  width: 6vw;
   padding: 0rpx;
   padding-bottom: 0px;
   padding-top: 5rpx;
@@ -406,7 +407,7 @@ animation:
   margin-right: auto;
   left: 0;
   right: 0;
-  bottom: 12vh;
+  bottom: 9vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -534,7 +535,7 @@ animation:
   border-radius: 4rpx;
   /* width: 15vw; */
   height: 50rpx;
-  font-size: 12px;
+  font-size: 20rpx;
   font-weight: lighter;
   display: inline-flex;
   /* display: flex;
@@ -543,9 +544,9 @@ animation:
   background-color: black;
   border: 2px solid rgba(255,255,255,.7);
   color: rgba(255,255,255,.9);
-  margin: 20rpx;
+  margin: 10rpx;
   border-radius: 15px;
-  box-shadow: 1rpx 2rpx 2rpx 3rpx rgba(255,255,255,0.3);
+  /* box-shadow: 1rpx 2rpx 2rpx 3rpx rgba(255,255,255,0.3); */
   }
 
   .tags-artist {
@@ -576,7 +577,7 @@ animation:
 
 
   .swipe-down {
-    font-size: 26rpx;
+    font-size: 20rpx;
     margin-right: 1vw;
     margin-left: 1vw;
   }
