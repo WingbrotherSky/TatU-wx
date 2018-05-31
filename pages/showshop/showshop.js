@@ -32,6 +32,13 @@ Page({
       }
     })
   },
+  makeaCall: function (e) {
+    var that = this
+    wx.makePhoneCall({
+      phoneNumber: that.data.shop.phone_number
+    })
+  },
+
 
   previewImages(e) {
     console.log('ready to preview');
