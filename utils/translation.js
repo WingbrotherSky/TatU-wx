@@ -3,7 +3,7 @@ export default {
     // Index Page.
     'Tap Above to Enter': 'Tap Above to Enter',
     // Browse Page
-    'Style:': 'Style:',
+    'Style: ': 'Style: ',
     'All': 'All',
 
     // Show Shop Page
@@ -11,6 +11,7 @@ export default {
     'Chengdu': 'Chengdu',
     'Bio:': 'Bio:',
     'Send': 'Send',
+    'Leave Booking': 'Leave Booking',
 
     // Show Artist Page
     'Artist:': 'Artist:',
@@ -22,12 +23,14 @@ export default {
     'Favorites:': 'Favorites:',
     'You have no favorites yet! Get some!': 'You have no favorites yet! Get some!',
 
-    // Conversations Page
-    'Conversations': 'Conversations',
+    // Inbox Page
+    'Conversations:': 'Conversations:',
     'You have no conversations yet!': 'You have no conversations yet!',
 
     // Info Page
     'Information and Safety:': 'Information and Safety:',
+    'Click Topic Below': 'Click Topic Below',
+    'Swap App Language:': 'Swap App Language:'
   },
 
 
@@ -37,7 +40,7 @@ export default {
     'Tap Above to Enter': '点击进入',
 
     // Browse Page
-    'Style:': '风格:',
+    'Style: ': '风格: ',
     'All': '全部',
 
     // Show Shop Page
@@ -57,11 +60,12 @@ export default {
      'You have no favorites yet! Get some!': '您还没有收藏!',
 
      // Inbox Page
-    'Conversations': '对话',
+    'Conversations:': '对话:',
     'You have no conversations yet!': '您还没有对话!',
 
     // Info Page
     'Information and Safety:': '信息及安全须知:',
-
+    'Click Topic Below': '点击一下标题',
+    'Swap App Language:': '切换语言',
   }
 }

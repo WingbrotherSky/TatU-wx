@@ -1,6 +1,9 @@
 <page>
+<view class="language-switcher-flex">
+      <text class="swap-text"><TText text="Swap App Language:"/></text> <button bindtap="switchLanguage" class="language-switcher" size="mini">EN/CN</button>
+    </view>
 <view class="empty"></view>
-<view class='shop-container' >
+<view class='shop-container'>
     <view class='featured-container'>
       <view bindtap='' data-artistId="{{item.id}}" class="big-card card-one"> <view class ="info-one">
       <!-- 信息及安全须知: -->
@@ -11,12 +14,9 @@
       <view class ="info-two">
       <!-- 点击下面的标题 -->
       </view>
-      <view class ="info-two">Click Topic Below</view>
+      <view class ="info-two"><TText text="Click Topic Below"/></view>
         </view>
       </view> 
-    </view>
-    <view class="language-switcher-flex">
-      <button bindtap="switchLanguage" class="language-switcher" type="primary" size="mini">EN/CN</button>
     </view>
     <view class='shop-container' bindtap='showInfo2'>
     <view class='featured-container'>

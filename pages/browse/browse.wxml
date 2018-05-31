@@ -1,16 +1,13 @@
-<picker mode="selector" bindchange='bindPickerChange' custom-item="All Styles" value="{{index}}" range="{{tags}}">  <view class="choose-style" style="color: #bf2a32;"> Style: {{inputVal || initialStyle || "All"}} <image src='/image/drop-down-arrow.png' class="dropdown"></image> </view>
+<picker mode="selector" bindchange='bindPickerChange' custom-item="All Styles" value="{{index}}" range="{{tags}}">  
+  <view class="choose-style" style="color: #bf2a32;"> 
+    <TText text="Style: "/>
+      <view class="invisible-underlines" style="color: #1C1919">_</view> 
+      {{inputVal || initialStyle || " All"}} 
+      <image src='/image/drop-down-arrow.png' class="dropdown"></image> 
+  </view>
 </picker>
 <view style="position: relative;">
-  <view class="message-container" hidden='{{bookedArtist ? false : true}}'>
-    <view style="background-color: black;">
-      <form class="message-form" bindsubmit='bindSubmit'>
-        <view  style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
-          <textarea name="content" placeholder='What do you want to ask {{ bookedArtist.shop.name }}?' style="text-align: center;"></textarea>
-        <button class="send-button" form-type='submit'>Send</button>
-      </view>
-    </form>
-  </view>
-  </view>
+  
 
    <!-- <picker class="picker-class" bindchange="bindPickerChange" value="{{index}}" range="{{array}}"> 
                           <button class="tag-picker"><view class="search"><image class="search-img" src="/image/search (1).png"></image><view class="search2">Search Styles</view> </view></button>
