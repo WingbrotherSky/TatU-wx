@@ -61,11 +61,13 @@ Page({
       url: '/pages/favourite/favourite',
     })
   },
+
   goInbox: function (e) {
     wx.reLaunch({
       url: '/pages/inbox/inbox',
     })
   },
+
   goInfo: function (e) {
     wx.reLaunch({
       url: '/pages/info/info',
@@ -192,9 +194,9 @@ Page({
   },
 
   goFavourite: function (e) {
-    wx.navigateTo({
-      url: '/pages/favourite/favourite',
-    })
+    // wx.navigateTo({
+    //   url: '/pages/favourite/favourite',
+    // })
   },
   goInbox: function (e) {
     wx.navigateTo({

@@ -17,29 +17,29 @@ Page({
   // START TABBAR
   goBack: function (e) {
     console.log(333, "back")
-    wx.navigateTo({
+    wx.reLaunch({
       url: '/pages/showshop/showshop',  //// change to one page before
     })
   },
 
   goBrowse: function (e) {
-    wx.navigateTo({
+    wx.reLaunch({
       url: '/pages/browse/browse',
     })
   },
 
   goFavourite: function (e) {
-    wx.navigateTo({
+    wx.reLaunch({
       url: '/pages/favourite/favourite',
     })
   },
   goInbox: function (e) {
-    wx.navigateTo({
+    wx.reLaunch({
       url: '/pages/inbox/inbox',
     })
   },
   goInfo: function (e) {
-    wx.navigateTo({
+    wx.reLaunch({
       url: '/pages/info/info',
     })
   },

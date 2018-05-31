@@ -21,31 +21,31 @@ Page({
    */
 
   showInfo1: function (e) {
-    wx.navigateTo({
+    wx.reLaunch({
       url: `/pages/info1/info1`,
     })
 },
 
   showInfo2: function (e) {
-    wx.navigateTo({
+    wx.reLaunch({
       url: `/pages/info1/info1`,
     })
   },
 
   showInfo3: function (e) {
-    wx.navigateTo({
+    wx.reLaunch({
       url: `/pages/info1/info1`,
     })
   },
 
   showInfo4: function (e) {
-    wx.navigateTo({
+    wx.reLaunch({
       url: `/pages/info1/info1`,
     })
   },
 
   showInfo5: function (e) {
-    wx.navigateTo({
+    wx.reLaunch({
       url: `/pages/info1/info1`,
     })
   },
@@ -54,7 +54,7 @@ Page({
     const data = e.currentTarget.dataset
     const artistId = data.artistid
 
-    wx.navigateTo({
+    wx.reLaunch({
       url: `/pages/showimage/showimage`,
     })
   },
@@ -63,7 +63,7 @@ Page({
     const data = e.currentTarget.dataset
     const artistId = data.artistid
 
-    wx.navigateTo({
+    wx.reLaunch({
       url: `/pages/showartist/showartist?id=${artistId}`,
     })
   },
@@ -73,7 +73,7 @@ Page({
     const artId = data.artid
 
 
-    wx.navigateTo({
+    wx.reLaunch({
       url: `/pages/showimage/showimage?id=${artId}`,
     })
   },
@@ -104,7 +104,7 @@ Page({
   // START TABBAR
   goBack: function (e) {
     console.log(333, "back")
-    wx.navigateTo({
+    wx.reLaunch({
       url: '/pages/index/index',    //// change to one page before
     })
   },
@@ -126,9 +126,9 @@ Page({
     })
   },
   goInfo: function (e) {
-    wx.reLaunch({
-      url: '/pages/info/info',
-    })
+    // wx.reLaunch({
+    //   url: '/pages/info/info',
+    // })
   },
 
   // END TABBAR
