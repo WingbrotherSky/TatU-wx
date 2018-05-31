@@ -20,7 +20,7 @@
             <view class='contact-info'>
               <image class="info-icon" src='/../../image/placeholder2.png'></image> Chengdu 
             </view>
-            <view class='contact-info'>
+            <view class='contact-info2' bindtap='makeaCall'>
               <image class="info-icon" src='/../../image/phonebook.png'></image>
                 <text>{{shop.phone_number}} </text>
             </view> 
