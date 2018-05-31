@@ -29,6 +29,13 @@
   
 }
 
+.info-icon2 {
+  width: 30rpx;
+  height: 30rpx;
+  padding-left: 8rpx;
+
+  
+}
 .featured-container {
   background: black;
 }
@@ -242,7 +249,7 @@ page {
 .message-container {
   display: flex;
   background: rgba(0,0,0,.6);
-  height: 37vh;
+  height: 32vh;
   width: 100vw;
   justify-content: center;
   align-content: center;
@@ -253,6 +260,10 @@ textarea {
   background-color: white;
   margin-bottom: 15rpx;
   border-radius: 5px;
+}
+
+.message-box {
+  height: 30vh;
 }
 
 ::content{
@@ -272,6 +283,7 @@ textarea {
   color: black;
   margin-bottom: 10rpx;
   /* border-radius: 5px; */
+  width:330rpx;
 }
 
 .experience {
@@ -286,8 +298,8 @@ textarea {
 
 .button {
   border-radius: 5rpx;
-  width: 55%;
-  height: 65rpx;
+  width:60%;
+  height:30%;
   font-size: 15px;
   font-weight: bold;
   display: flex;

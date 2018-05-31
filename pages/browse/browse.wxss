@@ -409,7 +409,7 @@ animation:
   margin-right: auto;
   left: 0;
   right: 0;
-  bottom: 9vh;
+  bottom: 9.2vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -436,7 +436,7 @@ animation:
   }
   
   100% {
-    transform: translate(0rpx, 5rpx);
+    transform: translate(0rpx, 4rpx);
   }
 }
 

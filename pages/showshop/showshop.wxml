@@ -6,7 +6,7 @@
         <image class='shop-logo' src="{{shop.logo_url}}"> </image>
               <view>
                   <view class='shop-name'>{{shop.name}}</view>
-                  <button class="book-button" bindtap='showMessageForm' data-id="{{shop.id}}">Message {{shop.name}}</button>
+                  <button class="book-button" bindtap='showMessageForm' data-id="{{shop.id}}">Message Us <image class="info-icon2" src='/image/paper-plane.png' /></button>
               </view>
       </view>
     </view>
@@ -18,10 +18,10 @@
         <view class="location">
            
             <view class='contact-info'>
-              <image class="info-icon" src='/../../image/placeholder2.png'></image> Chengdu 
+              <image class="info-icon" src='/image/placeholder2.png'></image> Chengdu 
             </view>
             <view class='contact-info2' bindtap='makeaCall'>
-              <image class="info-icon" src='/../../image/phonebook.png'></image>
+              <image class="info-icon" src='/image/phonebook.png'></image>
                 <text>{{shop.phone_number}} </text>
             </view> 
           </view>
@@ -41,10 +41,10 @@
     <view class="message-container" hidden='{{bookedShop ? false : true}}'>
         <view style="background-color: black;">
           <form class="message-form" bindsubmit='bindSubmit'>
-             <view  style="display: flex; justify-content: center; align-items: right; flex-direction: column;">
+             <view class='message-box' style="display: flex; justify-content: center; align-items: right; flex-direction: column;">
                 <textarea name="content" value="{{formValue}}" placeholder='What do you want to ask {{shop.name}}?' style="text-align: center;"></textarea>
               <button class="button" form-type='submit'>Send</button>
-              <button class='button' bindtap='goBack'>Leave booking</button>
+              <button class='button' bindtap='goBack'>Leave Booking</button>
              </view>
           </form>
         </view>
@@ -65,7 +65,7 @@
                 <view bindtap='showArtist' data-artistId="{{item.id}}" class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{item.avatar_url}}');">
                 <view>
                   <view>Artist: {{item.name}}</view>
-                  <view class='experience'> Experience: {{item.years_of_experience}} years</view>
+                  <view class='experience'> Experience: {{item.years_of_experience}} Years</view>
                 </view>
                
                       <!-- Block for tags -->
