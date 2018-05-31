@@ -1,4 +1,4 @@
-<picker mode="selector" bindchange='bindPickerChange' custom-item="All Styles" value="{{index}}" range="{{tags}}">  <view class="choose-style" style="color: #bf2a32;"> Style: {{inputVal || "All"}} <image src='/../../image/drop-down-arrow.png' class="dropdown"></image> </view>
+<picker mode="selector" bindchange='bindPickerChange' custom-item="All Styles" value="{{index}}" range="{{tags}}">  <view class="choose-style" style="color: #bf2a32;"> Style: {{inputVal || initialStyle || "All"}} <image src='/../../image/drop-down-arrow.png' class="dropdown"></image> </view>
 </picker>
 <view style="position: relative;">
   <view class="message-container" hidden='{{bookedArtist ? false : true}}'>
@@ -16,16 +16,16 @@
                           <button class="tag-picker"><view class="search"><image class="search-img" src="/image/search (1).png"></image><view class="search2">Search Styles</view> </view></button>
                         </picker> -->
   
-  <swiper vertical="true" current="{{currentPage}}" style="height: 100vh; width: 100vw;">
+  <swiper vertical="true" current="{{yIndex}}" style="height: 100vh; width: 100vw;" bindchange='resetXIndex'>
     <block wx:for="{{artists}}">
       <swiper-item>
         <view class="artist-container">
-          <swiper style="width: 100vw; height: 60vh;" indicator-dots="true" circular="true">
+          <swiper style="width: 100vw; height: 60vh;" indicator-dots="true" circular="true" current="{{xIndex}}">
             <block wx:for="{{item.art}}">
               <swiper-item>
                 <view style="display: flex; justify-content: center;">
                   <view class="CTA-container">
-                    <button class="share-btn" open-type="share"><image class="share-img" src="/image/share-buttonred.png"></image></button>
+                    <button data-artId="{{item.id}}" class="share-btn" open-type="share"><image class="share-img" src="/image/share-buttonred.png"></image></button>
                        
                      <image bindtap="favoriteImage" data-id="{{item.id}}" class="heart-icon" src="{{item.favorited ? '/image/devilred.png' : '/image/devilwhite.png'}}">
                       <!-- style="background-image: url({{item.favorited ? '/image/devilred.png' : '/image/devilwhite.png'}}); background-size: cover; background-position: center, center;" >   -->
@@ -49,12 +49,9 @@
           <view class="artist-and-work-info-flex">
             <view class="artist-info">
               <view class="artist-name-container">
-                <!-- <text class="artist-title">纹身师: Artist:</text> -->
-                <!-- <text class="artist-name">{{item.name}}</text> -->
                 <block wx:for="{{item.tags}}">
-                  <button class="tags" data-tag="{{item.style}}"><text class="tags-artist-style">{{item.style}}</text></button>
+                  <button class="tags" data-tag="{{item.style}}" bindtap='tagFilter'><text class="tags-artist-style">{{item.style}}</text></button>
                 </block>
-                <!-- <text class="see-more" bindtap='goToShowShopPage'>进入: Go To {{item.shop.name}}</text>  -->
               </view>
             </view>
               <view wx:if="{{item.id != artists[artists.length - 1].id}}" class="view-next-artist-text">
