@@ -174,6 +174,7 @@ bindPickerChange: function(e) {
   this.setData({
     inputVal: this.data.tags[e.detail.value]
   })
+  console.log(that.data.inputVal)
   if (this.data.inputVal == "All") {
     that.onLoad()
   } else {
@@ -181,9 +182,12 @@ bindPickerChange: function(e) {
     url: paths.searchStyles + `${that.data.inputVal}`,
     data: {auth_key: auth_key},
     success: res => {
+      console.log(res)
       that.setData({
-        artists: res.data.artists
+        artists: res.data.artists,
+        currentPage: 0
       })
+      console.log(that.data.artists)
     }
   })
   }
