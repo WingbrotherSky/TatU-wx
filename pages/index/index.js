@@ -1,8 +1,11 @@
 //index.js
 //获取应用实例
 const app = getApp()
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> d3a71194a4cd33ec971acebfae99e05e1d391b05
 const host = "https://tatu.wogengapp.cn/"
 
 
