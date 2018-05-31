@@ -10,7 +10,7 @@
       
       <view>
          <view> 纹身师 Artist: {{artist.name}}</view>
-          <view class='experience'> 经验 Experience: {{item.years_of_experience}} years</view>
+          <view class='experience'> 经验 Experience: {{artist.years_of_experience}} years</view>
                 </view>
     
         <!-- Block for tags -->
@@ -45,16 +45,16 @@
 <view class='nav'>
   <view class='markey-container'>
       <view class='extend-padding' bindtap='goBrowse'>
-      <image class='avatar-tab' src="../../image/search2red.png"></image>
+      <image class='avatar-tab' src="../../image/search2white.png"></image>
       </view>
       <view class='extend-padding' bindtap='goFavourite'>
-      <image class='avatar-tab' src="../../image/devilred.png"></image>
+      <image class='avatar-tab' src="../../image/favoriteswhite.png"></image>
       </view>
       <view class='extend-padding' bindtap='goInbox'>
-      <image class='avatar-tab' src="../../image/messagesred.png"></image>
+      <image class='avatar-tab' src="../../image/messageswhite.png"></image>
       </view>
       <view class='extend-padding' bindtap='goInfo'>
-      <image class='avatar-tab' src="../../image/infored.png"></image>
+      <image class='avatar-tab' src="../../image/infowhite.png"></image>
       </view>
   </view>
 </view>
