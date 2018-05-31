@@ -109,8 +109,8 @@
 }
 
 .small-card {
-  height: 250rpx;
-  width: 250rpx;
+  height: 240rpx;
+  width: 243rpx;
   background-size: cover;
 }
 
