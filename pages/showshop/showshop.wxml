@@ -27,7 +27,9 @@
             <!-- Begin Bio Button -->
 
               <view class="bio">
-                <button class="bio-button" bindtap='showBio'> about us <image class="info-icon2" src='/image/white-drop-down-round-button.png' /></button>
+                <button class="bio-button" bindtap='showBio'>
+                  <TText class="white-text" text="About Us"/>
+                <image class="info-icon2" src='/image/white-drop-down-round-button.png' /></button>
               </view>
               <!-- End Bio Button --> 
           </view>
@@ -89,7 +91,7 @@
 
                 <view bindtap='showArtist' data-artistId="{{item.id}}" class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{item.avatar_url}}');">
                 <view>
-                  <view>Artist: {{item.name}}</view>
+                  <view><TText text="Artist:"/> {{item.name}}</view>
                   <view class='experience'> <TText text="Experience:"/> {{item.years_of_experience}} <TText text="Years"/></view>
                 </view>
                

@@ -1,8 +1,8 @@
 <page>
 <view class="language-switcher-flex">
-      <text class="swap-text">
-        <TText text="Swap App Language:"/>
-      </text> <button bindtap="switchLanguage" class="language-switcher" size="mini">EN/CN</button>
+      
+        <TText class="swap-text" text="Swap App Language:"/>
+       <button bindtap="switchLanguage" class="language-switcher" size="mini">EN/CN</button>
     </view>
 <view class="empty"></view>
 <view class='shop-container'>

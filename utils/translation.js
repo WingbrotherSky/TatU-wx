@@ -12,6 +12,7 @@ export default {
     'Bio:': 'Bio:',
     'Send': 'Send',
     'Leave Booking': 'Leave Booking',
+    'About Us': 'About Us',
 
     // Show Artist Page
     'Artist:': 'Artist:',
@@ -48,6 +49,7 @@ export default {
     'Chengdu': '成都',
     'Send': '发送',
     'Leave Booking': '离开',
+    'About Us': '关于我们',
 
     // Show Artist Page
     'Artist:': '纹身师:',
@@ -65,7 +67,7 @@ export default {
 
     // Info Page
     'Information and Safety:': '信息及安全须知:',
-    'Click Topic Below': '点击一下标题',
+    'Click Topic Below': '点击以下标题',
     'Swap App Language:': '切换语言',
   }
 }

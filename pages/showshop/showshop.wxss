@@ -278,14 +278,14 @@ textarea {
 .bio-button {
   border-radius: 10rpx;
   height: 50rpx;
-  font-size: 12px;
+  font-size: 18rpx;
   font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: black;
    border: 2px solid white; 
-  color:white;
+  color: white;
   margin-bottom: 0;
   /* border-radius: 5px; */
   width:190rpx;
@@ -293,7 +293,7 @@ textarea {
 
 .bio-container {
   margin-top: 0;
-  padding: 16rpx;
+  padding: 8rpx;
   padding-left: 30rpx;
   padding-right: 30rpx;
   color: black;
@@ -301,6 +301,10 @@ textarea {
   background-color: white;
 
 }
+.white-text {
+  color: white;
+}
+
 .book-button {
   border-radius: 5rpx;
   height: 55rpx;
