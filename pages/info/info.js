@@ -24,7 +24,7 @@ Page({
     let currentLanguage = wx.getStorageSync('language')
     console.log(currentLanguage)
     if (currentLanguage === 'en') {
-      wx.setStorageSync('language', 'zh')
+      wx.setStorageSync('language', 'zh_CN')
       console.log(this)
       wx.reLaunch({
         url: '/pages/info/info',

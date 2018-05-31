@@ -32,7 +32,7 @@ export default {
 
 
 
-  'zh': {
+  'zh_CN': {
     // Index Page.
     'Tap Above to Enter': '点击进入',
 
