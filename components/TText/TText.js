@@ -9,10 +9,10 @@ Component({
     text: {
       type: String,
         observer: function(n) {
-        console.log(n)
-        const language = wx.getStorageSync('language') || 'en'
-        console.log(language)
-        console.log(translation.default['en']['Tap Above to Enter'])
+        // console.log(n)
+        const language = ['en', 'zh_CN'].includes(wx.getStorageSync('language')) ? wx.getStorageSync('language') : 'en'
+        // console.log(language)
+        // console.log(translation.default['en']['Tap Above to Enter'])
         this.setData({translatedText: translation.default[language][n]})
         }
     }
