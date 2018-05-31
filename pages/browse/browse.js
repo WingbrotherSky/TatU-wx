@@ -8,7 +8,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    index: 0
+    firstView: true
   },
 
   previewImages(e) {
@@ -63,7 +63,7 @@ Page({
    */
   onLoad: function (options) {
     const that = this
-   
+
     requests.get({
       url: paths.getAllArtists,
       success: res => {
@@ -77,6 +77,29 @@ Page({
           tags:tags,
           artists: res.data.artists
         })
+
+
+        if (options.id) {
+          let artId = options.id
+          let artists = res.data.artists
+
+          console.log("artists", artists)
+
+          artists.forEach((artist) => {
+            console.log(artist)
+            artist.art.forEach((art) => {
+              console.log(art)
+              if (art.id == artId) {
+                that.setData({
+                  yIndex: artists.indexOf(artist),
+                  xIndex: artist.art.indexOf(art)
+                })
+              }
+            })
+
+          })
+        }
+
       }
     })
     this.setData({
@@ -177,7 +200,7 @@ bindPickerChange: function(e) {
       console.log(res)
       that.setData({
         artists: res.data.artists,
-        currentPage: 0
+        yIndex: 0
       })
       console.log(that.data.artists)
     }
@@ -244,9 +267,25 @@ bindPickerChange: function(e) {
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
+  onShareAppMessage: function (e) {
+    console.log(e)
     wx.showShareMenu({
       withShareTicket: true
     })
+    return {
+      title: 'WeTat',
+      path: `/pages/browse/browse?id=${e.target.dataset.artid}`
+    }
+  },
+
+  resetXIndex: function () {
+    if (this.data.firstView) {
+    this.setData({
+      xIndex: 0
+    })
+    this.setData({
+      firstView: false
+    })
+    }
   }
 })
