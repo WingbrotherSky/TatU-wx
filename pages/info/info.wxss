@@ -12,6 +12,16 @@
   border-radius: 3px;
 }
 
+.language-switcher-flex {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15rpx;
+}
+
+.language-switcher {
+  display: flex;
+  align-items: center;
+}
 .featured-container {
   padding-top: 3rpx;
   margin-bottom: 1px;
