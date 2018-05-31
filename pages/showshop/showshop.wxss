@@ -29,6 +29,13 @@
   
 }
 
+.info-icon2 {
+  width: 30rpx;
+  height: 30rpx;
+  padding-left: 8rpx;
+
+  
+}
 .featured-container {
   background: black;
 }
@@ -276,6 +283,7 @@ textarea {
   color: black;
   margin-bottom: 10rpx;
   /* border-radius: 5px; */
+  width:330rpx;
 }
 
 .experience {
@@ -291,7 +299,7 @@ textarea {
 .button {
   border-radius: 5rpx;
   width:60%;
-height:30%;
+  height:30%;
   font-size: 15px;
   font-weight: bold;
   display: flex;
