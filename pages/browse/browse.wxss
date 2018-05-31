@@ -214,6 +214,9 @@ color: white;
 .artist-info {
   margin-top: 15rpx;
   background-color: black;
+  display:flex;
+  justify-content:center;
+
 }
 
 .artist-and-work-info-flex {
@@ -332,13 +335,13 @@ animation:
 }
 
 .artist-name-container {
-  font-size: 15vh;
-  color: white;
-  display: flex;
-  /* flex-direction: column; */
-  justify-content: center;
-  margin-top: 18vh;
-  flex-wrap: wrap;
+  font-size:15vh;
+  color:white;
+  display:flex;
+  justify-content:center;
+  margin-top:2vh;
+  flex-wrap:;
+  flex-direction:column;
 }
 
 .artist-title {
@@ -536,21 +539,19 @@ animation:
 
 
 .tags {
-  border-radius: 4rpx;
-  /* width: 15vw; */
-  height: 50rpx;
-  font-size: 20rpx;
-  font-weight: lighter;
-  display: inline-flex;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  background-color: black;
-  border: 2px solid rgba(255,255,255,.7);
-  color: rgba(255,255,255,.9);
-  margin: 10rpx;
-  border-radius: 15px;
-  /* box-shadow: 1rpx 2rpx 2rpx 3rpx rgba(255,255,255,0.3); */
+  border-radius:4px;
+
+font-weight:lighter;
+
+background-color:black;
+border:2px solid rgba(255,255,255,.7);
+color:rgba(255,255,255,.9);
+margin-bottom:10px;
+max-width:245rpx;
+
+font-size:27rpx;
+line-height:36rpx;
+
   }
 
   .tags-artist {
