@@ -6,7 +6,7 @@
         <image class='shop-logo' src="{{shop.logo_url}}"> </image>
               <view>
                   <view class='shop-name'>{{shop.name}}</view>
-                  <button class="book-button" bindtap='showMessageForm' data-id="{{shop.id}}">Message {{shop.name}}</button>
+                  <button class="book-button" bindtap='showMessageForm' data-id="{{shop.id}}">Message us <image class="info-icon2" src='/../../image/paper-plane.png' /></button>
               </view>
       </view>
     </view>
