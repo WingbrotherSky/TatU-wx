@@ -291,7 +291,7 @@ page {
   } */
 
   .tags {
-  border-radius:4px;
+  border-radius:15px;
 
 font-weight:lighter;
 
@@ -307,7 +307,7 @@ line-height:36rpx;
   }
 
   .tags-artist {
-  border-radius:4px;
+  border-radius:15px;
 
 font-weight:lighter;
 
@@ -315,7 +315,7 @@ background-color: transparent;
 border:2px solid rgba(255,255,255,.7);
 color:rgba(255,255,255,.9);
 margin-bottom:10px;
-max-width:245rpx;
+max-width:445rpx;
 
 font-size:27rpx;
 line-height:36rpx;
@@ -353,5 +353,7 @@ display: inline-flex;
 
 .tags-banner-box {
   justify-content: space-around;
-  margin: 10px;
+
 }
+
+

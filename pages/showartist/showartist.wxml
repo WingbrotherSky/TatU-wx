@@ -12,6 +12,7 @@
          <view> Artist: {{artist.name}}</view>
           <view class='experience'> Experience: {{artist.years_of_experience}} years</view>
                 </view>
+                
     
         <!-- Block for tags -->
           <!-- <view wx:for="{{shop.artists}}"> -->
@@ -26,6 +27,8 @@
                       </view>
                       <!-- </view> -->
                       <!-- Block for tags -->
+
+                  
           </view>
       </view>  
     </view>

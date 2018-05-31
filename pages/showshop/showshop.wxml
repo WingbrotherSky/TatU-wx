@@ -23,10 +23,24 @@
             <view class='contact-info2' bindtap='makeaCall'>
               <image class="info-icon" src='/image/phonebook.png'></image>
                 <text>{{shop.phone_number}} </text>
-            </view> 
+            </view>
+            <!-- Begin Bio Button -->
+
+              <view class="bio">
+                <button class="bio-button" bindtap='showBio'> about us <image class="info-icon2" src='/image/white-drop-down-round-button.png' /></button>
+              </view>
+              <!-- End Bio Button --> 
           </view>
     </view>
 <!-- Shop information  -->
+
+<!-- Begin Bio -->
+            <block wx:if="{{aboutUsExpanded}}">
+              <view class="bio-container">
+              {{shop.description}}
+              </view>
+            </block>
+<!-- End Bio -->
 
 <!-- Shop tags -->
 <view class="tags-banner-box">
@@ -35,6 +49,9 @@
         <button class="tags-banner" data-tag="{{item.style}}" catchtap='filterStyle'><text class="tags-artist-style">{{item.style}}</text></button>
     </block>
 </block>
+
+
+
 </view>
 <!-- Shop tags -->
 
@@ -50,6 +67,14 @@
         </view>
     </view>
 <!-- Booking Message -->
+
+
+
+
+
+
+
+
 
 <!-- Artists banner -->
 <view class='featured-container'>
