@@ -21,31 +21,31 @@ Page({
    */
 
   showInfo1: function (e) {
-    wx.reLaunch({
+    wx.navigateTo({
       url: `/pages/info1/info1`,
     })
 },
 
   showInfo2: function (e) {
-    wx.reLaunch({
+    wx.navigateTo({
       url: `/pages/info1/info1`,
     })
   },
 
   showInfo3: function (e) {
-    wx.reLaunch({
+    wx.navigateTo({
       url: `/pages/info1/info1`,
     })
   },
 
   showInfo4: function (e) {
-    wx.reLaunch({
+    wx.navigateTo({
       url: `/pages/info1/info1`,
     })
   },
 
   showInfo5: function (e) {
-    wx.reLaunch({
+    wx.navigateTo({
       url: `/pages/info1/info1`,
     })
   },

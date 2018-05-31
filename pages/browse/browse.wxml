@@ -78,13 +78,13 @@
       <image class='avatar-tab' src="../../image/search2red.png"></image>
       </view>
       <view class='extend-padding' bindtap='goFavourite'>
-      <image class='avatar-tab' src="../../image/devilred.png"></image>
+      <image class='avatar-tab' src="../../image/favoriteswhite.png"></image>
       </view>
       <view class='extend-padding' bindtap='goInbox'>
-      <image class='avatar-tab' src="../../image/messagesred.png"></image>
+      <image class='avatar-tab' src="../../image/messageswhite.png"></image>
       </view>
       <view class='extend-padding' bindtap='goInfo'>
-      <image class='avatar-tab' src="../../image/infored.png"></image>
+      <image class='avatar-tab' src="../../image/infowhite.png"></image>
       </view>
   </view>
 </view>
