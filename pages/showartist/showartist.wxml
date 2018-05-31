@@ -10,7 +10,7 @@
       
       <view>
          <view> 纹身师 Artist: {{artist.name}}</view>
-          <view class='experience'> 经验 Experience: {{item.years_of_experience}} years</view>
+          <view class='experience'> 经验 Experience: {{artist.years_of_experience}} years</view>
                 </view>
     
         <!-- Block for tags -->
