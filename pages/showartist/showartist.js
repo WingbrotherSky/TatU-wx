@@ -120,6 +120,13 @@ Page({
     })
   },
 
+  filterStyle: function(e) {
+    let tag = e.currentTarget.dataset.tag
+    wx.reLaunch({
+      url: `/pages/browse/browse?tag=${tag}`,
+    })
+  },
+
   // END TABBAR
 
 

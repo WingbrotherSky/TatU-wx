@@ -32,7 +32,7 @@
 <view class="tags-banner-box">
 <block wx:for="{{shop.artists}}">
       <block wx:for="{{item.tags}}">
-        <button class="tags-banner" data-tag="{{item.style}}"><text class="tags-artist-style">{{item.style}}</text></button>
+        <button class="tags-banner" data-tag="{{item.style}}" catchtap='filterStyle'><text class="tags-artist-style">{{item.style}}</text></button>
     </block>
 </block>
 </view>
