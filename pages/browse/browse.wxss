@@ -21,6 +21,10 @@ stretch
     justify-content: space-around; */
 }
 
+.invisible_underline {
+/* I added this color in the wxml to override the style in the wxml.  */
+}
+
 .dropdown {
   width: 6vw;
   height: 4vh;
