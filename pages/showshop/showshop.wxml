@@ -65,7 +65,7 @@
                 <view bindtap='showArtist' data-artistId="{{item.id}}" class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{item.avatar_url}}');">
                 <view>
                   <view>Artist: {{item.name}}</view>
-                  <view class='experience'> Experience: {{item.years_of_experience}} Years</view>
+                  <view class='experience'> <TText text="Experience:"/> {{item.years_of_experience}} <TText text="Years"/></view>
                 </view>
                
                       <!-- Block for tags -->

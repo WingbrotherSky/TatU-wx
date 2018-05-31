@@ -10,6 +10,7 @@
   margin: 10rpx;
   margin-left: 65rpx !important;
 }
+
 .shop-info {
   display: flex;
   justify-content: space-between;
