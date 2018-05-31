@@ -242,7 +242,7 @@ page {
 .message-container {
   display: flex;
   background: rgba(0,0,0,.6);
-  height: 100vh;
+  height: 37vh;
   width: 100vw;
   justify-content: center;
   align-content: center;
@@ -252,6 +252,7 @@ textarea {
   padding: 15px;
   background-color: white;
   margin-bottom: 15rpx;
+  border-radius: 5px;
 }
 
 ::content{
