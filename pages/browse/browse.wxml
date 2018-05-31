@@ -27,9 +27,10 @@
                   <view class="CTA-container">
                     <button class="share-btn" open-type="share"><image class="share-img" src="/image/share-buttonred.png"></image></button>
                        
-                    <view bindtap="favoriteImage" data-id="{{item.id}}" class="heart-icon" style="background-image: url({{item.favorited ? '/image/devilred.png' : '/image/devilwhite.png'}}); background-size: cover; background-position: center, center;" >
+                     <image bindtap="favoriteImage" data-id="{{item.id}}" class="heart-icon" src="{{item.favorited ? '/image/devilred.png' : '/image/devilwhite.png'}}">
+                      <!-- style="background-image: url({{item.favorited ? '/image/devilred.png' : '/image/devilwhite.png'}}); background-size: cover; background-position: center, center;" >   -->
                   <!-- <image bindtap="showInbox" data-id="item.id" class="icon" src="{{chat}}" />         -->
-                  </view>
+                  </image>
                     </view>
                   </view>
                  <view bindtap='previewImages' data-url="{{item.url}}" style="background-image: linear-gradient(-180deg, rgba(255,255,255,0.00) 21%, rgba(35,35,35,0.20) 97%, rgba(30,3,3,0.7) 100%),  url({{item.url}})" class="slide-image art-image" />
