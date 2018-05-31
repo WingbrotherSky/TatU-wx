@@ -6,7 +6,7 @@
        <!-- <button  class="splash-button" open-type="getUserInfo" bindgetuserinfo="getUserInfo" bindtap="goToBrowsePage"> -->
        <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" style="background: transparent;">
        <image src="/image/logo.png" mode="aspectFit" class='logo-button'> Enter TatU </image>
-       <view class="enter-text"> Tap Above to Enter </view>
+       <view class="enter-text"><TText text="Tap Above to Enter"/></view>
        </button>
      
      <view class="enter-text">

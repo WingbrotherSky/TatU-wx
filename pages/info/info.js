@@ -19,6 +19,24 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
+  switchLanguage: function (e) {
+    const that = this
+    let currentLanguage = wx.getStorageSync('language')
+    console.log(currentLanguage)
+    if (currentLanguage === 'en') {
+      wx.setStorageSync('language', 'zh')
+      console.log(this)
+      wx.reLaunch({
+        url: '/pages/info/info',
+      })
+    }
+    else {
+     wx.setStorageSync('language', 'en')
+     wx.reLaunch({
+       url: '/pages/info/info',
+     })
+    }
+  },
 
   showInfo1: function (e) {
     wx.navigateTo({

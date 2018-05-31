@@ -5,7 +5,9 @@
       <view bindtap='' data-artistId="{{item.id}}" class="big-card card-one"> <view class ="info-one">
       <!-- 信息及安全须知: -->
       </view>
-      <view class ="info-one">Information and Safety:</view>
+      <view class ="info-one">
+      <TText text="Information and Safety:"/>
+      </view>
       <view class ="info-two">
       <!-- 点击下面的标题 -->
       </view>
@@ -13,7 +15,7 @@
         </view>
       </view> 
     </view>
-
+    <button bindtap="switchLanguage" class="language-switcher" size="mini">EN/CN</button>
     <view class='shop-container' bindtap='showInfo2'>
     <view class='featured-container'>
       <view bindtap='' data-artistId="{{item.id}}" class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://www.verygoodlight.com/wp-content/uploads/2017/07/Screen-Shot-2017-07-03-at-11.49.13-AM-400x397.png');">
