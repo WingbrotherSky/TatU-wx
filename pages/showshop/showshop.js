@@ -84,7 +84,7 @@ Page({
     const data = e.currentTarget.dataset
     const artistId = data.artistid
 
-    wx.reLaunch({
+    wx.navigateTo({
       url: `/pages/showartist/showartist?id=${artistId}`,
     })
   },
