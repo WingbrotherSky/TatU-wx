@@ -162,3 +162,9 @@ button {
 }
 
  /* END TAB BAR  */
+
+ .prompt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
