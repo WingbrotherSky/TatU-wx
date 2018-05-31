@@ -2,6 +2,7 @@
 
 const app = getApp()
 const paths = require('../../common/apiPaths')
+const requests = require("../../common/apiClient")
 
 
 Page({
@@ -24,11 +25,8 @@ Page({
   onLoad: function () {
     const that = this
     const auth_key = wx.getStorageSync("auth_key")
-    wx.request({
+    requests.get({
       url: paths.getAllConversations,
-      data: {
-        auth_key: auth_key
-      },
       success: res => {
         console.log(11111,res)
         that.setData({
@@ -84,11 +82,8 @@ Page({
     this.setData({
       inbox: false
     })
-    wx.request({
+    requests.get({
       url: paths.getConverstation + `${e.currentTarget.dataset.shop_id}`,
-      data: {
-        auth_key: auth_key
-      },
       success: res => {
         that.setData({
           items: res.data.messages,
@@ -109,20 +104,15 @@ Page({
       nada: '',
       lastOne: ""
     })
-    wx.request({
+    requests.post({
       url: paths.postMessage,
-      method: "post",
       data: {
-        auth_key: wx.getStorageSync("auth_key"),
         shop_id: recipient_id,
         content: content
       },
       success: res => {
-        wx.request({
+        requests.get({
           url: paths.getConverstation + `${that.data.convId}`,
-          data: {
-            auth_key: auth_key
-          },
           success: res => {
             that.setData({
               items: res.data.messages,

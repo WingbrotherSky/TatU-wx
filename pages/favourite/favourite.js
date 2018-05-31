@@ -2,6 +2,7 @@
 
 const app = getApp()
 const paths = require('../../common/apiPaths')
+const requests = require("../../common/apiClient")
 
 Page({
 
@@ -20,12 +21,9 @@ Page({
   onLoad: function () {
     const that = this
     const auth_key = wx.getStorageSync("auth_key")
-    wx.request({
+    requests.get({
       // url: paths.getAllShops,
       url: paths.getAllFavorites,
-      data: {
-        auth_key: auth_key
-      },
       success:(res) => {
         console.log(res)
           // that.setData({shops: res.data.shops})
@@ -80,7 +78,7 @@ Page({
   
   showShop: function (e) {
 
-    wx.navigateTo({
+    wx.reLaunch({
       url: `/pages/showshop/showshop`,
     })
   },
@@ -89,7 +87,7 @@ Page({
     const data = e.currentTarget.dataset
     const artistId = data.artistid
 
-    wx.navigateTo({
+    wx.reLaunch({
       url: `/pages/showimage/showimage`,
     })
   },
@@ -98,7 +96,7 @@ Page({
     const data = e.currentTarget.dataset
     const artistId = data.artistid
 
-    wx.navigateTo({
+    wx.reLaunch({
       url: `/pages/showartist/showartist?id=${artistId}`,
     })
   },
@@ -108,7 +106,7 @@ Page({
     const artId = data.artid
 
 
-    wx.navigateTo({
+    wx.reLaunch({
       url: `/pages/showimage/showimage?id=${artId}`,
     })
   },
@@ -190,7 +188,7 @@ Page({
   },
 
   goBrowse: function (e) {
-    wx.navigateTo({
+    wx.reLaunch({
       url: '/pages/browse/browse',
     })
   },
@@ -201,12 +199,12 @@ Page({
     // })
   },
   goInbox: function (e) {
-    wx.navigateTo({
+    wx.reLaunch({
       url: '/pages/inbox/inbox',
     })
   },
   goInfo: function (e) {
-    wx.navigateTo({
+    wx.reLaunch({
       url: '/pages/info/info',
     })
   },

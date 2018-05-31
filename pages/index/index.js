@@ -1,7 +1,7 @@
 //index.js
 //获取应用实例
 const app = getApp()
-const host = "http://localhost:3000/"
+const host = "https://tatu.wogengapp.cn/"
 
 
 Page({
@@ -21,36 +21,36 @@ Page({
   },
 
   goToFavouritePage: function () {
-    wx.navigateTo({
+    wx.reLunch({
       url: '/pages/favourite/favourite'
     })
   },
   goToInboxPage: function () {
-    wx.navigateTo({
+    wx.reLunch({
       url: '/pages/inbox/inbox'
     })
   },
 
   goToInfoPage: function () {
-    wx.navigateTo({
+    wx.reLunch({
       url: '/pages/info/info'
     })
   },
 
   goToShowImagePage: function () {
-    wx.navigateTo({
+    wx.reLunch({
       url: '/pages/showimage/showimage'
     })
   },
 
   goToShowArtistPage: function () {
-    wx.navigateTo({
+    wx.reLunch({
       url: '/pages/showartist/showartist'
     })
   },
   
   goToShowShopPage: function () {
-    wx.navigateTo({
+    wx.reLunch({
       url: '/pages/showshop/showshop'
     })
   },

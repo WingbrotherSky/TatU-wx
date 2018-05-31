@@ -21,6 +21,14 @@
 
 }
 
+.info-icon {
+  width: 40rpx;
+  height: 40rpx;
+  padding-right:14rpx;
+
+  
+}
+
 .featured-container {
   background: black;
 }
@@ -40,12 +48,17 @@
 }
 
 .location {
-  font-size: 12px;
-  font-weight: lighter;
-  color: white;
-  margin: 4px;
-  left: 5px;
-  padding: 5px;
+font-size:15px;
+font-weight:lighter;
+color:white;
+margin-left:3px;
+padding:rpx;
+display: flex;
+justify-content: center;
+align-content:center;
+align-items:center;
+
+
 }
 
 .shop-logo {
@@ -266,7 +279,8 @@ textarea {
 }
 
 .shop-bio {
-   display: flex;
+   display: inline-block;
+   justify-content: center;
 }
 
 .button {
@@ -284,6 +298,16 @@ textarea {
   margin-bottom: 10rpx;
   border-radius: 5px;
   right: 10px;
+}
+
+.contact-info {
+  margin: 10px;
+  margin-bottom:1px;
+  margin-top:1px;
+  align-content:center;
+align-items:center;
+display:flex;
+
 }
 
 .tags {

@@ -16,9 +16,15 @@
 <!-- Shop information  -->
     <view class='shop-bio'>
         <view class="location">
-            <view> Location: Chengdu </view>
-            <view> Contact: {{shop.phone_number}} </view>
-        </view>
+           
+            <view class='contact-info'>
+              <image class="info-icon" src='/../../image/placeholder2.png'></image> Chengdu 
+            </view>
+            <view class='contact-info'>
+              <image class="info-icon" src='/../../image/phonebook.png'></image>
+                <text>{{shop.phone_number}} </text>
+            </view> 
+          </view>
     </view>
 <!-- Shop information  -->
 
@@ -61,7 +67,7 @@
                   <view>Artist: {{item.name}}</view>
                   <view class='experience'> Experience: {{item.years_of_experience}} years</view>
                 </view>
-                     
+               
                       <!-- Block for tags -->
                       <view class='tags-banner-box'>
                       <block wx:for="{{item.tags}}">
