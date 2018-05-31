@@ -3,9 +3,9 @@
 
 
 <view class='shop-container'>
-  <view class="text">View Favorites Below:</view>
+  <view class="text">Favorites:</view>
     <view wx:if="{{favorites.length < 1}}" class="prompt-container">
-    <view class="text">Don't be so stingy with that favorite button!</view>
+    <view class="text">You have no favorites yet! Get some!</view>
     </view>
   <view wx:for="{{favorites}}" >
     

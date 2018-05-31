@@ -1,0 +1,2 @@
+<!--components/TText/TText.wxml-->
+<text>{{translatedText}}</text>
