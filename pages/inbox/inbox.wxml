@@ -2,6 +2,9 @@
   <view class="wrapper">
   <view class='shop-container'>
     <view class="text" wx:if="{{inbox}}">Conversations</view>
+    <view wx:if="items.length < 1" class="prompt">
+      <view class="text">You haven't contacted any studios yet!</view>
+  </view>
     <view class="title" wx:else>{{convName}}</view>
     <scroll-view scroll-y="true" scroll-into-view="{{lastOne}}" class="inbox-container">
       <block wx:for="{{items}}">
