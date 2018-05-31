@@ -15,8 +15,8 @@
    <!-- <picker class="picker-class" bindchange="bindPickerChange" value="{{index}}" range="{{array}}"> 
                           <button class="tag-picker"><view class="search"><image class="search-img" src="/image/search (1).png"></image><view class="search2">Search Styles</view> </view></button>
                         </picker> -->
-
-  <swiper vertical="true" style="height: 100vh; width: 100vw;">
+  
+  <swiper vertical="true" current="{{currentPage}}" style="height: 100vh; width: 100vw;">
     <block wx:for="{{artists}}">
       <swiper-item>
         <view class="artist-container">

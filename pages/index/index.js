@@ -21,36 +21,36 @@ Page({
   },
 
   goToFavouritePage: function () {
-    wx.navigateTo({
+    wx.reLunch({
       url: '/pages/favourite/favourite'
     })
   },
   goToInboxPage: function () {
-    wx.navigateTo({
+    wx.reLunch({
       url: '/pages/inbox/inbox'
     })
   },
 
   goToInfoPage: function () {
-    wx.navigateTo({
+    wx.reLunch({
       url: '/pages/info/info'
     })
   },
 
   goToShowImagePage: function () {
-    wx.navigateTo({
+    wx.reLunch({
       url: '/pages/showimage/showimage'
     })
   },
 
   goToShowArtistPage: function () {
-    wx.navigateTo({
+    wx.reLunch({
       url: '/pages/showartist/showartist'
     })
   },
   
   goToShowShopPage: function () {
-    wx.navigateTo({
+    wx.reLunch({
       url: '/pages/showshop/showshop'
     })
   },
