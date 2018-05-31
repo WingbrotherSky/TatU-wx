@@ -65,7 +65,7 @@ Page({
     app.globalData.userInfo = e.detail.userInfo
     wx.setStorage({
       key: 'language',
-      data: e.detail.userInfo.language,
+      data: e.detail.userInfo.language.toLowerCase(),
     })
 
     this.setData({

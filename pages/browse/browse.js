@@ -298,5 +298,8 @@ bindPickerChange: function(e) {
   tagFilter: function(e) {
     const tag = e.currentTarget.dataset.tag
     this.onLoad({tag: tag})
+    this.setData({
+      yIndex: 0
+    })
   }
 })
