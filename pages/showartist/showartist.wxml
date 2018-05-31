@@ -9,8 +9,8 @@
       <view bindtap='previewImages' data-url="{{artist.avatar_url}}" class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{artist.avatar_url}}')">
       
       <view>
-         <view> Artist: {{artist.name}}</view>
-          <view class='experience'> Experience: {{artist.years_of_experience}} years</view>
+         <view> <TText text="Artist:"/> {{artist.name}}</view>
+          <view class='experience'> <TText text="Experience:"/> {{artist.years_of_experience}} <TText text="Years"/></view>
                 </view>
     
         <!-- Block for tags -->

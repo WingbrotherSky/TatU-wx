@@ -5,6 +5,11 @@
   background: black;
 }
 
+.swap-text {
+  color: white;
+  margin: 10rpx;
+  margin-left: 65rpx !important;
+}
 .shop-info {
   display: flex;
   justify-content: space-between;
@@ -16,12 +21,21 @@
   display: flex;
   align-items: center;
   margin-bottom: 15rpx;
+  justify-content: space-around;
+  background-color: #1C1919;
+  padding-bottom: 10rpx;
 }
 
 .language-switcher {
   display: flex;
+  margin-right: 65rpx !important;
   align-items: center;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  box-shadow: 2px 2px 2px 2px black;
 }
+
 .featured-container {
   padding-top: 3rpx;
   margin-bottom: 1px;
