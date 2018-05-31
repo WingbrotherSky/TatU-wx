@@ -17,13 +17,7 @@
     <view class='shop-container' bindtap='showInfo2'>
     <view class='featured-container'>
       <view bindtap='' data-artistId="{{item.id}}" class="big-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://www.verygoodlight.com/wp-content/uploads/2017/07/Screen-Shot-2017-07-03-at-11.49.13-AM-400x397.png');">
-<<<<<<< HEAD
-      <view>
-      <!-- 关于纹身 -->
-      </view>
-=======
       <!-- <view> 关于纹身 </view> -->
->>>>>>> d3a71194a4cd33ec971acebfae99e05e1d391b05
       <view> Basic Tattoo Safety Guidelines</view>
         </view>
       </view>
