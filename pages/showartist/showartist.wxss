@@ -5,6 +5,13 @@
   border-radius: 3px;
 }
 
+
+.artist {
+  display: flex;
+  justify-content: space-between;
+  font-size: 19px;
+}
+
 .artist-info {
   display: flex;
   justify-content: space-between;
@@ -39,16 +46,26 @@
 }
 
 .big-card {
-  height: 260px;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  height: 170px;
+  width: 100%;
   background-size: cover !important;
   background-position: center;
   color: white;
   position: relative;
-  margin: 9px;
-  margin-bottom: 5px;
-  border-radius: 3px;
-  padding: 10px;
+  margin: 0;
+  margin-bottom: 0;
+  padding: 20rpx;
+  font-weight: bolder;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border-top: solid 1px rgba(255,255,255,.2);
+}
+
+
+.experience {
+  font-weight: lighter;
+  font-size: 16px;
 }
 
 .small-cards {
@@ -132,10 +149,11 @@
   font-weight: bold;
 }
 
-.featured-container {
+/* .featured-container {
   display: flex;
   justify-content: space-between;
-}
+  font-size: 19px;
+} */
 
 .card-description {
   position: absolute;
@@ -277,8 +295,8 @@ page {
   border-radius: 15px;
   }
 
-  .tags-artist {
-  max-width: 940rpx;	
+   .tags-artist {
+  max-width: 940rpx;
 	/* margin: 0 auto; */
   height: 15rpx;
   font-size: 10px;
@@ -291,18 +309,19 @@ page {
   border-radius: 15px;
   background-color: transparent;
   padding: 6px;
-  position: absolute;
-  bottom: 20rpx;
+  margin: 3rpx;
   }
 
-   .tags-artist-style {
+  .tags-artist-style {
      display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
+  color: white;
   /* margin: 15rpx; */
   }
 
-  .tags-banner-box {
+
+.tags-banner-box {
   justify-content: space-around;
   margin: 10px;
 }
