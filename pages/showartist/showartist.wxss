@@ -102,19 +102,18 @@
 .small-cards {
   display: flex;
   justify-content: space-around;
-   flex-wrap: wrap; 
+   flex-wrap: wrap;
   background-color: black;
-  margin-top: 6rpx;
-  margin-bottom: 6rpx;
-  padding: 3rpx;
-  border: 2px solid rgba(255,255,255,0.8);
+  margin-bottom: 30rpx;
+  border-bottom: solid 1px rgba(255,255,255,.4);
 }
 
 .small-card {
-  height: 240rpx;
-  width: 235rpx;
+  height: 250rpx;
+  width: 250rpx;
   background-size: cover;
 }
+
 
 
 .gallery-item-cover {
