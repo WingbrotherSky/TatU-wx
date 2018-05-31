@@ -16,16 +16,16 @@
                           <button class="tag-picker"><view class="search"><image class="search-img" src="/image/search (1).png"></image><view class="search2">Search Styles</view> </view></button>
                         </picker> -->
   
-  <swiper vertical="true" current="{{currentPage}}" style="height: 100vh; width: 100vw;">
+  <swiper vertical="true" current="{{yIndex}}" style="height: 100vh; width: 100vw;" bindchange='resetXIndex'>
     <block wx:for="{{artists}}">
       <swiper-item>
         <view class="artist-container">
-          <swiper style="width: 100vw; height: 60vh;" indicator-dots="true" circular="true">
+          <swiper style="width: 100vw; height: 60vh;" indicator-dots="true" circular="true" current="{{xIndex}}">
             <block wx:for="{{item.art}}">
               <swiper-item>
                 <view style="display: flex; justify-content: center;">
                   <view class="CTA-container">
-                    <button class="share-btn" open-type="share"><image class="share-img" src="/image/share-buttonred.png"></image></button>
+                    <button data-artId="{{item.id}}" class="share-btn" open-type="share"><image class="share-img" src="/image/share-buttonred.png"></image></button>
                        
                      <image bindtap="favoriteImage" data-id="{{item.id}}" class="heart-icon" src="{{item.favorited ? '/image/devilred.png' : '/image/devilwhite.png'}}">
                       <!-- style="background-image: url({{item.favorited ? '/image/devilred.png' : '/image/devilwhite.png'}}); background-size: cover; background-position: center, center;" >   -->
