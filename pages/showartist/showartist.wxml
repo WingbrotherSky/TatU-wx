@@ -12,6 +12,7 @@
          <view> <TText text="Artist:"/> {{artist.name}}</view>
           <view class='experience'> <TText text="Experience:"/> {{artist.years_of_experience}} <TText text="Years"/></view>
                 </view>
+                
     
         <!-- Block for tags -->
           <!-- <view wx:for="{{shop.artists}}"> -->
@@ -26,6 +27,8 @@
                       </view>
                       <!-- </view> -->
                       <!-- Block for tags -->
+
+                  
           </view>
       </view>  
     </view>
