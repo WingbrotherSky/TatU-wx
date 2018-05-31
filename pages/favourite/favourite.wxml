@@ -1,9 +1,12 @@
 <page>
  
 
-   
+
 <view class='shop-container'>
   <view class="text">View Favorites Below:</view>
+    <view wx:if="{{favorites.length < 1}}" class="prompt-container">
+    <view class="text">Don't be so stingy with that favorite button!</view>
+    </view>
   <view wx:for="{{favorites}}" >
     
     <view  class='featured-container'> 
