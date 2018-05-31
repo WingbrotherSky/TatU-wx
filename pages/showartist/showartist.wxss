@@ -277,26 +277,54 @@ page {
   top: 150px;
 }
 
-.tags {
+/* .tags {
   border-radius: 4rpx;
-  /* width: 15vw; */
   height: 50rpx;
   font-size: 10px;
   font-weight: lighter;
   display: inline-flex;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   background-color: black;
   border: 2px solid rgba(255,255,255,.7);
   color: rgba(255,255,255,.9);
   margin: 20rpx;
   border-radius: 15px;
+  } */
+
+  .tags {
+  border-radius:4px;
+
+font-weight:lighter;
+
+background-color:black;
+border:2px solid rgba(255,255,255,.7);
+color:rgba(255,255,255,.9);
+margin-bottom:10px;
+max-width:245rpx;
+
+font-size:27rpx;
+line-height:36rpx;
+
   }
 
-   .tags-artist {
+  .tags-artist {
+  border-radius:4px;
+
+font-weight:lighter;
+
+background-color: transparent;
+border:2px solid rgba(255,255,255,.7);
+color:rgba(255,255,255,.9);
+margin-bottom:10px;
+max-width:245rpx;
+
+font-size:27rpx;
+line-height:36rpx;
+display: inline-flex;
+  text-align: center;
+  }
+
+   /* .tags-artist {
   max-width: 940rpx;
-	/* margin: 0 auto; */
   height: 15rpx;
   font-size: 10px;
   font-weight: lighter;
@@ -309,7 +337,7 @@ page {
   background-color: transparent;
   padding: 6px;
   margin: 3rpx;
-  }
+  } */
 
   .tags-artist-style {
      display: flex;
