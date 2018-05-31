@@ -1,5 +1,5 @@
 const app = getApp() 
-const host = "https://localhost:3000/api/v1/"
+const host = "https://tatu.wogengapp.cn/api/v1/"
 
 const request = function(method, options) {
   let auth_key = wx.getStorageSync("auth_key")
