@@ -66,6 +66,7 @@ Page({
     const that = this
     if (options.tag) {
       this.setData({
+        inputVal: "",
         initialStyle: options.tag
       })
     }
