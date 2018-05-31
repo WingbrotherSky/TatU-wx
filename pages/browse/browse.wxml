@@ -49,12 +49,9 @@
           <view class="artist-and-work-info-flex">
             <view class="artist-info">
               <view class="artist-name-container">
-                <!-- <text class="artist-title">纹身师: Artist:</text> -->
-                <!-- <text class="artist-name">{{item.name}}</text> -->
                 <block wx:for="{{item.tags}}">
                   <button class="tags" data-tag="{{item.style}}"><text class="tags-artist-style">{{item.style}}</text></button>
                 </block>
-                <!-- <text class="see-more" bindtap='goToShowShopPage'>进入: Go To {{item.shop.name}}</text>  -->
               </view>
             </view>
               <view wx:if="{{item.id != artists[artists.length - 1].id}}" class="view-next-artist-text">
