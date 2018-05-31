@@ -78,7 +78,7 @@ Page({
   
   showShop: function (e) {
 
-    wx.navigateTo({
+    wx.reLaunch({
       url: `/pages/showshop/showshop`,
     })
   },
@@ -87,7 +87,7 @@ Page({
     const data = e.currentTarget.dataset
     const artistId = data.artistid
 
-    wx.navigateTo({
+    wx.reLaunch({
       url: `/pages/showimage/showimage`,
     })
   },
@@ -96,7 +96,7 @@ Page({
     const data = e.currentTarget.dataset
     const artistId = data.artistid
 
-    wx.navigateTo({
+    wx.reLaunch({
       url: `/pages/showartist/showartist?id=${artistId}`,
     })
   },
@@ -106,7 +106,7 @@ Page({
     const artId = data.artid
 
 
-    wx.navigateTo({
+    wx.reLaunch({
       url: `/pages/showimage/showimage?id=${artId}`,
     })
   },
@@ -188,7 +188,7 @@ Page({
   },
 
   goBrowse: function (e) {
-    wx.navigateTo({
+    wx.reLaunch({
       url: '/pages/browse/browse',
     })
   },
@@ -199,12 +199,12 @@ Page({
     })
   },
   goInbox: function (e) {
-    wx.navigateTo({
+    wx.reLaunch({
       url: '/pages/inbox/inbox',
     })
   },
   goInfo: function (e) {
-    wx.navigateTo({
+    wx.reLaunch({
       url: '/pages/info/info',
     })
   },

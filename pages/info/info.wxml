@@ -2,9 +2,13 @@
 <view class="empty"></view>
 <view class='shop-container' >
     <view class='featured-container'>
-       <view bindtap='' data-artistId="{{item.id}}" class="big-card card-one"> <view class ="info-one">Information and Safety</view> 
-      <!-- <view class ="info-one">Information and Safety:</view> -->
-      <!-- <view class ="info-two">点击下面的标题</view> -->
+      <view bindtap='' data-artistId="{{item.id}}" class="big-card card-one"> <view class ="info-one">
+      <!-- 信息及安全须知: -->
+      </view>
+      <view class ="info-one">Information and Safety:</view>
+      <view class ="info-two">
+      <!-- 点击下面的标题 -->
+      </view>
       <view class ="info-two">Click Topic Below</view>
         </view>
       </view> 
