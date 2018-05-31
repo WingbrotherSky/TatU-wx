@@ -60,9 +60,9 @@ Page({
     })
   },
   goInbox: function (e) {
-    wx.reLaunch({
-      url: '/pages/inbox/inbox',
-    })
+    // wx.reLaunch({
+    //   url: '/pages/inbox/inbox',
+    // })
   },
   goInfo: function (e) {
     wx.reLaunch({

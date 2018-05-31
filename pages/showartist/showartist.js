@@ -47,7 +47,7 @@ Page({
     const shop = data.name
     const auth_key = wx.getStorageSync("auth_key")
     console.log(2321, shop)
-    wx.navigateTo({
+    wx.reLaunch({
       url: `/pages/showshop/showshop`,
     })
   },
@@ -56,7 +56,7 @@ Page({
     const data = e.currentTarget.dataset
     const shop = data.name
     console.log(2323, shop)
-    wx.navigateTo({
+    wx.reLaunch({
       url: `/pages/showimage/showimage`,
     })
 
@@ -93,29 +93,29 @@ Page({
   // START TABBAR
   goBack: function (e) {
     console.log(333, "back")
-    wx.navigateTo({
+    wx.reLaunch({
       url: '/pages/index/index',    //// change to one page before
     })
   },
 
   goBrowse: function (e) {
-    wx.navigateTo({
+    wx.reLaunch({
       url: '/pages/browse/browse',
     })
   },
 
   goFavourite: function (e) {
-    wx.navigateTo({
+    wx.reLaunch({
       url: '/pages/favourite/favourite',
     })
   },
   goInbox: function (e) {
-    wx.navigateTo({
+    wx.reLaunch({
       url: '/pages/inbox/inbox',
     })
   },
   goInfo: function (e) {
-    wx.navigateTo({
+    wx.reLaunch({
       url: '/pages/info/info',
     })
   },
