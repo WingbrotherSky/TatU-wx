@@ -1,5 +1,42 @@
 <!--pages/info4/info4.wxml-->
-<text>pages/info4/info4.wxml</text>
+<view class="flex-for-text">
+  <view class="title-text"> "A Tattoo Lasts Forever" </view>
+  <image class='red-border' src="/image/red-border.jpg" />
+
+<text>
+What should I do after I receive my tattoo to prevent problems?
+
+When finished, your tattoo artist will clean excess ink and body fluids from the tattooed area and then apply an ointment andbandage.
+The ointment soothes the skin, keeps it moist, and prevents the bandage from sticking. The bandage protects yourskin
+and absorbs drainage.
+
+Ointment: It is important to keep the area moist. Use the ointment recommended by your artist. Antibiotic ointments can cause
+allergic reactions, and petroleum jellies are too occlusive. Ointments containing vitamins A and D are recommended bysome
+artists.
+
+Bandage: Using plastic wrap will create an environment that can encourage infection. A cotton bandage is recommended, particularly
+one with a plastic film surrounding the cotton, so that the drainage can be absorbed but the dressing doesn’t stick to
+the skin. Your tattoo artist will tell you how long to wear a bandage.
+
+Post-care instructions: Your tattoo artist should give you specific verbal and printed instructions regarding post-tattoo care. Pay
+attention and follow these instructions completely. If you have any questions or problems during the healing process, call your
+artist. Don't rely on advice from people outside the tattoo industry.
+
+<text class="body-text-first-pg">
+Other examples of tattoo aftercare instructions can be found at:
+http://www.safe-tattoos.com/
+http://tattooaftercare.org/
+http://www.mayoclinic.com/health/tattoos-and-piercings/MC00020
+http://www.tattooaftercare.net/howTo.htm
+http://www.city.milwaukee.gov/display/displayFile.aspx?docid=9229&filename=/Groups/healthAuthors/
+CEH/PDFs/ Tattoo_aftercare.pdf 
+    </text>
+
+        <text class="body-text-first-pg">
+This information is adapted from the Alliance of Professional Tattooists (APT). Their website can be accessed
+at www.safe-tattoos.com.
+</text>
+</text>
 
 
 <!-- START TAB BAR -->
@@ -21,3 +58,5 @@
   </view>
 </view>
 <!-- END TAB BAR -->
+
+</view>

@@ -1,5 +1,50 @@
 <!--pages/info2/info2.wxml-->
-<text>pages/info2/info2.wxml</text>
+<view class="flex-for-text">
+  <view class="title-text"> Five Things to Ask Artist </view>
+  <image class='red-border' src="/image/red-border.jpg" />
+
+<text>
+How should I choose an artist?
+
+OSDH licenses tattoo artists and establishments, so insure that these licenses are current. Artistic abilities vary, and this element
+cannot be licensed. Make every effort to find an artist whose work you like, and who will work on you safely. Ask others where
+they got tattooed, and about their experience. At the tattoo establishment, ask to see photographs of the artist's
+work,but keep in mind that the pictures may have been taken right after the procedure when redness and swelling are common.
+Taking time to check out a few artists and shops will ensure that you are happy with your results.
+
+----------------
+
+At the shop.
+
+Make sure the shop is neat and clean. What you see in the front room is a good indication of the shop’s overall cleanliness. Ask
+questions about the shop's safety procedures. What are they doing to insure your health and well-being? The personnel
+shouldbe willing and able to answer you questions. If you feel they are brushing your concerns aside or can't answer your questions,leave
+and seek out another shop.
+
+----------------
+
+What is single service equipment?
+
+All equipment should be single service if possible. This means that each needle and ink tube set is individually packaged,dated,
+sealed and autoclaved. The artist should open a fresh set of needles and ink tubes in front of you. Any ointments,
+pigments, needles, gloves, razors, plastic trays or containers used in applying your new tattoo are discarded after use.
+
+<text class="body-text-first-pg">
+Other examples of tattoo aftercare instructions can be found at:
+http://www.safe-tattoos.com/
+http://tattooaftercare.org/
+http://www.mayoclinic.com/health/tattoos-and-piercings/MC00020
+http://www.tattooaftercare.net/howTo.htm
+http://www.city.milwaukee.gov/display/displayFile.aspx?docid=9229&filename=/Groups/healthAuthors/
+CEH/PDFs/ Tattoo_aftercare.pdf 
+    </text>
+
+        <text class="body-text-first-pg">
+This information is adapted from the Alliance of Professional Tattooists (APT). Their website can be accessed
+at www.safe-tattoos.com.
+</text>
+</text>
+
 
 <!-- START TAB BAR -->
 <view class='blank-item'> </view>
@@ -20,3 +65,5 @@
   </view>
 </view>
 <!-- END TAB BAR -->
+
+</view>
