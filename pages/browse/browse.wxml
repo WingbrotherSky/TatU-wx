@@ -1,4 +1,4 @@
-<picker mode="selector" bindchange='bindPickerChange' custom-item="All Styles" value="{{index}}" range="{{tags}}">  <view class="choose-style" style="color: #bf2a32;"> Style: {{inputVal || "All"}} <image src='/../../image/drop-down-arrow.png' class="dropdown"></image> </view>
+<picker mode="selector" bindchange='bindPickerChange' custom-item="All Styles" value="{{index}}" range="{{tags}}">  <view class="choose-style" style="color: #bf2a32;"> Style: {{inputVal || initialStyle || "All"}} <image src='/../../image/drop-down-arrow.png' class="dropdown"></image> </view>
 </picker>
 <view style="position: relative;">
   <view class="message-container" hidden='{{bookedArtist ? false : true}}'>
@@ -50,7 +50,7 @@
             <view class="artist-info">
               <view class="artist-name-container">
                 <block wx:for="{{item.tags}}">
-                  <button class="tags" data-tag="{{item.style}}"><text class="tags-artist-style">{{item.style}}</text></button>
+                  <button class="tags" data-tag="{{item.style}}" bindtap='tagFilter'><text class="tags-artist-style">{{item.style}}</text></button>
                 </block>
               </view>
             </view>

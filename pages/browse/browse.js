@@ -8,7 +8,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    firstView: true
+    firstView: true,
+    initialStyle: undefined
   },
 
   previewImages(e) {
@@ -63,9 +64,15 @@ Page({
    */
   onLoad: function (options) {
     const that = this
+    if (options.tag) {
+      this.setData({
+        initialStyle: options.tag
+      })
+    }
+    let url = options.tag ? paths.searchStyles + `${options.tag}` : paths.getAllArtists
 
     requests.get({
-      url: paths.getAllArtists,
+      url: url,
       success: res => {
         console.log("res", res)
         const tags = []
@@ -99,7 +106,6 @@ Page({
 
           })
         }
-
       }
     })
     this.setData({
@@ -192,7 +198,7 @@ bindPickerChange: function(e) {
   })
   console.log(that.data.inputVal)
   if (this.data.inputVal == "All") {
-    that.onLoad()
+    that.onLoad({tag: undefined})
   } else {
   requests.get({
     url: paths.searchStyles + `${that.data.inputVal}`,
@@ -287,5 +293,10 @@ bindPickerChange: function(e) {
       firstView: false
     })
     }
+  },
+
+  tagFilter: function(e) {
+    const tag = e.currentTarget.dataset.tag
+    this.onLoad({tag: tag})
   }
 })
