@@ -11,7 +11,9 @@ Page({
   data: {
     inputShowed: false,
     inputVal: "",
-    shop: {}
+    shop: {},
+    artist: {},
+    aboutUsExpanded: false
   },
 
   /**
@@ -51,6 +53,13 @@ Page({
     const shop = e.currentTarget.dataset.id
     this.setData({
       bookedShop: shop
+    })
+  },
+
+  showBio: function (e) {
+    // const shop = e.currentTarget.dataset.id
+    this.setData({
+      aboutUsExpanded: !this.data.aboutUsExpanded
     })
   },
 

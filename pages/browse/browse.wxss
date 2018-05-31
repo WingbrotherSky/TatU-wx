@@ -216,7 +216,7 @@ color: white;
 }
 
 .artist-info {
-  margin-top: 15rpx;
+  margin-top: 95rpx;
   background-color: black;
   display:flex;
   justify-content:center;
@@ -543,7 +543,7 @@ animation:
 
 
 .tags {
-  border-radius:4px;
+  border-radius:15px;
 
 font-weight:lighter;
 
@@ -551,7 +551,7 @@ background-color:black;
 border:2px solid rgba(255,255,255,.7);
 color:rgba(255,255,255,.9);
 margin-bottom:10px;
-max-width:245rpx;
+max-width:445rpx;
 
 font-size:27rpx;
 line-height:36rpx;

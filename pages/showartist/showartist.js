@@ -13,6 +13,7 @@ Page({
     inputShowed: false,
     inputVal: "",
     shop: {}
+   
 
   },
   
@@ -22,6 +23,7 @@ Page({
       urls: [e.currentTarget.dataset.url]
     })
   },
+
 
   /**
    * 生命周期函数--监听页面加载

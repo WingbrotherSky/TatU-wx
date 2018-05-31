@@ -270,6 +270,37 @@ textarea {
   justify-content: center;
 }
 
+.bio {
+  position: absolute;
+  right: 10rpx;
+}
+
+.bio-button {
+  border-radius: 10rpx;
+  height: 50rpx;
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+   border: 2px solid white; 
+  color:white;
+  margin-bottom: 0;
+  /* border-radius: 5px; */
+  width:190rpx;
+}
+
+.bio-container {
+  margin-top: 0;
+  padding: 16rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  color: black;
+  font-size: 30rpx;
+  background-color: white;
+
+}
 .book-button {
   border-radius: 5rpx;
   height: 55rpx;
@@ -361,7 +392,7 @@ display:flex;
   background-color: black;
   border: 2px solid rgba(255,255,255,.7);
   color: white;
-  border-radius: 4px;
+  border-radius: 15px;
   background-color: transparent;
   padding: 6px;
   margin: 2rpx;
@@ -378,7 +409,7 @@ display:flex;
 
 .tags-banner-box {
   justify-content: space-around;
-  margin: 10px;
+  margin: 10rpx;
 }
 
 /* .tags-banner {
@@ -394,7 +425,7 @@ display:flex;
   } */
 
 .tags-banner {
-  border-radius:4px;
+  border-radius:15px;
 
 font-weight:lighter;
 
