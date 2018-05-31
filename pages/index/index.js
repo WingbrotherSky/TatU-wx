@@ -63,6 +63,11 @@ Page({
   getUserInfo: function(e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo
+    wx.setStorage({
+      key: 'language',
+      data: e.detail.userInfo.language,
+    })
+
     this.setData({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
