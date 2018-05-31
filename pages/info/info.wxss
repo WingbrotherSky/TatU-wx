@@ -34,7 +34,7 @@
   height: 200rpx;
   width: 900rpx;
   color: white;
-  transform: rotate(5deg);
+  transform: rotate(0deg);
   padding: 10px;
   border-top: 1px solid rgba(255,255,255,0.6);
   border-bottom: 1px solid rgba(255,255,255,0.6);
@@ -48,25 +48,29 @@
 
 .big-card.card-one {
   /* text-decoration: underline; */
+  height: 120rpx;
   padding-left: 40rpx;
   font-weight: bolder;
   letter-spacing: 2px;
   font-size: 150rpx;
   transform: rotate(0deg);
-  margin-top: 0px;
-  margin-bottom: 70rpx;
+  margin-top: -13px;
+  margin-bottom: 20rpx;
   border: 3px solid rgba(100,100,100,0.9);
 }
 
 .info-one {
   text-decoration: none;
-  font-size: 30rpx;
+  font-size: 52rpx;
+  margin-top: -5rpx;
   /* margin-left: 10rpx;
   margin-bottom: 12rpx; */
 }
 
 .info-two {
-  font-size: 25rpx;
+  font-size: 35rpx;
+  margin-left: 135rpx;
+  margin-top: 0rpx;
 }
 
 .empty {
