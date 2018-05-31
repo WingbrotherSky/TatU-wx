@@ -6,7 +6,7 @@
         <image class='shop-logo' src="{{shop.logo_url}}"> </image>
               <view>
                   <view class='shop-name'>{{shop.name}}</view>
-                  <button class="book-button" bindtap='showMessageForm' data-id="{{shop.id}}">Message us <image class="info-icon2" src='/../../image/paper-plane.png' /></button>
+                  <button class="book-button" bindtap='showMessageForm' data-id="{{shop.id}}">Message us <image class="info-icon2" src='/image/paper-plane.png' /></button>
               </view>
       </view>
     </view>
@@ -18,10 +18,10 @@
         <view class="location">
            
             <view class='contact-info'>
-              <image class="info-icon" src='/../../image/placeholder2.png'></image> Chengdu 
+              <image class="info-icon" src='/image/placeholder2.png'></image> Chengdu 
             </view>
             <view class='contact-info2' bindtap='makeaCall'>
-              <image class="info-icon" src='/../../image/phonebook.png'></image>
+              <image class="info-icon" src='/image/phonebook.png'></image>
                 <text>{{shop.phone_number}} </text>
             </view> 
           </view>
