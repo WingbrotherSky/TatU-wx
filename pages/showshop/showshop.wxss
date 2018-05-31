@@ -311,6 +311,16 @@ display:flex;
 
 }
 
+.contact-info2 {
+  margin: 10px;
+  margin-bottom:1px;
+  margin-top:1px;
+  align-content:center;
+align-items:center;
+display:flex;
+
+}
+
 .tags {
   border-radius: 4rpx;
   /* width: 15vw; */
