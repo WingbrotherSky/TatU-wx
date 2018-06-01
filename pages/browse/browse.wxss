@@ -70,13 +70,13 @@ stretch
  height: 60rpx;
   width: 60rpx;
   padding: 0px;
-   border: 1px solid rgba(255,255,255,.1);
+   /* border: 1px solid rgba(255,255,255,.1); */
   border-top-left-radius: 20%;
   border-bottom-left-radius: 20%;
   border-top-right-radius: 20%;
   border-bottom-right-radius: 20%;
    /* opacity: 0.5;   */
-  background-color: rgba(28,25,25,0.2);
+  background-color: rgba(28,25,25,.1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -178,7 +178,7 @@ color: white;
   height: 60rpx;
   width: 60rpx;
   padding: 0px;
-   border: 1px solid rgba(255,255,255,.1); 
+   /* border: 1px solid rgba(255,255,255,.1);  */
   background-color: rgba(28,25,25,.1);
   border-radius: 20%;
 }
