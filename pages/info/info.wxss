@@ -5,6 +5,11 @@
   background: black;
 }
 
+.container-5 {
+  margin-bottom: 120rpx;
+  border-bottom: 15rpx solid rgba(255,255,255,0.6);
+}
+
 .swap-text {
   color: white;
   margin: 10rpx;

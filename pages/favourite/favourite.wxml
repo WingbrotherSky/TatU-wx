@@ -3,7 +3,7 @@
 
 
 <view class='shop-container'>
-  <view class="text"><TText text="Favorites:"/></view>
+  <view class="text"><TText text="Favorites"/></view>
     <view wx:if="{{favorites.length < 1}}" class="prompt-container">
     <view class="text"><TText text="You have no favorites yet! Get some!"/></view>
     </view>

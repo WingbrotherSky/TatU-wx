@@ -21,15 +21,19 @@ export default {
     'Bio:': 'Bio:',
 
     // Favorites Page
-    'Favorites:': 'Favorites:',
+    'Favorites': 'Favorites',
     'You have no favorites yet! Get some!': 'You have no favorites yet! Get some!',
 
     // Inbox Page
-    'Conversations:': 'Conversations:',
+    'Conversations': 'Conversations',
     'You have no conversations yet!': 'You have no conversations yet!',
 
     // Info Page
     'Information and Safety:': 'Information and Safety:',
+    'Basic Tattoo Safety Guidelines': 'Basic Tattoo Safety Guidelines',
+    'Choosing a Safe and Professional Artist': 'Choosing a Safe and Professional Artist',
+    'My First Tattoo: What to Expect!': 'My First Tattoo: What to Expect!',
+    'After Tattoo Care': 'After Tattoo Care',
     'Click Topic Below': 'Click Topic Below',
     'Swap App Language:': 'Swap App Language:'
   },
@@ -58,15 +62,19 @@ export default {
     'Bio:': '档案:',
 
      // Favorites Page
-     'Favorites:': '收藏:',
+     'Favorites': '收藏',
      'You have no favorites yet! Get some!': '您还没有收藏!',
 
      // Inbox Page
-    'Conversations:': '对话:',
+    'Conversations': '对话',
     'You have no conversations yet!': '您还没有对话!',
 
     // Info Page
     'Information and Safety:': '信息及安全须知:',
+    'Basic Tattoo Safety Guidelines': '基本纹身安全导读',
+    'Choosing a Safe and Professional Artist': '选择一个专业和可靠的纹身师',
+    'My First Tattoo: What to Expect!': '我的第一个纹身: 会有什么期望!',
+    'After Tattoo Care': '纹身之后的注意事项',
     'Click Topic Below': '点击以下标题',
     'Swap App Language:': '切换语言',
   }

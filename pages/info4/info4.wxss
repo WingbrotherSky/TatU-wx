@@ -12,7 +12,9 @@
   font-size: 25px;
   font-weight: bold;
   padding-left: 30rpx;
-
+  padding-top: 40rpx;
+  padding-bottom: 100rpx;
+  border-bottom: 15rpx solid rgba(255,255,255,0.6);
 }
 
 .body-text-first-pg {
@@ -24,6 +26,7 @@
 .body-text {
 font-size: 17px;
 padding-left: 30rpx;
+padding-bottom: 200rpx;
 }
 
 .red-border {

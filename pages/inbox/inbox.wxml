@@ -2,7 +2,7 @@
   <view class="wrapper">
   <view class='shop-container'>
   <block>
-        <view class="text" wx:if="{{inbox}}"><TText text="Conversations:"/></view>
+        <view class="text" wx:if="{{inbox}}"><TText text="Conversations"/></view>
         <view class="title" wx:else>{{convName}}</view>
     </block>
      <block wx:if="{{items.length < 1}}" >
@@ -30,6 +30,7 @@
         <view  style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
           <textarea name="content" placeholder="Enter message here" value="{{nada}}" style="text-align: center;"></textarea>
           <button class="send-button" form-type='submit'><TText text="Send"/></button>
+          <button class="button" bindtap="toggleInboxOff"><TText text="Leave Booking"/></button>
         </view>
       </form>
       </block> 

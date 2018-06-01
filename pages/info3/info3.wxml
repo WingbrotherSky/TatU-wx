@@ -1,8 +1,46 @@
-<!--pages/info3/info3.wxml-->
-<text>pages/info3/info3.wxml</text>
+<!--pages/info1/info1.wxml-->
+<view class="flex-for-text">
+  <view class="title-text"> My First Tattoo: What to Expect! </view>
+
+<text class="body-text">
+What should I expect for my first tattoo experience?
+
+It is good to be prepared for your first tattoo. First, you should be well rested and well fed. If you are tired, or your blood sugar is
+low, you may be more sensitive to discomfort. Drinking alcohol before getting tattooed can cause you to become dehydrated,and
+increase bleeding which can affect the quality of the tattoo.
+
+Expect to see blood. The amount varies from person to person, but usually it is about what you would expect from a scraped
+knee or rug burn. The level of pain also varies from person to person, but most people find it bearable. The best thing to do is
+just accept the discomfort and relax. Fighting or tensing will only increase your discomfort.
+If you start to feel faint or a little "green," tell your artist right away instead of toughing it out. There is absolutely nothing
+wrongwith taking a break. Your artist is prepared for this sort of thing and knows how to handle it.
+If you need to change position or stretch, go to the bathroom, sneeze or wiggle for any reason, let your artist know BEFORE you
+do it.
+
+Your new tattoo will get a patch of shiny skin over it or it may scab over. Leave the scab alone! This is a normal part of the healing
+process. Picking the scab may lead to infection or damage to your tattoo. The scab will slough off gradually in the course
+ofa week or two. If you have any questions during the healing process, call your artist. Don't rely on stories told to you by your
+friends.
 
 
-<!-- START TAB BAR -->
+
+<!-- <text class="body-text-first-pg">
+Other examples of tattoo aftercare instructions can be found at:
+http://www.safe-tattoos.com/
+http://tattooaftercare.org/
+http://www.mayoclinic.com/health/tattoos-and-piercings/MC00020
+http://www.tattooaftercare.net/howTo.htm
+http://www.city.milwaukee.gov/display/displayFile.aspx?docid=9229&filename=/Groups/healthAuthors/
+CEH/PDFs/ Tattoo_aftercare.pdf 
+    </text> -->
+
+    <text class="body-text-first-pg">
+This information is adapted from the Alliance of Professional Tattooists (APT). Their website can be accessed
+at www.safe-tattoos.com.
+</text>
+  </text>
+
+  <!-- START TAB BAR -->
 <view class='blank-item'> </view>
 <view class='nav'>
   <view class='markey-container'>
@@ -21,3 +59,5 @@
   </view>
 </view>
 <!-- END TAB BAR -->
+
+</view>

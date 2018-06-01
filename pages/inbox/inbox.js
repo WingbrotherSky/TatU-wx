@@ -33,6 +33,7 @@ Page({
           conversations: res.data.users
         })
         that.setData({
+          oldItems: that.data.conversations,
           items: that.data.conversations
         })
       }
@@ -80,8 +81,9 @@ Page({
       convId: e.currentTarget.dataset.shop_id
     })
     this.setData({
-      inbox: false
+      inbox: false,
     })
+
     requests.get({
       url: paths.getConverstation + `${e.currentTarget.dataset.shop_id}`,
       success: res => {
@@ -94,6 +96,15 @@ Page({
     }) 
     }
   },
+
+  toggleInboxOff: function () {
+    const that = this
+  this.setData({
+    inbox: true,
+    items: this.data.oldItems
+
+  })},
+  
   bindSubmit: function (e) {
     console.log(e)
     const that = this

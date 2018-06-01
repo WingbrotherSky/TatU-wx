@@ -46,25 +46,25 @@ Page({
 
   showInfo2: function (e) {
     wx.navigateTo({
-      url: `/pages/info1/info1`,
+      url: `/pages/info2/info2`,
     })
   },
 
   showInfo3: function (e) {
     wx.navigateTo({
-      url: `/pages/info1/info1`,
+      url: `/pages/info3/info3`,
     })
   },
 
   showInfo4: function (e) {
     wx.navigateTo({
-      url: `/pages/info1/info1`,
+      url: `/pages/info4/info4`,
     })
   },
 
   showInfo5: function (e) {
     wx.navigateTo({
-      url: `/pages/info1/info1`,
+      url: `/pages/info5/info5`,
     })
   },
   
