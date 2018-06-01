@@ -2,7 +2,7 @@
 
 .text {
  height: 5vh;
-  color: #bf2a32;
+  color: white;
   background-color: #1C1919;
   margin-bottom: 15px;
   /* border: 1rpx solid rgba(0,0,0,0.7);  */
