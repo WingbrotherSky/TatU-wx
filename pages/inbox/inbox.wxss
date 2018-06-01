@@ -2,7 +2,7 @@
 
 .text {
  height: 5vh;
-  color: #bf2a32;
+  color: white;
   background-color: #1C1919;
   margin-bottom: 15px;
   /* border: 1rpx solid rgba(0,0,0,0.7);  */
@@ -117,11 +117,37 @@ stretch
   background-color: white;
 } 
 
-button {
-  width: 100vw;
-  background: transparent;
-  border: dotted white 5rpx;
-  color: white;
+.send-button {
+  border-radius: 5rpx;
+  width:60%;
+  height:30%;
+  font-size: 15px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border: 2px solid rgba(255,255,255,.7);
+  color: rgba(255,255,255,.9);
+  margin: 15rpx;
+  border-radius: 5px;
+  right: 10px;
+}
+.button {
+  border-radius: 5rpx;
+  width:60%;
+  height:30%;
+  font-size: 15px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border: 2px solid rgba(255,255,255,.7);
+  color: rgba(255,255,255,.9);
+  margin-bottom: 120rpx;
+  border-radius: 5px;
+  right: 10px;
 }
 
 /* START TAB BAR  */
