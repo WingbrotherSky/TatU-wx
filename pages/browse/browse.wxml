@@ -1,5 +1,5 @@
 <picker mode="selector" bindchange='bindPickerChange' custom-item="All Styles" value="{{index}}" range="{{tags}}">  
-  <view class="choose-style" style="color: #bf2a32;"> 
+  <view class="choose-style" style="color: white;"> 
     <TText text="Style: "/>
       <view class="invisible-underlines" style="color: #1C1919">_</view> 
       {{inputVal || initialStyle || " All"}} 
@@ -22,7 +22,7 @@
               <swiper-item>
                 <view style="display: flex; justify-content: center;">
                   <view class="CTA-container">
-                    <button data-artId="{{item.id}}" class="share-btn" open-type="share"><image class="share-img" src="/image/share-buttonred.png"></image></button>
+                    <button data-artId="{{item.id}}" class="share-btn" open-type="share"><image class="share-img" src="/image/share.png"></image></button>
                        
                      <image bindtap="favoriteImage" data-id="{{item.id}}" class="heart-icon" src="{{item.favorited ? '/image/devilred.png' : '/image/devilwhite.png'}}">
                       <!-- style="background-image: url({{item.favorited ? '/image/devilred.png' : '/image/devilwhite.png'}}); background-size: cover; background-position: center, center;" >   -->
