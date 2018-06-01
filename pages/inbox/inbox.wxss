@@ -194,3 +194,12 @@ stretch
     flex-direction: column;
     justify-content: center;
  }
+
+ .conversation {
+   font-size:48rpx;
+width:160% !important;
+margin-right:20% !important;
+margin-left:20% !important;
+text-align:center;
+
+ }
