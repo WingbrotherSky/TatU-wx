@@ -24,8 +24,8 @@ stretch
   margin: 1px;
   border-radius: 1px;
   background: black;
-
 }
+
 .wrapper {
   height: 93.5vh;
   background-color: black;
@@ -55,7 +55,7 @@ stretch
 }
 
 .inbox-container {
-   height: 54vh; 
+   height: 58vh; 
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -82,6 +82,9 @@ stretch
   word-wrap: break-word;
 }
 
+.message-box {
+margin-bottom: 0px;
+}
 .other {
   float: left;
   margin-left: 3vw;
@@ -145,7 +148,7 @@ stretch
   background-color: black;
   border: 2px solid rgba(255,255,255,.7);
   color: rgba(255,255,255,.9);
-  margin-bottom: 120rpx;
+  margin-bottom: 20rpx;
   border-radius: 5px;
   right: 10px;
 }
@@ -193,4 +196,14 @@ stretch
     display: flex;
     flex-direction: column;
     justify-content: center;
+ }
+
+ .conversation {
+   font-size:48rpx;
+width:160% !important;
+margin-right: 20% !important;
+margin-left: calc(20% - 3vw) !important;
+text-align:center;
+
+
  }
