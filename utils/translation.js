@@ -27,6 +27,7 @@ export default {
     // Inbox Page
     'Conversations': 'Conversations',
     'You have no conversations yet!': 'You have no conversations yet!',
+    'Leave': 'Leave',
 
     // Info Page
     'Information and Safety:': 'Information and Safety:',
@@ -68,6 +69,7 @@ export default {
      // Inbox Page
     'Conversations': '对话',
     'You have no conversations yet!': '您还没有对话!',
+    'Leave': '离开',
 
     // Info Page
     'Information and Safety:': '信息及安全须知:',
