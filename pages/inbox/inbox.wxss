@@ -55,10 +55,11 @@ stretch
 }
 
 .inbox-container {
-   height: 54vh; 
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
+  height:64vh;
+  width:100vw;
+  display:flex;
+  flex-direction:column;
+
 }
 
 .card {
