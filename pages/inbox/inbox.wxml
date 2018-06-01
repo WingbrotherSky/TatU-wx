@@ -25,14 +25,16 @@
         </view>
       </block>
     </scroll-view>
+    <view class='message-box'>
      <block wx:if="{{!inbox}}">
      <form class="message-form" bindsubmit='bindSubmit'>
-        <view  style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+        <view style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
           <textarea name="content" placeholder="Enter message here" value="{{nada}}" style="text-align: center;"></textarea>
           <button class="send-button" form-type='submit'><TText text="Send"/></button>
         </view>
       </form>
-      </block> 
+      </block>
+      </view> 
   </view>
 
 

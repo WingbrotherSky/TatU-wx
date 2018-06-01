@@ -24,18 +24,15 @@
 .info-icon {
   width: 40rpx;
   height: 40rpx;
-  padding-right:14rpx;
-
-  
+  padding-right:14rpx; 
 }
 
 .info-icon2 {
   width: 30rpx;
   height: 30rpx;
-  padding-left: 8rpx;
-
-  
+  padding-left: 8rpx; 
 }
+
 .featured-container {
   background: black;
 }
@@ -73,7 +70,6 @@ align-items:center;
   width: 85px;
   height: 85px;
   margin: 20rpx;
-
 }
 
 .big-card {
@@ -138,14 +134,17 @@ align-items:center;
   bottom: 10px;
   left: 10px;
 }
+
 .card-description h2 {
   font-size: 24px;
 }
+
 .card-description p {
   font-size: 14px;
   opacity: 0.7;
   font-weight: lighter;
 }
+
 .card-link {
   position: absolute;
   top: 0;
