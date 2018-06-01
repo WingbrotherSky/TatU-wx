@@ -31,7 +31,7 @@
         <view style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
           <textarea name="content" placeholder="Enter message here" value="{{nada}}" style="text-align: center;"></textarea>
           <button class="send-button" form-type='submit'><TText text="Send"/></button>
-          <button class="button" bindtap="toggleInboxOff"><TText text="Leave Booking"/></button>
+          <button class="button" bindtap="toggleInboxOff"><TText text="Leave"/></button>
         </view>
       </form>
       </block>
