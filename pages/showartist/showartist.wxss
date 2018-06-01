@@ -75,7 +75,13 @@
     position: relative;
     padding-left: 2rpx;
     padding-right: 2rpx;
-    padding-bottom: 5rpx;
+    padding-bottom: 0rpx;
+     display: flex;
+  justify-content: space-around;
+   flex-wrap: wrap;
+  background-color: black;
+  margin-bottom: 30rpx;
+  border-bottom: solid 1px rgba(255,255,255,.4);
 }
 
 /* For Gallery  */
@@ -85,6 +91,7 @@
     margin-bottom: 60rpx;
     position: relative;
     padding: 9rpx;
+
 }
 
 .big-card {
@@ -98,19 +105,12 @@
   margin-bottom: 0;
   padding: 20rpx;
   font-weight: bolder;
-}
-.small-cards {
-  display: flex;
-  justify-content: space-around;
-   flex-wrap: wrap;
-  background-color: black;
-  margin-bottom: 30rpx;
-  border-bottom: solid 1px rgba(255,255,255,.4);
+
 }
 
 .small-card {
   height: 240rpx;
-  width: 243rpx;
+  width: 249rpx;
   background-size: cover;
 }
 
