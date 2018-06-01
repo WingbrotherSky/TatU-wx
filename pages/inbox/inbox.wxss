@@ -24,9 +24,7 @@ stretch
   margin: 1px;
   border-radius: 1px;
   background: black;
-
 }
-
 
 .wrapper {
   height: 93.5vh;
@@ -198,4 +196,14 @@ margin-bottom: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+ }
+
+ .conversation {
+   font-size:48rpx;
+width:160% !important;
+margin-right: 20% !important;
+margin-left: calc(20% - 3vw) !important;
+text-align:center;
+
+
  }
